@@ -6,166 +6,103 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-05-10 ~ 2026-06-08
-- 运行时间：2026-06-08 07:49:44 UTC
+- 最新运行日期：2026-06-08
+- 运行时间：2026-06-08 21:16:03 UTC
 - 运行状态：成功
-- 本次总论文数：48
-- 精读区：37
+- 本次总论文数：27
+- 精读区：16
 - 速读区：11
 
 ### 今日简报（AI）
-本期48篇论文精读37篇，聚焦智能体记忆机制，两篇满分论文分别提出GUI智能体自进化框架与长程科学智能体记忆架构。  
-核心方向是记忆增强的智能体自我进化与长程推理，同时警惕轨迹中的虚假关联陷阱。  
-普通读者可优先关注速率-失真记忆选择框架及跨智能体加密记忆传输协议，以优化实用部署。
-- 详情：[/20260510-20260608/README](/20260510-20260608/README)
+今日日报聚焦具身智能与多智能体系统中的记忆机制，精选27篇论文，其中两篇精读获得满分10分。  
+最值得关注的两大方向：混合时空记忆系统提升具身智能体行为连贯性，以及情景记忆时间一致性助力合作多智能体学习。  
+建议优先精读满分论文《eMEM》与《Episodic Memory Temporal Consistency》，深入理解记忆机制如何增强智能体的长期推理与协作能力。
+- 详情：[/202606/08/README](/202606/08/README)
 
 ### 精读区论文标签
-1. [SE-GA: Memory-Augmented Self-Evolution for GUI Agents](/20260510-20260608/2605.16883v1-se-ga-memory-augmented-self-evolution-for-gui-agents)  
+1. [eMEM: A Hybrid Spatio-Temporal Memory System For Embodied Agents](/202606/08/2606.03374v1-emem-a-hybrid-spatio-temporal-memory-system-for-embodied-agents)  
    标签：评分：10.0/10、query:agent-memory
-   evidence：为GUI智能体整合层级记忆，包括情景、语义和经验记忆
-2. [Episodic-Semantic Memory Architecture for Long-Horizon Scientific Agents](/20260510-20260608/2605.17625v1-episodic-semantic-memory-architecture-for-long-horizon-scientific-agents)  
+   evidence：面向具身代理的混合时空记忆系统，采用多索引架构
+2. [Episodic Memory Temporal Consistency for Cooperative Multi-Agent Reinforcement Learning](/202606/08/2606.04492v1-episodic-memory-temporal-consistency-for-cooperative-multi-agent-reinforcement-learning)  
    标签：评分：10.0/10、query:agent-memory
-   evidence：面向科学智能体的双过程记忆架构，包括情景和语义记忆
-3. [Mitigating Provenance-Role Collapse in Long-Term Agents via Typed Memory Representation](/20260510-20260608/2605.25869v1-mitigating-provenance-role-collapse-in-long-term-agents-via-typed-memory-representation)  
+   evidence：面向合作多智能体强化学习的情景记忆时间一致性框架，解决奖励稀疏问题
+3. [AdaMEM: Test-Time Adaptive Memory for Language Agents](/202606/08/2606.05684v1-adamem-test-time-adaptive-memory-for-language-agents)  
    标签：评分：10.0/10、query:agent-memory
-   evidence：提出类型化记忆表示解决长期智能体源监控错误
-4. [Eywa: Provenance-Grounded Long-Term Memory for AI Agents](/20260510-20260608/2605.30771v1-eywa-provenance-grounded-long-term-memory-for-ai-agents)  
-   标签：评分：10.0/10、query:agent-memory
-   evidence：基于溯源的记忆架构，以证据为先，确定性多路由检索
-5. [MemReread: Enhancing Agentic Long-Context Reasoning via Memory-Guided Rereading](/20260510-20260608/2605.10268v1-memreread-enhancing-agentic-long-context-reasoning-via-memory-guided-rereading)  
+   evidence：混合记忆架构：长程轨迹记忆与动态短程策略记忆
+4. [ExpWeaver: LLM Agents Learn from Experience via Latent RAG](/202606/08/2606.01041v1-expweaver-llm-agents-learn-from-experience-via-latent-rag)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：记忆引导重读增强检索
-6. [SAGE: A Self-Evolving Agentic Graph-Memory Engine for Structure-Aware Associative Memory](/20260510-20260608/2605.12061v1-sage-a-self-evolving-agentic-graph-memory-engine-for-structure-aware-associative-memory)  
+   evidence：通过潜在检索增强生成实现LLM智能体的经验学习
+5. [Expanding Spatial and Temporal Context for Robotic Imitation Learning With Scene Graphs](/202606/08/2606.01072v1-expanding-spatial-and-temporal-context-for-robotic-imitation-learning-with-scene-graphs)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：自进化图记忆引擎，结合记忆写入器和图基础模型读取器
-7. [LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues](/20260510-20260608/2605.12493v1-longmemeval-v2-evaluating-long-term-agent-memory-toward-experienced-colleagues)  
+   evidence：场景图作为显式结构化记忆机制
+6. [AMP: A Vendor-Neutral Wire Format for Agent Memory Operations](/202606/08/2606.01138v1-amp-a-vendor-neutral-wire-format-for-agent-memory-operations)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：评估智能体长期记忆对环境特定经验内化能力的基准
-8. [Agentic Recommender System with Hierarchical Belief-State Memory](/20260510-20260608/2605.14401v1-agentic-recommender-system-with-hierarchical-belief-state-memory)  
+   evidence：定义五种记忆操作和四种记忆类型的线格式，提供标准化的代理记忆架构
+7. [Unified Context Evolution for LLM Agents](/202606/08/2606.02304v1-unified-context-evolution-for-llm-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：推荐代理的层次信念状态记忆
-9. [Agentic Recommender System with Hierarchical Belief-State Memory](/20260510-20260608/2605.14401v2-agentic-recommender-system-with-hierarchical-belief-state-memory)  
+   evidence：提出类型化的可演化上下文单元作为代理经验记忆
+8. [AURA: Action-Gated Memory for Robot Policies at Constant VRAM](/202606/08/2606.02775v1-aura-action-gated-memory-for-robot-policies-at-constant-vram)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：用于智能推荐系统的层次信念状态记忆
-10. [MemEye: A Visual-Centric Evaluation Framework for Multimodal Agent Memory](/20260510-20260608/2605.15128v1-memeye-a-visual-centric-evaluation-framework-for-multimodal-agent-memory)  
+   evidence：面向具身智能体策略的动作门控循环记忆
+9. [MemTrain: Self-Supervised Context Memory Training](/202606/08/2606.03197v1-memtrain-self-supervised-context-memory-training)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：以视觉为中心的多模态智能体记忆评估框架
-11. [H-Mem: A Novel Memory Mechanism for Evolving and Retrieving Agent Memory via a Hybrid Structure](/20260510-20260608/2605.15701v1-h-mem-a-novel-memory-mechanism-for-evolving-and-retrieving-agent-memory-via-a-hybrid-structure)  
+   evidence：自监督训练框架，增强LLM代理的上下文记忆能力
+10. [InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain](/202606/08/2606.03329v1-infomem-training-long-context-memory-agents-with-answer-conditioned-information-gain)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：用于智能体记忆演化与检索的混合结构
-12. [DimMem: Dimensional Structuring for Efficient Long-Term Agent Memory](/20260510-20260608/2605.15759v1-dimmem-dimensional-structuring-for-efficient-long-term-agent-memory)  
+   evidence：使用答案条件信息增益训练分块记忆代理的奖励机制
+11. [Scaling Self-Evolving Agents via Parametric Memory](/202606/08/2606.04536v1-scaling-self-evolving-agents-via-parametric-memory)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：用于高效长期智能体记忆的维度内存框架
-13. [RecMem: Recurrence-based Memory Consolidation for Efficient and Effective Long-Running LLM Agents](/20260510-20260608/2605.16045v1-recmem-recurrence-based-memory-consolidation-for-efficient-and-effective-long-running-llm-agents)  
+   evidence：通过快速LoRA权重实现经验学习的参数记忆框架
+12. [PersonaTree: Structured Lifecycle Memory for Person Understanding in LLM Agents](/202606/08/2606.04780v1-personatree-structured-lifecycle-memory-for-person-understanding-in-llm-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：基于重复出现的记忆巩固提取情景与语义记忆
-14. [EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective](/20260510-20260608/2605.18421v1-evomembench-benchmarking-agent-memory-from-a-self-evolving-perspective)  
+   evidence：用于人物理解的三级人物树结构化生命周期记忆框架
+13. [Towards Persistent Case-Based Memory for Autonomous Data Science: A CBR-Augmented R&D-Agent with a Locally Deployable Small Language Model](/202606/08/2606.05250v1-towards-persistent-case-based-memory-for-autonomous-data-science-a-cbr-augmented-rd-agent-with-a-locally-deployable-small-language-model)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：从自我演化角度对智能体记忆进行基准测试
-15. [LongMINT: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](/20260510-20260608/2605.18565v1-longmint-evaluating-memory-under-multi-target-interference-in-long-horizon-agent-systems)  
+   evidence：面向自主智能体的持久案例记忆
+14. [Beyond Semantic Organization: Memory as Execution State Management for Long-Horizon Agents](/202606/08/2606.06090v1-beyond-semantic-organization-memory-as-execution-state-management-for-long-horizon-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：长时域系统中多目标干扰下的记忆评估基准
-16. [MementoGUI: Learning Agentic Multimodal Memory Control for Long-Horizon GUI Agents](/20260510-20260608/2605.18652v1-mementogui-learning-agentic-multimodal-memory-control-for-long-horizon-gui-agents)  
+   evidence：记忆作为执行状态管理，支持长程决策
+15. [Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](/202606/08/2606.06448v1-agent-memory-characterization-and-system-implications-of-stateful-long-horizon-workloads)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：面向GUI智能体的学习型记忆控制器，实现选择、压缩和检索
-17. [Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory](/20260510-20260608/2605.19952v1-rethinking-how-to-remember-beyond-atomic-facts-in-lifelong-llm-agent-memory)  
+   evidence：首次对代理记忆进行系统级表征，包括分类、性能剖析和瓶颈分析
+16. [M$^3$Exam: Benchmarking Multimodal Memory for Realistic User-Agent Interactions](/202606/08/2606.07402v1-m3exam-benchmarking-multimodal-memory-for-realistic-user-agent-interactions)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：三种共存的表示粒度用于智能体记忆
-18. [MemGym: a Long-Horizon Memory Environment for LLM Agents](/20260510-20260608/2605.20833v1-memgym-a-long-horizon-memory-environment-for-llm-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：智能体记忆基准测试
-19. [Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory](/20260510-20260608/2605.26252v1-is-agent-memory-a-database-rethinking-data-foundations-for-long-term-ai-agent-memory)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：重新思考长期智能体记忆的数据基础
-20. [PEAM: Parametric Embodied Agent Memory through Contrastive Internalization of Experience in Minecraft](/20260510-20260608/2605.27762v2-peam-parametric-embodied-agent-memory-through-contrastive-internalization-of-experience-in-minecraft)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：参数化具身智能体记忆，通过对比学习和失败-纠正轨迹对内化经验
-21. [MemCog: From Memory-as-Tool to Memory-as-Cognition in Conversational Agents](/20260510-20260608/2605.28046v1-memcog-from-memory-as-tool-to-memory-as-cognition-in-conversational-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：提出将记忆作为认知过程的智能体系统，支持主动推理
-22. [Rethinking Memory as Continuously Evolving Connectivity](/20260510-20260608/2605.28773v1-rethinking-memory-as-continuously-evolving-connectivity)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：面向大模型智能体的动态记忆图
-23. [WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction](/20260510-20260608/2605.29341v2-worldmemarena-evaluating-multimodal-agent-memory-through-action-world-interaction)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：通过动作-世界交互评估多模态智能体记忆
-24. [Task-Focused Memorization for Multimodal Agents](/20260510-20260608/2605.31075v1-task-focused-memorization-for-multimodal-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：多模态代理的任务聚焦记忆化
-25. [Learning to Retrieve: Dual-Level Long-Term Memory for Text-to-SQL Agents](/20260510-20260608/2606.00547v1-learning-to-retrieve-dual-level-long-term-memory-for-text-to-sql-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：文本到SQL代理的多水平动态记忆检索
-26. [MemPro: Agentic Memory Systems as Evolvable Programs](/20260510-20260608/2606.00619v1-mempro-agentic-memory-systems-as-evolvable-programs)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：代理的可进化记忆管道架构
-27. [DELTAMEM: Incremental Experience Memory for LLM Agents via Residual Trees](/20260510-20260608/2606.03083v1-deltamem-incremental-experience-memory-for-llm-agents-via-residual-trees)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：通过残差树为LLM智能体提供增量经验记忆
-28. [PhotoCraft: Agentic Reasoning with Hierarchical Self-Evolving Memory for Deep Image Search](/20260510-20260608/2606.03099v1-photocraft-agentic-reasoning-with-hierarchical-self-evolving-memory-for-deep-image-search)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：用于图像搜索智能体的包含工作、情景和语义记忆的层次自进化记忆
-29. [DMF: A Deterministic Memory Framework for Conversational AI Agents](/20260510-20260608/2606.03463v1-dmf-a-deterministic-memory-framework-for-conversational-ai-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：对话代理的确定性记忆框架
-30. [Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline](/20260510-20260608/2606.04315v1-exploring-cross-scenario-generality-of-agentic-memory-systems-diagnostics-and-a-strong-baseline)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：跨场景评估智能体记忆系统
-31. [Temporal Order Matters for Agentic Memory: Segment Trees for Long-Horizon Agents](/20260510-20260608/2606.04555v1-temporal-order-matters-for-agentic-memory-segment-trees-for-long-horizon-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：保留时间顺序的线段树记忆架构
-32. [SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents](/20260510-20260608/2606.05761v1-subtlememory-a-benchmark-for-fine-grained-relational-memory-discrimination-in-long-horizon-ai-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：针对AI智能体长期关系记忆区分的基准测试
-33. [SubtleMemory: A Benchmark for Fine-Grained Relational Memory Discrimination in Long-Horizon AI Agents](/20260510-20260608/2606.05761v2-subtlememory-a-benchmark-for-fine-grained-relational-memory-discrimination-in-long-horizon-ai-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：长时域智能体细粒度关系记忆判别基准
-34. [Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents](/20260510-20260608/2606.06036v1-memory-is-reconstructed-not-retrieved-graph-memory-for-llm-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：基于图记忆的主动重建检索
-35. [Beyond Similarity: Trustworthy Memory Search for Personal AI Agents](/20260510-20260608/2606.06054v1-beyond-similarity-trustworthy-memory-search-for-personal-ai-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：将记忆搜索视为信任边界，评估基于相似性检索的信任差距
-36. [Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads](/20260510-20260608/2606.06448v1-agent-memory-characterization-and-system-implications-of-stateful-long-horizon-workloads)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：代理记忆工作负载的系统表征
-37. [AdMem: Advanced Memory for Task-solving Agents](/20260510-20260608/2606.06787v1-admem-advanced-memory-for-task-solving-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：统一记忆框架，整合语义、情景和程序记忆
+   evidence：多模态记忆基准测试，评估跨会话推理
 
 ### 速读区论文标签
-1. [The Trap of Trajectory: Towards Understanding and Mitigating Spurious Correlations in Agentic Memory](/20260510-20260608/2605.09330v1-the-trap-of-trajectory-towards-understanding-and-mitigating-spurious-correlations-in-agentic-memory)  
+1. [Self-Evolving Multi-Agent Systems via Decentralized Memory](/202606/08/2605.22721v1-self-evolving-multi-agent-systems-via-decentralized-memory)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：理解智能体记忆中的虚假相关
-2. [Remember the Decision, Not the Description: A Rate-Distortion Framework for Agent Memory](/20260510-20260608/2605.10870v1-remember-the-decision-not-the-description-a-rate-distortion-framework-for-agent-memory)  
+   evidence：通过去中心化记忆和经验回放实现多智能体自进化
+2. [SAM: State-Adaptive Memory for Long-Horizon Reasoning Agent](/202606/08/2605.24468v1-sam-state-adaptive-memory-for-long-horizon-reasoning-agent)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：面向智能体记忆的决策中心率失真框架
-3. [Portable Agent Memory: A Protocol for Cryptographically-Verified Memory Transfer Across Heterogeneous AI Agents](/20260510-20260608/2605.11032v1-portable-agent-memory-a-protocol-for-cryptographically-verified-memory-transfer-across-heterogeneous-ai-agents)  
+   evidence：面向长程推理的状态自适应记忆检索
+3. [Personalizing Embodied Multimodal Large Language Model Agents over Long-term User Interactions](/202606/08/2605.26256v1-personalizing-embodied-multimodal-large-language-model-agents-over-long-term-user-interactions)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：跨异构AI智能体的加密验证记忆传输协议，带结构化记忆模型
-4. [CALMem : Application-Layer Dual Memory for Conversational AI](/20260510-20260608/2605.20724v1-calmem--application-layer-dual-memory-for-conversational-ai)  
+   evidence：结合情景记忆和语义记忆的多模态记忆增强个体化具身智能体框架
+4. [PEAM: Parametric Embodied Agent Memory through Contrastive Internalization of Experience in Minecraft](/202606/08/2605.27762v1-peam-parametric-embodied-agent-memory-through-contrastive-internalization-of-experience-in-minecraft)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：面向对话AI的应用层双记忆架构
-5. [Mem-$π$: Adaptive Memory through Learning When and What to Generate](/20260510-20260608/2605.21463v1-mem--adaptive-memory-through-learning-when-and-what-to-generate)  
+   evidence：参数化具身智能体记忆内化经验
+5. [Meta-Cognitive Memory Policy Optimization for Long-Horizon LLM Agents](/202606/08/2605.30159v1-meta-cognitive-memory-policy-optimization-for-long-horizon-llm-agents)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：面向LLM智能体的自适应记忆生成框架
-6. [MINTEval: Evaluating Memory under Multi-Target Interference in Long-Horizon Agent Systems](/20260510-20260608/2605.18565v2-minteval-evaluating-memory-under-multi-target-interference-in-long-horizon-agent-systems)  
+   evidence：面向长期智能体的元认知记忆策略优化
+6. [ElasticMem: Latent Memory as a Learnable Resource for LLM Agents](/202606/08/2605.30690v1-elasticmem-latent-memory-as-a-learnable-resource-for-llm-agents)  
+   标签：评分：8.0/10、query:agent-memory
+   evidence：将隐式记忆作为可学习的弹性资源用于智能体长期记忆
+7. [Expanding Spatial and Temporal Context for Robotic Imitation Learning With Scene Graphs](/202606/08/2606.01072v2-expanding-spatial-and-temporal-context-for-robotic-imitation-learning-with-scene-graphs)  
+   标签：评分：8.0/10、query:agent-memory
+   evidence：使用动态场景图作为显式结构化记忆，捕获以对象为中心的关系和时间演化
+8. [memorywire: A Vendor-Neutral Wire Format for Agent Memory Operations](/202606/08/2606.01138v2-memorywire-a-vendor-neutral-wire-format-for-agent-memory-operations)  
+   标签：评分：8.0/10、query:agent-memory
+   evidence：跨框架标准化代理记忆操作的厂商中立线格式
+9. [QueryAgent-R1: Bridging Query Generation and Product Retrieval for E-Commerce Query Recommendation](/202606/08/2606.05671v1-queryagent-r1-bridging-query-generation-and-product-retrieval-for-e-commerce-query-recommendation)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：面向长程智能体多目标干扰下记忆评估的基准
-7. [Personalize-then-Store: Benchmarking and Learning Personalized Memory for Long-horizon Agents](/20260510-20260608/2605.25535v1-personalize-then-store-benchmarking-and-learning-personalized-memory-for-long-horizon-agents)  
+   evidence：提出记忆增强的代理框架，使用检索链优化
+10. [When Should Memory Stay Silent: Measuring Memory-Use Boundaries in Memory-Augmented Conversational Agents](/202606/08/2606.06055v1-when-should-memory-stay-silent-measuring-memory-use-boundaries-in-memory-augmented-conversational-agents)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：针对智能体个性化长期记忆的基准和学习
-8. [MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation](/20260510-20260608/2605.27366v1-muse-autoskill-self-evolving-agents-via-skill-creation-memory-management-and-evaluation)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：利用记忆进行技能演化的长期智能体改进
-9. [Hijacking Agent Memory: Stealthy Trojan Attacks Through Conversational Interaction](/20260510-20260608/2605.29960v1-hijacking-agent-memory-stealthy-trojan-attacks-through-conversational-interaction)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：针对LLM智能体长期记忆的投毒攻击
-10. [Channel Fracture: Architectural Blind Spots in Scheduled Cross-Agent Memory Injection for Multi-Agent Orchestration Systems](/20260510-20260608/2606.04896v1-channel-fracture-architectural-blind-spots-in-scheduled-cross-agent-memory-injection-for-multi-agent-orchestration-systems)  
+   evidence：衡量对话智能体中何时应使用检索到的记忆
+11. [Exploring the Topology and Memory of Consensus: How LLM Agents Agree, Fragment, or Settle When Forming Conventions](/202606/08/2606.04197v1-exploring-the-topology-and-memory-of-consensus-how-llm-agents-agree-fragment-or-settle-when-forming-conventions)  
    标签：评分：6.0/10、query:agent-memory
-   evidence：发现多智能体记忆注入中因硬编码隔离守卫导致的信道断裂故障
-11. [Channel Fracture: Architectural Blind Spots in Scheduled Cross-Agent Memory Injection for Multi-Agent Orchestration Systems](/20260510-20260608/2606.04896v2-channel-fracture-architectural-blind-spots-in-scheduled-cross-agent-memory-injection-for-multi-agent-orchestration-systems)  
-   标签：评分：6.0/10、query:agent-memory
-   evidence：跨智能体记忆注入中的架构盲点
+   evidence：研究记忆深度和网络拓扑对多代理系统共识的影响
 
 
 <div class="dpr-home-promo-card">
