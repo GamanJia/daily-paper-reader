@@ -25,3 +25,60 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: agent-memory
+      description: 找Agent Memory相关的论文
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: agent memory
+          keyword_cn: 智能体记忆
+          query: agent memory mechanisms
+        - keyword: experience replay
+          keyword_cn: 经验回放
+          query: experience replay agent learning
+        - keyword: memory retrieval
+          keyword_cn: 记忆检索
+          query: memory retrieval techniques for agents
+        - keyword: memory-based decision
+          keyword_cn: 基于记忆的决策
+          query: memory-based decision making agents
+        - keyword: long-term memory
+          keyword_cn: 长期记忆
+          query: long-term memory in artificial agents
+        - keyword: memory architecture
+          keyword_cn: 记忆架构
+          query: memory architecture for intelligent agents
+      intent_queries:
+        - query: agent memory mechanisms in artificial intelligence
+          query_cn: 人工智能中的智能体记忆机制
+          enabled: true
+          source: manual
+          note: ''
+        - query: memory augmented agent architectures and applications
+          query_cn: 记忆增强智能体架构及应用
+          enabled: true
+          source: manual
+          note: ''
+        - query: episodic and semantic memory for autonomous agents
+          query_cn: 自主智能体中的情景记忆与语义记忆
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-06-08T07:13:15.891Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
