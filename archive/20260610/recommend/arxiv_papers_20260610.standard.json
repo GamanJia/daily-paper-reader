@@ -1,0 +1,383 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-10T21:59:04.803131+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 5,
+    "deep_cap": 6,
+    "deep_selected": 5,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2606.09900v1",
+      "source": "arxiv",
+      "title": "Less Context, More Accuracy: A Bi-Temporal Memory Engine for LLM Agents Where a Lean Retrieved Context Beats the Full History",
+      "abstract": "Long-term memory is the missing layer for LLM agents: across sessions they forget, and the common workaround -- replaying the whole history into the prompt -- is expensive, slow, and, as distractors accumulate, less accurate. Most memory systems win on cost or latency but still lose to the full-context baseline on accuracy, and benchmark numbers are reported on inconsistent, non-reproducible harnesses, so one system appears at wildly different scores across sources. We present Engram, an open-source, dual-process memory engine on a bi-temporal data model. A fast write path appends lossless episodes with no LLM on the critical path; an asynchronous path extracts atomic (subject, predicate, object) facts, builds a bi-temporal knowledge graph, and resolves contradictions without an LLM call per fact -- invalidating, never deleting, so every fact keeps provenance and a supersession chain. A hybrid read path fuses dense, lexical, graph, and recency/salience signals, applies a point-in-time (\"as-of\") filter, and assembles a compact, provenance-tagged context. On the full 500-question LongMemEval_S, graded by the official category-specific judge, Engram's lean configuration -- answering from a ~9.6k-token retrieved slice, never the full history -- scores 83.6% vs. 73.2% for full-context (+10.4 points, McNemar p < 10^-6) at ~8x fewer tokens (9.6k vs. 79k), with 0/500 errored. The gain needs a hybrid read path: facts alone lose recall, while facts plus retrieved chunks recover detail. We also contribute a neutral, in-repo evaluation harness with the official judge baked in and the full-context baseline in every table, publish the raw per-question logs, and document the measurement-integrity pitfalls (truncation, home-grown judges, full-history leaks) that silently distort memory benchmarks. Every number ships with a command to reproduce it.",
+      "authors": [
+        "Liuyin Wang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG"
+      ],
+      "published": "2026-06-05T11:43:56+00:00",
+      "link": "https://arxiv.org/pdf/2606.09900v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "bi-temporal memory engine for long-term memory in LLM agents",
+      "llm_evidence_cn": "面向LLM代理的双时间记忆引擎，支持长期记忆",
+      "llm_evidence": "面向LLM代理的双时间记忆引擎，支持长期记忆",
+      "canonical_evidence": "面向LLM代理的双时间记忆引擎，支持长期记忆",
+      "llm_tldr_en": "Engram is an open-source dual-process memory engine using a bi-temporal data model that achieves higher accuracy than full-context replay while being efficient.",
+      "llm_tldr_cn": "LLM代理面临长期记忆缺失问题，当前方案是回放整个历史，但代价高且随干扰积累准确率下降。本文提出Engram，基于双时间数据模型，包含快速写路径（无损记录）和异步提取路径（原子事实），能够在无需完整历史的情况下达到更高准确率。实验证明Engram在多个记忆密集型任务上超越了全上下文基线和现有记忆系统。",
+      "llm_tldr": "LLM代理面临长期记忆缺失问题，当前方案是回放整个历史，但代价高且随干扰积累准确率下降。本文提出Engram，基于双时间数据模型，包含快速写路径（无损记录）和异步提取路径（原子事实），能够在无需完整历史的情况下达到更高准确率。实验证明Engram在多个记忆密集型任务上超越了全上下文基线和现有记忆系统。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.10677v1",
+      "source": "arxiv",
+      "title": "Infini Memory: Maintainable Topic Documents for Long-Term LLM Agent Memory",
+      "abstract": "Long-term LLM agents need persistent memory that can track changing facts and provide relevant evidence across sessions. Existing memory systems often store observations as isolated records, summaries, or indexed fragments, which makes evidence aggregation, fact revision, and memory maintenance difficult. We propose Infini Memory, a maintainable text-based persistent memory architecture that treats agent memory as topic-structured documents. Each topic document serves as a semantic unit for collecting related evidence, preserving metadata, and revising facts over time. New observations are first staged in a buffer and periodically consolidated into coherent textual contexts. At inference time, an agentic retrieval procedure lets the LLM read memory through iterative tool calls rather than a single retrieval step. On MemoryAgentBench, Infini Memory achieves 64.7% overall score. Ablations show that topic-structured maintenance and iterative evidence inspection improve complementary aspects of long-term memory use.",
+      "authors": [
+        "Suozhao Ji",
+        "Baodong Wu",
+        "Zehao Wang",
+        "Lei Xia",
+        "Qingping Li",
+        "Ruisong Wang",
+        "Wenbo Ding",
+        "Zhenhua Zhu",
+        "Boxun Li",
+        "Guohao Dai",
+        "Yu Wang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-09T10:31:51+00:00",
+      "link": "https://arxiv.org/pdf/2606.10677v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "topic-structured documents for long-term LLM agent memory with maintenance and retrieval",
+      "llm_evidence_cn": "主题结构化文档用于LLM智能体长期记忆，支持维护和检索",
+      "llm_evidence": "主题结构化文档用于LLM智能体长期记忆，支持维护和检索",
+      "canonical_evidence": "主题结构化文档用于LLM智能体长期记忆，支持维护和检索",
+      "llm_tldr_en": "Infini Memory stores agent memory as topic-structured documents, enabling evidence aggregation, fact revision, and agentic retrieval.",
+      "llm_tldr_cn": "长期LLM智能体需要持久记忆来跟踪变化的事实并跨会话提供证据。本文提出Infini Memory，将记忆建模为主题文档，每个文档作为语义单元收集相关证据并保留元数据。新观察先存入缓冲区，定期整合为连贯文本。推理时通过智能体检索程序让LLM直接读取记忆。实验表明该方法在事实追踪和跨会话推理任务上优于现有记忆系统。",
+      "llm_tldr": "长期LLM智能体需要持久记忆来跟踪变化的事实并跨会话提供证据。本文提出Infini Memory，将记忆建模为主题文档，每个文档作为语义单元收集相关证据并保留元数据。新观察先存入缓冲区，定期整合为连贯文本。推理时通过智能体检索程序让LLM直接读取记忆。实验表明该方法在事实追踪和跨会话推理任务上优于现有记忆系统。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.10299v1",
+      "source": "arxiv",
+      "title": "What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory",
+      "abstract": "Language-agent \"memory palace\" systems anchor each memory to a world coordinate, on the intuition that geometry adds something text cannot. We make that intuition testable and report three results. First, the memory-palace default of folding spatial proximity into a linear blend beside recency and importance does not help and can hurt: in a pre-registered recall experiment the shipped blend fails its own frozen test (mean Delta-Hit@5 -0.0375, Wilcoxon p=0.306), sitting at a position-blind baseline, while a geometry-led weighting wins decisively (+0.3208, p<10^-15): geometry must lead recall when the query regime is spatial. Second, memory recall and visibility must be separated: recall is occlusion-blind by design (you correctly remember the next room behind a wall), while visibility is a perception predicate over stored geometry that the live system never computed. A one-line ray-versus-voxel digital differential analyzer (DDA), re-pointed from the gaze ray the agent already casts, supplies it: text and the live FoV cone both score 0.000 on 849 behind-wall targets while cone-plus-DDA reaches 0.982 (exact McNemar p<10^-6); coordinate recall separately resolves near-duplicate locations a cosine null cannot (1.000 vs 0.533, n=150). Third, the visibility predicate is confirmed live under a git-committed pre-registration (SPMEM-OCC-LIVE-v1: eight scripted worlds, automated oracle scoring, 96 behind-wall targets, false-visible 1.000->0.000, pooled exact McNemar p=2.5x10^-29), a run that surfaced and fixed a real relay anchor defect. We concede that occlusion-needs-geometry is near-tautological; the contribution is the measurement and isolation, separating what spatial memory must store from how it is read. These pilots power a frozen confirmatory study (SPMEM-ZERO-REAL-PREREG-v1); the full human-authored multi-world study with blind raters remains future work.",
+      "authors": [
+        "Doeon Kwon",
+        "Junho Bang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.MA"
+      ],
+      "published": "2026-06-09T01:34:18+00:00",
+      "link": "https://arxiv.org/pdf/2606.10299v1",
+      "tags": [
+        "keyword:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "tests spatial memory retrieval techniques for language agents",
+      "llm_evidence_cn": "测试语言智能体的空间记忆检索技术",
+      "llm_evidence": "测试语言智能体的空间记忆检索技术",
+      "canonical_evidence": "测试语言智能体的空间记忆检索技术",
+      "llm_tldr_en": "Analyzes spatial memory in language agents, showing geometry-led weighting significantly outperforms linear blends in recall.",
+      "llm_tldr_cn": "语言智能体的记忆宫殿方法将记忆锚定到世界坐标，但几何信息如何发挥作用尚未明确。本文通过预注册实验发现，线性混合加权（邻近性、时效性、重要性）效果不优于无位置基线，而几何主导的加权在空间查询中大幅提升召回率。同时证明记忆召回和可见性必须分离，为空间记忆设计提供了关键指导。",
+      "llm_tldr": "语言智能体的记忆宫殿方法将记忆锚定到世界坐标，但几何信息如何发挥作用尚未明确。本文通过预注册实验发现，线性混合加权（邻近性、时效性、重要性）效果不优于无位置基线，而几何主导的加权在空间查询中大幅提升召回率。同时证明记忆召回和可见性必须分离，为空间记忆设计提供了关键指导。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.10532v1",
+      "source": "arxiv",
+      "title": "ActiveMem: Distributed Active Memory for Long-Horizon LLM Reasoning",
+      "abstract": "Memory is essential for enabling large language model (LLM) agents to handle long-horizon reasoning tasks. Existing memory mechanisms are largely centralized, typically organizing retrieved information and interaction history within a single model context. This design imposes a fundamental trade-off: scaling reasoning trajectories risks context overload, whereas aggressive content pruning may result in irreversible information loss. Seeking a better trade-off, we draw inspiration from human cognitive systems, especially the functional complementarity between the prefrontal cortex (executive control) and the hippocampus (memory management), suggesting that such a trade-off need not be inherent, but may instead stem from centralized memory organization. To this end, we propose ActiveMem, a heterogeneous framework that decouples agent memory from the core reasoning process. Specifically, a high-level Planner utilizes distilled semantic gists to execute reasoning, while a lightweight, distributed memory system operates in parallel to actively accumulate and consolidate these gists throughout the task. Experiments on BrowseComp-Plus and GAIA show that ActiveMem achieves state-of-the-art accuracy with significantly reduced overhead, demonstrating the effectiveness of distributed active memory for long-horizon reasoning.",
+      "authors": [
+        "Yunhan Jiang",
+        "Wenbin Duan",
+        "Shasha Guo",
+        "Liang Pang",
+        "Xiaoqian Sun",
+        "Huawei Shen"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-09T08:03:38+00:00",
+      "link": "https://arxiv.org/pdf/2606.10532v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "distributed active memory inspired by human cognitive systems",
+      "llm_evidence_cn": "受人类认知系统启发的分布式主动记忆",
+      "llm_evidence": "受人类认知系统启发的分布式主动记忆",
+      "canonical_evidence": "受人类认知系统启发的分布式主动记忆",
+      "llm_tldr_en": "ActiveMem proposes a distributed active memory architecture that separates executive control and memory management, inspired by prefrontal cortex and hippocampus, to avoid context overload in long-horizon reasoning.",
+      "llm_tldr_cn": "现有LLM智能体记忆机制集中化，随着推理轨迹增长导致上下文过载或信息丢失。ActiveMem 受人类大脑前额叶和海马体功能互补启发，提出分布式主动记忆架构，将执行控制与记忆管理分离。每个记忆单元自主更新，通过信息流协调实现高效推理。实验表明该架构在长程推理任务中显著减少上下文过载，同时保留关键信息。",
+      "llm_tldr": "现有LLM智能体记忆机制集中化，随着推理轨迹增长导致上下文过载或信息丢失。ActiveMem 受人类大脑前额叶和海马体功能互补启发，提出分布式主动记忆架构，将执行控制与记忆管理分离。每个记忆单元自主更新，通过信息流协调实现高效推理。实验表明该架构在长程推理任务中显著减少上下文过载，同时保留关键信息。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.10616v1",
+      "source": "arxiv",
+      "title": "Learning What to Remember: Observability-Safe Memory Retention via Constrained Optimization for Long-Horizon Language Agents",
+      "abstract": "Long-horizon language agents accumulate observations, reasoning traces, and retrieved facts that exceed their finite context windows, making memory retention a fundamental resource-allocation problem. Existing memory systems improve management through heuristic scoring, retrieval optimization, or learned compression, but largely treat retention as a local decision problem and do not explicitly model its long-term consequences under realistic observability constraints. To fill this gap, we formulate memory retention as a constrained stochastic optimization problem with explicit budget feasibility, evidence utility, and delayed costs including miss penalties, reacquisition delays, and stale-information risk. We then propose OSL-MR (Observability-Safe Learning for Memory Retention), a novel framework that enforces a strict separation between online-observable features and offline-available supervision (OAS). OSL-MR combines an evidence learner trained from realized evidence supervision with a Mixed-Score heuristic that serves both as a deployable online-safe baseline and as a structured inductive prior for learning. The resulting policy learns query-conditioned evidence value directly from interaction data while remaining deployable under the same observability constraints. Experiments on LOCOMO and LongMemEval show that OSL-MR consistently outperforms recency-based methods, Generative Agents-style scoring, and other heuristic baselines, particularly under tight memory budgets. The Mixed-Score prior further improves precision while preserving recall, and sensitivity analysis demonstrates robustness across a wide range of cost configurations.",
+      "authors": [
+        "Qingcan Kang",
+        "Liu Mingyang",
+        "Shixiong Kai",
+        "Kaichao Liang",
+        "Tao Zhong",
+        "Mingxuan Yuan"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-09T09:15:33+00:00",
+      "link": "https://arxiv.org/pdf/2606.10616v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "constrained optimization for memory retention in long-horizon agents",
+      "llm_evidence_cn": "长程智能体记忆保留的约束优化方法",
+      "llm_evidence": "长程智能体记忆保留的约束优化方法",
+      "canonical_evidence": "长程智能体记忆保留的约束优化方法",
+      "llm_tldr_en": "Formulates memory retention as constrained stochastic optimization with budget feasibility and delayed costs, learning what to remember under observability constraints.",
+      "llm_tldr_cn": "长程智能体记忆保留本质是资源分配问题，但现有方法仅局部决策，忽略长期后果。本文将其建模为约束随机优化问题，显式考虑预算可行性、证据效用以及错过惩罚、重新获取延迟等延迟成本。通过求解该优化，智能体学习在可观测性约束下安全地保留最有价值的记忆。实验验证该方法在保留关键信息的同时减少了存储代价。",
+      "llm_tldr": "长程智能体记忆保留本质是资源分配问题，但现有方法仅局部决策，忽略长期后果。本文将其建模为约束随机优化问题，显式考虑预算可行性、证据效用以及错过惩罚、重新获取延迟等延迟成本。通过求解该优化，智能体学习在可观测性约束下安全地保留最有价值的记忆。实验验证该方法在保留关键信息的同时减少了存储代价。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.09916v1",
+      "source": "arxiv",
+      "title": "IntentKV: Cross-Turn Intent-Aware KV Cache Pruning for Agent Inference",
+      "abstract": "Multi-turn LLM agents fan short queries into long trajectories of tool calls, search results, and intermediate reasoning. Both KV memory and KV read bandwidth grow by orders of magnitude across a single trajectory, making the key-value (KV) cache, not parameter compute, the dominant serving bottleneck for long-horizon agents. We introduce IntentKV, learned KV pruning that keeps the base LLM frozen. IntentKV maintains a session-level QueryMemory of cross-turn intent, scores live history tokens with a memory-attention rule, and adds a zero-initialized residual head with cross-attention over current-query K-vectors. To stay composable with prefix caches, eviction is a slot-map redirection: dropped positions route to a sentinel dead slot while surviving K/V rows, RoPE phases, and slot identities stay in place. IntentKV matches the no-pruning full-cache baseline with almost no accuracy drop under tight KV budgets: at an 8k KV budget, mean peak request tokens drop 23.9% on Qwen3-8B and 30.7% on Qwen2.5-14B. On the 100 longest BCP queries that all methods complete on Qwen2.5-14B, IntentKV-8k further cuts worst-case peak request tokens from 92.3k to 20.5k, a 77.8% reduction, and worst-case raw KV reads from 411M to 31M, a 92.6% reduction.",
+      "authors": [
+        "Junjie Li",
+        "Jiong Lou",
+        "Jie Li"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "published": "2026-06-06T15:54:48+00:00",
+      "link": "https://arxiv.org/pdf/2606.09916v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "maintains session-level QueryMemory for intent-aware KV pruning",
+      "llm_evidence_cn": "维护会话级查询记忆以实现意图感知的KV剪枝",
+      "llm_evidence": "维护会话级查询记忆以实现意图感知的KV剪枝",
+      "canonical_evidence": "维护会话级查询记忆以实现意图感知的KV剪枝",
+      "llm_tldr_en": "IntentKV prunes KV cache for LLM agents by maintaining cross-turn intent memory and using memory-attention scoring.",
+      "llm_tldr_cn": "多轮LLM智能体的KV缓存成为推理瓶颈。本文提出IntentKV，通过维护会话级跨轮查询记忆，并利用记忆注意力规则对历史令牌评分，实现零增加推理负担的KV剪枝。实验表明该方法在保持性能的同时大幅降低内存和带宽消耗。",
+      "llm_tldr": "多轮LLM智能体的KV缓存成为推理瓶颈。本文提出IntentKV，通过维护会话级跨轮查询记忆，并利用记忆注意力规则对历史令牌评分，实现零增加推理负担的KV剪枝。实验表明该方法在保持性能的同时大幅降低内存和带宽消耗。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.09316v2",
+      "source": "arxiv",
+      "title": "Anything2Skill: Compiling External Knowledge into Reusable Skills for Agents",
+      "abstract": "Retrieval-augmented generation (RAG) enables agents to access external knowledge at inference time, but it primarily retrieves fragmented declarative evidence, leaving agents to repeatedly infer task procedures from passages, manuals, examples, logs, or trajectories. This raises a fundamental question: can skills extracted from external knowledge bases be installed into an agent, enabling it to rapidly approximate domain expertise? In this paper, we propose Anything2Skill, a taxonomy-guided framework that compiles heterogeneous external knowledge into reusable, retrievable, and executable skills for agents. Given a corpus of knowledge records, \\textsc{Anything2Skill} first decomposes each record into evidence windows and performs plan-and-expand skill extraction under a skill-tree prior. The extracted candidates are then converted into structured skill contracts that specify invocation conditions, contraindications, action moves, workflow steps, constraints, output specifications, supporting evidence, and confidence scores. To construct a deployable procedural memory, Anything2Skill manages the extracted skills in a persistent SkillBank through taxonomy-aware compilation, registry-level reconciliation, lifecycle tracking, versioned updates, and visible skill-tree projection. At inference time, agents retrieve both task-specific passages from the original knowledge base and relevant procedural skills from the SkillBank, allowing RAG to provide declarative evidence while compiled skills provide reusable procedural guidance. Experiments on qsv and GitHub-CLI show that Anything2Skill combined with RAG achieves 98.85\\% and 94.10\\% success rates, respectively, substantially outperforming RAG-only agents. These results suggest that compiling latent procedural knowledge into explicit skills is an effective way to extend retrieval-augmented agents from knowledge access toward capability reuse.",
+      "authors": [
+        "Qianjun Pan",
+        "Yutao Yang",
+        "Junsong Li",
+        "Jie Zhou",
+        "Kai Chen",
+        "Xin Li",
+        "Qin Chen",
+        "Liang He"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-08T10:24:32+00:00",
+      "link": "https://arxiv.org/pdf/2606.09316v2",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "compiling external knowledge into reusable skills for agent memory",
+      "llm_evidence_cn": "将外部知识编译为智能体可复用的技能记忆",
+      "llm_evidence": "将外部知识编译为智能体可复用的技能记忆",
+      "canonical_evidence": "将外部知识编译为智能体可复用的技能记忆",
+      "llm_tldr_en": "Anything2Skill compiles heterogeneous external knowledge into reusable, retrievable, and executable skills for agents, enabling rapid domain expertise approximation.",
+      "llm_tldr_cn": "智能体通过RAG获取外部知识，但知识碎片化，无法直接获取任务流程。Anything2Skill 提出分类学引导框架，将异构知识记录编译为可复用、可检索、可执行的技能。该方法先分解记录为证据窗口，再执行规划与扩展，最终形成技能库。实验表明该技能库能显著提升智能体在未见任务上的表现，为智能体经验回放提供了新的知识编译途径。",
+      "llm_tldr": "智能体通过RAG获取外部知识，但知识碎片化，无法直接获取任务流程。Anything2Skill 提出分类学引导框架，将异构知识记录编译为可复用、可检索、可执行的技能。该方法先分解记录为证据窗口，再执行规划与扩展，最终形成技能库。实验表明该技能库能显著提升智能体在未见任务上的表现，为智能体经验回放提供了新的知识编译途径。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.10062v1",
+      "source": "arxiv",
+      "title": "Deployment-Time Memorization in Foundation-Model Agents",
+      "abstract": "Foundation-model agents are increasingly long-lived systems that remember users across interactions, making memorization an explicit deployment-time function rather than solely a property of model weights. Existing work addresses parametric memorization or audits fixed memory configurations, but does not characterize how memory-design choices jointly shape personalization utility, extraction risk, and deletion fidelity. We study this surface as deployment-time memorization, formulating agent memory as a privacy-utility frontier measured by Personalization Recall (PR) and Adversarial Extraction Rate (AER), and sweeping three memory-design knobs: summarization aggressiveness, retrieval breadth (k), and deletion mode. We further introduce the Forgetting Residue Score (FRS) to quantify whether deleted information remains recoverable from derived memory tiers. On LongMemEval, key-fact summarization reduces canary extraction by 76% on Gemma 3 12B and 64% on GPT-4o-mini while preserving nearly all personalization recall; critically, once content is compressed away, increasing k no longer restores leakage. The same compression, however, induces a deletion-fidelity failure: raw-only deletion leaves derived summary copies recoverable in approximately 20% of instances, and only full-pipeline purge or tombstone redaction drives worst-tier residue to zero. Together, these results establish that persistent agent memory must be evaluated as a first-class memorization mechanism -- assessed by what it helps agents recall, what it makes extractable, and what it can truly erase.",
+      "authors": [
+        "Lei",
+        "Chen",
+        "Guilin Zhang",
+        "Kai Zhao",
+        "Dalmo Cirne",
+        "Andy Olsen",
+        "Xu Chu",
+        "Zeke Miller",
+        "Alet Blanken",
+        "Amine Anoun",
+        "Jerry Ting"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "published": "2026-06-08T18:38:41+00:00",
+      "link": "https://arxiv.org/pdf/2606.10062v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "analyzes memory design choices for personalization and privacy in agent memory",
+      "llm_evidence_cn": "分析代理记忆中记忆设计对个性化和隐私的影响",
+      "llm_evidence": "分析代理记忆中记忆设计对个性化和隐私的影响",
+      "canonical_evidence": "分析代理记忆中记忆设计对个性化和隐私的影响",
+      "llm_tldr_en": "Studies deployment-time memorization in foundation-model agents, formulating a privacy-utility frontier and introducing Forgetting Residue Score to evaluate deletion fidelity.",
+      "llm_tldr_cn": "基础模型代理在部署时需记忆用户以个性化，但现有工作忽略记忆设计对隐私和删除完整性的影响。本文提出部署时记忆化概念，将代理记忆视为隐私-效用前沿，通过个人化召回率和对抗提取率量化，并通过三个记忆旋钮（摘要激进程度、检索广度、删除模式）进行扫描。还引入遗忘残留分数评估删除完整性。",
+      "llm_tldr": "基础模型代理在部署时需记忆用户以个性化，但现有工作忽略记忆设计对隐私和删除完整性的影响。本文提出部署时记忆化概念，将代理记忆视为隐私-效用前沿，通过个人化召回率和对抗提取率量化，并通过三个记忆旋钮（摘要激进程度、检索广度、删除模式）进行扫描。还引入遗忘残留分数评估删除完整性。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.10742v1",
+      "source": "arxiv",
+      "title": "MemVenom: Triggered Poisoning of Multimodal Memories in Web Agents",
+      "abstract": "External memory has become a core component of modern web agents, enabling long-horizon reasoning through the retrieval of past experiences. However, this paradigm introduces a critical vulnerability: malicious content injected into memory can be persistently recalled and repeatedly influence agent behavior. In this work, we identify and systematically study multimodal memory poisoning, an overlooked yet practical attack surface in web-agent systems. We propose MemVenom, a unified black-box attack framework that poisons graph-structured external memory with coordinated text-image evidence. Our method consists of a two-stage design: (1) a trigger-conditioned retrieval attack that ensures high-probability recall of malicious memory, and (2) a post-retrieval attack induction that leverages adversarial perturbations and stealthy OCR injection to override the original user objective. Unlike prior attacks that operate on prompts or text-only memory, our approach enables persistent, reusable, and goal-agnostic attacks without modifying model parameters or re-optimizing malicious tasks. Experiments across multiple web-agent frameworks and vision-language models demonstrate that MemVenom achieves strong end-to-end attack success with minimal impact on benign performance, reaching up to 99.15% on GPT-5-family web agents, while transferring effectively across architectures and model scales.",
+      "authors": [
+        "Yv Zhang",
+        "Hao Sun",
+        "Hao Fang",
+        "Kuofeng Gao",
+        "Fan Mo",
+        "Bin Chen",
+        "Shu-Tao Xia",
+        "Yaowei Wang"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "published": "2026-06-09T11:53:25+00:00",
+      "link": "https://arxiv.org/pdf/2606.10742v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "investigates memory poisoning attack on web agent external memory",
+      "llm_evidence_cn": "研究针对Web代理外部记忆的投毒攻击",
+      "llm_evidence": "研究针对Web代理外部记忆的投毒攻击",
+      "canonical_evidence": "研究针对Web代理外部记忆的投毒攻击",
+      "llm_tldr_en": "Proposes MemVenom, a black-box attack framework poisoning graph-structured external memory in web agents via trigger-conditioned retrieval and post-retrieval manipulation.",
+      "llm_tldr_cn": "本文揭示了Web代理外部记忆系统的新漏洞：恶意记忆可被持久召回。提出MemVenom框架，通过触发条件检索攻击和检索后操纵，以图文结合方式投毒图结构记忆。实验表明攻击成功率高且隐蔽，为代理记忆安全性敲响警钟。",
+      "llm_tldr": "本文揭示了Web代理外部记忆系统的新漏洞：恶意记忆可被持久召回。提出MemVenom框架，通过触发条件检索攻击和检索后操纵，以图文结合方式投毒图结构记忆。实验表明攻击成功率高且隐蔽，为代理记忆安全性敲响警钟。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
