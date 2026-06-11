@@ -1,0 +1,184 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-11T22:13:44.082350+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 0,
+    "quick_skim_target": 11,
+    "quick_selected": 0
+  },
+  "deep_dive": [
+    {
+      "id": "2606.07909v2",
+      "source": "arxiv",
+      "title": "MemToolAgent: Leveraging Memory for Tool Using Agents Based on Environment and User Feedback",
+      "abstract": "Modern large language model (LLM) agents can use external tools to help users solve complex tasks. However, for problems that require learning from long-term historical events or from previous agent-environment interactions, LLM agents are required to use memory mechanisms to store and retrieve experiences. While sophisticated memory systems exist for dialogue agents, few studies have empirically examined how to improve agents' tool-using capabilities through past user-agent conversations. We propose MemToolAgent, a framework that improves tool use through memory management. Our approach contains a memory extraction module that processes past experiences into structured memory entries, and a retrieval module that dynamically selects a subset of the stored memory entries. This enables more personalized and accurate responses aligned with user preferences and feedback without requiring LLM fine-tuning. In summary, this work has three main contributions: (1) a unified memory entry format that improves both general-purpose and personalized tool use without LLM fine-tuning, (2) a reflection-based memory extraction that uses environment and user feedback to distill wrong executions into critiques to store, and (3) a retrieval module that chooses how many past experiences to use based on the memory similarity distribution. MemToolAgent achieves 29%, 80%, and 17% relative improvements compared to strong baselines on the WorkBench, NESTFUL, and PEToolBench benchmarks, respectively.",
+      "authors": [
+        "Suleyman Armagan Er",
+        "Danilo Ribeiro",
+        "Yogesh Virkar",
+        "Surafel Lakew",
+        "Adi Kalyanpur",
+        "James Gung",
+        "Thomas Delteil",
+        "Arshit Gupta"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-06T00:15:00+00:00",
+      "link": "https://arxiv.org/pdf/2606.07909v2",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "leverages memory extraction and retrieval to improve tool using abilities of LLM agents",
+      "llm_evidence_cn": "利用记忆提取与检索提升LLM智能体的工具使用能力",
+      "llm_evidence": "利用记忆提取与检索提升LLM智能体的工具使用能力",
+      "canonical_evidence": "利用记忆提取与检索提升LLM智能体的工具使用能力",
+      "llm_tldr_en": "Proposes MemToolAgent framework with memory extraction module processing past experiences into structured entries and retrieval module for dynamic selection, improving tool use of LLM agents via memory management.",
+      "llm_tldr_cn": "针对LLM智能体需要从长期历史或环境交互中学习的问题，现有工作缺乏对工具使用能力的记忆机制研究。该论文提出MemToolAgent框架，包含记忆提取模块将过往经验处理为结构化记忆条目，以及检索模块动态选择最相关的经验辅助工具调用。实验表明通过记忆管理能显著提升智能体在复杂任务中的工具选择和执行效率。该工作将记忆机制与工具使用能力进行了有效结合。",
+      "llm_tldr": "针对LLM智能体需要从长期历史或环境交互中学习的问题，现有工作缺乏对工具使用能力的记忆机制研究。该论文提出MemToolAgent框架，包含记忆提取模块将过往经验处理为结构化记忆条目，以及检索模块动态选择最相关的经验辅助工具调用。实验表明通过记忆管理能显著提升智能体在复杂任务中的工具选择和执行效率。该工作将记忆机制与工具使用能力进行了有效结合。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.11680v1",
+      "source": "arxiv",
+      "title": "Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents",
+      "abstract": "Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input contexts. The resulting degraded reasoning quality, increased inference cost, and higher latency necessitate efficient working memory mechanisms. However, existing approaches either rely on lossy compression or similarity-based retrieval, which often fail to capture temporal structure and causal dependencies required for multi-step agentic tasks. In this work, we present HORMA, a Hierarchical Organize-and-Retrieve Memory Agent that organizes experience into a file-system-like hierarchical structure, where summarized entities are linked to the corresponding raw trajectories, enabling efficient access without losing detailed information. HORMA decomposes working memory into two stages: structured memory construction and navigation-based retrieval. The construction module iteratively refines how experiences are structured by distinguishing between failures caused by missing information and those caused by misleading or overloaded context. The navigation module retrieves task-relevant context by traversing the hierarchy using a lightweight agent trained with reinforcement learning to select minimal yet sufficient context, thereby reducing latency along the critical execution path. Across ALFWorld, LoCoMo, and LongMemEval, HORMA improves task performance under constrained context budgets while requiring at most 22.17% of the baseline token usage in long conversation tasks. Compared to existing methods, it consistently achieves better efficiency-performance trade-offs and generalizes effectively to unseen tasks.",
+      "authors": [
+        "Hao-Lun Hsu",
+        "Nikki Lijing Kuang",
+        "Boyi Liu",
+        "Zhewei Yao",
+        "Yuxiong He"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-06-10T05:49:14+00:00",
+      "link": "https://arxiv.org/pdf/2606.11680v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "hierarchical memory retrieval for efficient agents",
+      "llm_evidence_cn": "层次化记忆检索实现高效代理",
+      "llm_evidence": "层次化记忆检索实现高效代理",
+      "canonical_evidence": "层次化记忆检索实现高效代理",
+      "llm_tldr_en": "HORMA organizes agent experience into a file-system-like hierarchy, linking summarized entities to raw trajectories for efficient retrieval in long-horizon tasks.",
+      "llm_tldr_cn": "LLM代理因无状态性在长期任务中需要高效工作记忆。现有压缩或相似性检索无法捕获时间结构。本文提出HORMA，将经验组织成类文件系统层次结构，连接摘要实体与原始轨迹，实现层次化导航检索，提升多步任务性能。",
+      "llm_tldr": "LLM代理因无状态性在长期任务中需要高效工作记忆。现有压缩或相似性检索无法捕获时间结构。本文提出HORMA，将经验组织成类文件系统层次结构，连接摘要实体与原始轨迹，实现层次化导航检索，提升多步任务性能。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.09365v2",
+      "source": "arxiv",
+      "title": "Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory",
+      "abstract": "Medical agent systems are increasingly expected to support interactive clinical decision making rather than only static question answering. In such settings, effective agents must reuse prior experience across evolving cases, yet existing memory mechanisms often retain raw historical traces that are redundant, noisy, and difficult to govern. More importantly, they rarely distinguish which memories are truly useful for future reasoning. This limits their ability to accumulate compact and reliable experience for long-horizon clinical reasoning. To close this gap, we propose SkeMex, a post-deployment self-evolution framework that improves medical agents through a skill-based memory without updating model weights. SkeMex distills informative interaction trajectories into structured skills that encode reusable procedural knowledge, and organizes them into a multi-branch repository spanning general, task-specific, and action-level experience. To determine which memories should be reused and retained, SkeMex estimates context-dependent utility from environment feedback and uses it to guide value-aware retrieval and repository governance. A closed-loop ``Read--Write--Assess--Govern\" lifecycle further supports continual evolution by writing new skills, updating utilities, promoting useful memories, and removing harmful entries. Experiments across diverse clinical tasks show that SkeMex consistently outperforms representative memory-based agents in both offline and online settings. It also generalizes across model backbones and supports transferable skill memory. All data and code will be released publicly.",
+      "authors": [
+        "Haoran Sun",
+        "Wenjie Li",
+        "Yujie Zhang",
+        "Zekai Lin",
+        "Fanrui Zhang",
+        "Kaitao Chen",
+        "Xingqi He",
+        "Yichen Li",
+        "Mianxin Liu",
+        "Lei Liu",
+        "Yankai Jiang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-08T11:37:01+00:00",
+      "link": "https://arxiv.org/pdf/2606.09365v2",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "self-evolving skill memory for experience replay in medical agent reasoning",
+      "llm_evidence_cn": "用于医疗智能体推理的自我进化技能记忆（经验回放）",
+      "llm_evidence": "用于医疗智能体推理的自我进化技能记忆（经验回放）",
+      "canonical_evidence": "用于医疗智能体推理的自我进化技能记忆（经验回放）",
+      "llm_tldr_en": "SkeMex improves medical agent reasoning by post-deployment self-evolution with a skill-based memory that selects and compacts useful experiences.",
+      "llm_tldr_cn": "医疗智能体需要重用以往经验，但现有记忆机制保留冗余噪声，难以区分哪些记忆对未来推理有用。本文提出SkeMex，一种部署后自进化框架，通过技能基记忆（skill-based memory）自动提炼和压缩有用经验，无需更新模型权重。该方法使智能体在长期临床推理中积累可靠经验，提升泛化能力。",
+      "llm_tldr": "医疗智能体需要重用以往经验，但现有记忆机制保留冗余噪声，难以区分哪些记忆对未来推理有用。本文提出SkeMex，一种部署后自进化框架，通过技能基记忆（skill-based memory）自动提炼和压缩有用经验，无需更新模型权重。该方法使智能体在长期临床推理中积累可靠经验，提升泛化能力。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.12290v1",
+      "source": "arxiv",
+      "title": "Selection Integrity for LLM Graph Memory: An Accumulability Criterion for Information-Flow-Blind Retrieval",
+      "abstract": "Agent memory is moving to graphs, and the provenance defenses now being built for it all check one thing: the provenance of the records an agent retrieves. We show that this entire class of defense is blind by construction. A long-term graph memory runs a global selection step over writable graph structure, so structure that an untrusted principal writes changes \\emph{which} authenticated facts are selected while the cited evidence stays fully authenticated; faithful information-flow control (IFC), checking the provenance of what the reader uses (all of it authenticated), makes the byte-identical decision to no defense at all, across document-QA substrates and real multi-session agent memory. In the most consequential instance, a no-source structural write silently misdirects $28$ irreversible ledger transfers over $499$ live actions: faithful IFC permits every one, and \\authselect\\ prevents every one. We then characterize exactly which memories are exposed: a selector admits the channel when its structural term can reallocate an $Ω(1)$ share of top-$k$ membership past a selected fact's margin. Personalized PageRank can, since a sourceless write reroutes conserved random-walk mass; a content-fixed reranker cannot, and Graphiti's node-distance, which leans on structure \\emph{more} than PageRank does, stays immune. Reallocatability, not reliance, is the predictor. We prove the immune case in general and the open case under a chokepoint condition we verify. Closing the channel forces any provenance defense to recompute selection on the authenticated subgraph, which is what \\authselect\\ does, at zero over-block and $2$--$3\\%$ latency.",
+      "authors": [
+        "Zeming Fei",
+        "Hongming Fei",
+        "Xiaoyang Wang",
+        "Yang yang",
+        "Prosanta Gope",
+        "Biplab Sikdar",
+        "Ying Zhang"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR"
+      ],
+      "published": "2026-06-10T16:26:46+00:00",
+      "link": "https://arxiv.org/pdf/2606.12290v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Proposes selection integrity criterion for graph memory retrieval",
+      "llm_evidence_cn": "提出图记忆检索的选择完整性准则",
+      "llm_evidence": "提出图记忆检索的选择完整性准则",
+      "canonical_evidence": "提出图记忆检索的选择完整性准则",
+      "llm_tldr_en": "The paper reveals a blind spot in provenance defenses for LLM graph memory and proposes an accumulability criterion for information-flow-blind retrieval, demonstrating that existing defenses are inadequate.",
+      "llm_tldr_cn": "本文揭示了LLM图记忆溯源防御的盲点：全局选择步骤可被未受信任方操纵，而现有防御检查检索记录的来源却无法检测到这种操纵。我们提出了累加性准则作为信息流盲检索的选择完整性标准，实验证明现有防御在文档问答和真实多会话记忆场景中均无效。",
+      "llm_tldr": "本文揭示了LLM图记忆溯源防御的盲点：全局选择步骤可被未受信任方操纵，而现有防御检查检索记录的来源却无法检测到这种操纵。我们提出了累加性准则作为信息流盲检索的选择完整性标准，实验证明现有防御在文档问答和真实多会话记忆场景中均无效。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": []
+}

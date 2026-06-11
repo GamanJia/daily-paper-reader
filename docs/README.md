@@ -6,49 +6,35 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-10
-- 运行时间：2026-06-10 22:05:25 UTC
+- 最新运行日期：2026-06-11
+- 运行时间：2026-06-11 22:17:30 UTC
 - 运行状态：成功
-- 本次总论文数：9
-- 精读区：5
-- 速读区：4
+- 本次总论文数：4
+- 精读区：4
+- 速读区：0
 
 ### 今日简报（AI）
-今日聚焦LLM Agent记忆引擎优化与安全风险，精读两篇高分论文提出精简上下文优于完整历史及可维护主题文档方案。
-最值得关注：精简检索上下文可提升准确率，以及利用主题文档实现长期记忆的动态维护。
-建议进一步关注记忆引擎的安全隐患，如速读中的跨轮KV缓存意图剪枝与触发式模态记忆中毒攻击。
-- 详情：[/202606/10/README](/202606/10/README)
+今日精读2篇高价值论文，聚焦智能体记忆管理与工具使用。  
+核心方向：基于环境与用户反馈的记忆增强机制，以及分层导航高效检索策略。  
+建议关注记忆系统在复杂长任务和工具调用中的实际部署与优化。
+- 详情：[/202606/11/README](/202606/11/README)
 
 ### 精读区论文标签
-1. [Less Context, More Accuracy: A Bi-Temporal Memory Engine for LLM Agents Where a Lean Retrieved Context Beats the Full History](/202606/10/2606.09900v1-less-context-more-accuracy-a-bi-temporal-memory-engine-for-llm-agents-where-a-lean-retrieved-context-beats-the-full-history)  
+1. [MemToolAgent: Leveraging Memory for Tool Using Agents Based on Environment and User Feedback](/202606/11/2606.07909v2-memtoolagent-leveraging-memory-for-tool-using-agents-based-on-environment-and-user-feedback)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：面向LLM代理的双时间记忆引擎，支持长期记忆
-2. [Infini Memory: Maintainable Topic Documents for Long-Term LLM Agent Memory](/202606/10/2606.10677v1-infini-memory-maintainable-topic-documents-for-long-term-llm-agent-memory)  
+   evidence：利用记忆提取与检索提升LLM智能体的工具使用能力
+2. [Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents](/202606/11/2606.11680v1-organize-then-retrieve-hierarchical-memory-navigation-for-efficient-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：主题结构化文档用于LLM智能体长期记忆，支持维护和检索
-3. [What Spatial Memory Must Store: Occlusion as the Test for Language-Agent Memory](/202606/10/2606.10299v1-what-spatial-memory-must-store-occlusion-as-the-test-for-language-agent-memory)  
+   evidence：层次化记忆检索实现高效代理
+3. [Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory](/202606/11/2606.09365v2-experience-makes-skillful-enabling-generalizable-medical-agent-reasoning-via-self-evolving-skill-memory)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：测试语言智能体的空间记忆检索技术
-4. [ActiveMem: Distributed Active Memory for Long-Horizon LLM Reasoning](/202606/10/2606.10532v1-activemem-distributed-active-memory-for-long-horizon-llm-reasoning)  
+   evidence：用于医疗智能体推理的自我进化技能记忆（经验回放）
+4. [Selection Integrity for LLM Graph Memory: An Accumulability Criterion for Information-Flow-Blind Retrieval](/202606/11/2606.12290v1-selection-integrity-for-llm-graph-memory-an-accumulability-criterion-for-information-flow-blind-retrieval)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：受人类认知系统启发的分布式主动记忆
-5. [Learning What to Remember: Observability-Safe Memory Retention via Constrained Optimization for Long-Horizon Language Agents](/202606/10/2606.10616v1-learning-what-to-remember-observability-safe-memory-retention-via-constrained-optimization-for-long-horizon-language-agents)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：长程智能体记忆保留的约束优化方法
+   evidence：提出图记忆检索的选择完整性准则
 
 ### 速读区论文标签
-1. [IntentKV: Cross-Turn Intent-Aware KV Cache Pruning for Agent Inference](/202606/10/2606.09916v1-intentkv-cross-turn-intent-aware-kv-cache-pruning-for-agent-inference)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：维护会话级查询记忆以实现意图感知的KV剪枝
-2. [Deployment-Time Memorization in Foundation-Model Agents](/202606/10/2606.10062v1-deployment-time-memorization-in-foundation-model-agents)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：分析代理记忆中记忆设计对个性化和隐私的影响
-3. [MemVenom: Triggered Poisoning of Multimodal Memories in Web Agents](/202606/10/2606.10742v1-memvenom-triggered-poisoning-of-multimodal-memories-in-web-agents)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：研究针对Web代理外部记忆的投毒攻击
-4. [Anything2Skill: Compiling External Knowledge into Reusable Skills for Agents](/202606/10/2606.09316v2-anything2skill-compiling-external-knowledge-into-reusable-skills-for-agents)  
-   标签：评分：6.0/10、query:agent-memory
-   evidence：将外部知识编译为智能体可复用的技能记忆
+- 本次无速读推荐。
 
 
 <div class="dpr-home-promo-card">
