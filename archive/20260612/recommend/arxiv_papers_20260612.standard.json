@@ -1,0 +1,297 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-12T21:16:52.513635+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 3,
+    "deep_cap": 6,
+    "deep_selected": 3,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2606.05894v1",
+      "source": "arxiv",
+      "title": "EMBER: Efficient Memory via Budgeted Evidence Retention for Long-Horizon Agents",
+      "abstract": "Long-horizon agents can archive large histories, but future answers still incur retrieval, rereading, and context costs. When retained memory misses answer-relevant evidence, the system must return to larger portions of the raw history. We study budgeted evidence survival: before the query is known, which source evidence should be retained so that it remains recoverable and usable under a fixed retained source-evidence token budget? We instantiate this setting as Budgeted Pre-Query Retention, where memory is written during ingestion and later read without access to the full raw stream. We introduce EMBER, a learned retention policy that constructs a compact, source-backed evidence state. EMBER stores evidence capsules: verbatim source excerpts paired with retrieval keys and update metadata, preserving both grounding and read-time access. Post-query outcome feedback trains the writer to preserve evidence across the ingestion-retrieval-answer chain. On LongMemEval-RR, our LongMemEval-derived retained-evidence protocol, EMBER-14B reaches 0.3017 F1 at the 8192-token retained-evidence comparison point, compared with 0.1765 for the strongest non-EMBER budgeted baseline. Across retained source-evidence budgets, EMBER improves F1, Retain-Recall, and Read-Recall, indicating that long-horizon memory depends on retaining evidence within the budget rather than rereading larger histories.",
+      "authors": [
+        "Yilong Li",
+        "Suman Banerjee",
+        "Tong Che"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-04T09:03:05+00:00",
+      "link": "https://arxiv.org/pdf/2606.05894v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "budgeted evidence retention for long-term agent memory",
+      "llm_evidence_cn": "长时程代理记忆的预算化证据保留",
+      "llm_evidence": "长时程代理记忆的预算化证据保留",
+      "canonical_evidence": "长时程代理记忆的预算化证据保留",
+      "llm_tldr_en": "Studies budgeted pre-query retention for long-horizon agents, proposing EMBER which learns a retention policy to construct compact evidence capsules, balancing memory usage and answer accuracy.",
+      "llm_tldr_cn": "长期代理存储大量历史，但有限预算下需保留关键证据。本文研究预算化预查询保留问题，提出EMBER，一种学习保留策略，构建由原始摘要组成的紧凑证据胶囊。在固定预算下，EMBER显著优于启发式保留方法，提升了证据恢复性和答案准确性。",
+      "llm_tldr": "长期代理存储大量历史，但有限预算下需保留关键证据。本文研究预算化预查询保留问题，提出EMBER，一种学习保留策略，构建由原始摘要组成的紧凑证据胶囊。在固定预算下，EMBER显著优于启发式保留方法，提升了证据恢复性和答案准确性。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.07436v1",
+      "source": "arxiv",
+      "title": "Skill-3D: Evolving Scene-Aware Skills for Agentic 3D Spatial Reasoning",
+      "abstract": "This paper explores agentic 3D spatial understanding, i.e., MLLM agents performing 3D reasoning through tool use. Existing methods often misuse tools and exhibit biased tool preferences under 3D scenarios, leaving the agentic paradigm with only marginal gains over non-agentic strategies. We reveal that 3D spatial reasoning tasks are heterogeneous across scenes, while these agents apply a uniform tool-use strategy to all scenes rather than selecting tools according to the specific scene and task. To address this, we propose Skill-3D, a framework that learns self-evolving scene-aware skills. Specifically, Skill-3D identifies the task scene and records the agent's tool-use trajectory into a Scene Memory, where successful trajectories from similar scenes are aggregated and distilled into a reusable scene-aware skill, with failed ones attached to the skill as lessons. During training, once a similar scene recurs, the corresponding skill is injected to guide the agent, producing new trajectories whose successes and failures further refine the skill, forming a loop in which the memory and the skill library co-evolve. Experiments show that Skill-3D substantially improves tool utilization in 3D spatial reasoning (from 39% to 78% on VSI-Bench), driving the agent toward correct and sufficient tool use. For instance, it improves Gemini-3-Flash by 67% on MMSI-Bench. Furthermore, we conduct agentic post-training over skill-guided trajectories, which boosts Qwen3-VL-8B by 43% on VSI-Bench.",
+      "authors": [
+        "Haoyuan Li",
+        "Zhengdong Hu",
+        "Jun Wang",
+        "Hehe Fan",
+        "Yi Yang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-05T16:33:44+00:00",
+      "link": "https://arxiv.org/pdf/2606.07436v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "uses Scene Memory to record and retrieve successful tool-use trajectories",
+      "llm_evidence_cn": "使用场景记忆记录和检索成功的工具使用轨迹",
+      "llm_evidence": "使用场景记忆记录和检索成功的工具使用轨迹",
+      "canonical_evidence": "使用场景记忆记录和检索成功的工具使用轨迹",
+      "llm_tldr_en": "Proposes Skill-3D with self-evolving scene-aware skills using Scene Memory to store and retrieve successful trajectories for agentic 3D reasoning.",
+      "llm_tldr_cn": "现有3D空间推理智能体对不同场景采用统一工具使用策略，效果不佳。本文提出Skill-3D框架，通过场景记忆记录成功轨迹，并根据相似场景检索经验来进化技能。实验表明该方法在多个3D推理基准上超越了现有策略，证明了场景感知记忆对智能体技能学习的重要性。",
+      "llm_tldr": "现有3D空间推理智能体对不同场景采用统一工具使用策略，效果不佳。本文提出Skill-3D框架，通过场景记忆记录成功轨迹，并根据相似场景检索经验来进化技能。实验表明该方法在多个3D推理基准上超越了现有策略，证明了场景感知记忆对智能体技能学习的重要性。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.10927v1",
+      "source": "arxiv",
+      "title": "AllDayNav: Lifelong Navigation via Real-World Reinforcement Learning",
+      "abstract": "Lifelong embodied navigation in dynamic environments requires robots to form persistent scene understanding from fragmentary observations, which remains difficult for existing methods that rely on explicit maps or scene graphs and struggle to generalize beyond structured settings. We propose AllDayNav, a lifelong self-learning navigation framework that implicitly encodes scene dynamics into the billion-scale parameters of a large model via reinforcement learning, powered by a self-evolving multimodal memory that maintains and updates visual keyframes, semantic descriptions, and temporal context while autonomously generating open-vocabulary instructions, image goals, and structured rewards. Experiments in both synthetic and real-world environments across cross-room, cross-episode, and cross-task scenarios show that AllDayNav achieves success rates approaching $100\\%$ and consistently surpasses strong map-based, VLM, and RL baselines in path efficiency and robustness, demonstrating implicit, memory-driven reinforcement learning as a scalable alternative to explicit mapping for reliable lifelong navigation.",
+      "authors": [
+        "Hang Yin",
+        "Yinan Liang",
+        "Jiazhao Zhang",
+        "Jiahang Liu",
+        "Minghan Li",
+        "Zhizheng Zhang",
+        "He Wang"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-06-09T14:35:53+00:00",
+      "link": "https://arxiv.org/pdf/2606.10927v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Self-evolving multimodal memory for lifelong navigation",
+      "llm_evidence_cn": "用于终身导航的自我演化多模态记忆",
+      "llm_evidence": "用于终身导航的自我演化多模态记忆",
+      "canonical_evidence": "用于终身导航的自我演化多模态记忆",
+      "llm_tldr_en": "AllDayNav uses a self-evolving multimodal memory that maintains visual keyframes and semantic context, enabling lifelong navigation via reinforcement learning.",
+      "llm_tldr_cn": "针对终身具身导航中从片段观测形成持久场景理解的问题，提出AllDayNav框架，通过强化学习将场景动态隐式编码到大模型参数中，核心是自我演化的多模态记忆，维护并更新视觉关键帧、语义描述和时间上下文。在合成和真实环境中实验验证了其在动态环境中的持续学习能力。",
+      "llm_tldr": "针对终身具身导航中从片段观测形成持久场景理解的问题，提出AllDayNav框架，通过强化学习将场景动态隐式编码到大模型参数中，核心是自我演化的多模态记忆，维护并更新视觉关键帧、语义描述和时间上下文。在合成和真实环境中实验验证了其在动态环境中的持续学习能力。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.06960v1",
+      "source": "arxiv",
+      "title": "Tree-of-Experience: A Structured Experience-Management Solution for Self-Evolving Agents under Low-Repetition and Implicit-Reward Environments",
+      "abstract": "Experience-based self-evolution is crucial for LLM agents, but existing benchmarks often assume explicit goals, stable task patterns, and clear feedback. We study a more challenging setting: low-repetition tasks with implicit rewards, where past experience is difficult to reuse and feedback is delayed, noisy, and outcome-level. We introduce \\textsc{FinEvolveBench}, a temporally controlled benchmark for financial sentiment prediction that links daily news-driven predictions to future excess returns. We further propose Tree-of-Experience (ToE), a structured experience-management method that organizes, retrieves, validates, and updates agent experience. Experiments show that general-purpose experience mechanisms do not consistently outperform no-experience baselines, while ToE achieves stronger overall performance. These results highlight the importance of structured experience management for self-evolving agents in implicit-reward environments.",
+      "authors": [
+        "Zihao Deng",
+        "Yining Zhu",
+        "Leiming Wang",
+        "Jingfei Lu",
+        "Junbo Wang",
+        "Chuncheng Ran",
+        "Yu Yang",
+        "Dixuan Yang",
+        "Jikun Shen"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-05T06:39:16+00:00",
+      "link": "https://arxiv.org/pdf/2606.06960v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "structured experience management for self-evolving agents",
+      "llm_evidence_cn": "结构化经验管理用于自进化代理",
+      "llm_evidence": "结构化经验管理用于自进化代理",
+      "canonical_evidence": "结构化经验管理用于自进化代理",
+      "llm_tldr_en": "Proposes Tree-of-Experience (ToE), a structured method to organize, retrieve, validate, and update agent experience in low-repetition tasks, advancing experience-based learning.",
+      "llm_tldr_cn": "在低重复率、隐式奖励场景中，代理难以重用过去经验。本文提出Tree-of-Experience (ToE)，一种结构化经验管理方法，对代理经验进行组织、检索、验证和更新。在金融情感预测基准上，ToE提升了代理的自我进化能力，为经验回放式学习提供了新思路。",
+      "llm_tldr": "在低重复率、隐式奖励场景中，代理难以重用过去经验。本文提出Tree-of-Experience (ToE)，一种结构化经验管理方法，对代理经验进行组织、检索、验证和更新。在金融情感预测基准上，ToE提升了代理的自我进化能力，为经验回放式学习提供了新思路。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.09316v1",
+      "source": "arxiv",
+      "title": "Anything2Skill: Compiling External Knowledge into Reusable Skills for Agents",
+      "abstract": "Retrieval-augmented generation (RAG) enables agents to access external knowledge at inference time, but it primarily retrieves fragmented declarative evidence, leaving agents to repeatedly infer task procedures from passages, manuals, examples, logs, or trajectories. This raises a fundamental question: can skills extracted from external knowledge bases be installed into an agent, enabling it to rapidly approximate domain expertise? In this paper, we propose Anything2Skill, a taxonomy-guided framework that compiles heterogeneous external knowledge into reusable, retrievable, and executable skills for agents. Given a corpus of knowledge records, \\textsc{Anything2Skill} first decomposes each record into evidence windows and performs plan-and-expand skill extraction under a skill-tree prior. The extracted candidates are then converted into structured skill contracts that specify invocation conditions, contraindications, action moves, workflow steps, constraints, output specifications, supporting evidence, and confidence scores. To construct a deployable procedural memory, Anything2Skill manages the extracted skills in a persistent SkillBank through taxonomy-aware compilation, registry-level reconciliation, lifecycle tracking, versioned updates, and visible skill-tree projection. At inference time, agents retrieve both task-specific passages from the original knowledge base and relevant procedural skills from the SkillBank, allowing RAG to provide declarative evidence while compiled skills provide reusable procedural guidance. Experiments on qsv and GitHub-CLI show that Anything2Skill combined with RAG achieves 98.85\\% and 94.10\\% success rates, respectively, substantially outperforming RAG-only agents. These results suggest that compiling latent procedural knowledge into explicit skills is an effective way to extend retrieval-augmented agents from knowledge access toward capability reuse.",
+      "authors": [
+        "Qianjun Pan",
+        "Yutao Yang",
+        "Junsong Li",
+        "Jie Zhou",
+        "Kai Chen",
+        "Xin Li",
+        "Qin Chen",
+        "Liang He"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-08T10:24:32+00:00",
+      "link": "https://arxiv.org/pdf/2606.09316v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "compiles external knowledge into skills for agents, relevant to memory-augmented architectures",
+      "llm_evidence_cn": "将外部知识编译为智能体技能,与记忆增强架构相关",
+      "llm_evidence": "将外部知识编译为智能体技能,与记忆增强架构相关",
+      "canonical_evidence": "将外部知识编译为智能体技能,与记忆增强架构相关",
+      "llm_tldr_en": "Anything2Skill proposes a taxonomy-guided framework to compile heterogeneous external knowledge into reusable, retrievable, and executable skills for agents, bridging RAG and skill learning.",
+      "llm_tldr_cn": "现有检索增强生成主要检索碎片化声明性知识,智能体需重复推断任务流程。本文提出Anything2Skill,一个分类学引导的框架,将异构外部知识(如手册、日志、轨迹)编译为可复用、可检索、可执行的技能。通过分解证据窗口与计划扩展,智能体能快速获得领域专长。实验证明了技能的有效性和泛化性。",
+      "llm_tldr": "现有检索增强生成主要检索碎片化声明性知识,智能体需重复推断任务流程。本文提出Anything2Skill,一个分类学引导的框架,将异构外部知识(如手册、日志、轨迹)编译为可复用、可检索、可执行的技能。通过分解证据窗口与计划扩展,智能体能快速获得领域专长。实验证明了技能的有效性和泛化性。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory augmented agent architectures and applications",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.10423v1",
+      "source": "arxiv",
+      "title": "WebChallenger: A Reliable and Efficient Generalist Web Agent",
+      "abstract": "Autonomous web navigation remains challenging for LLM agents, and the strongest generalist systems rely on proprietary reasoning models whose inference cost is prohibitive for the repetitive tasks where such agents would be most useful. We argue this gap stems not from insufficient model capability but from agent architectures that fail to replicate three human cognitive advantages: selective attention to relevant page regions, persistent memory of website structure, and procedural fluency with common interaction patterns. We introduce WebChallenger, a web agent framework that addresses each gap through architecture design rather than model scale, built around PageMem: a structured page representation deterministically constructed from the DOM that exposes each page as a hierarchy of semantic sections with short summaries. On this shared substrate we build three mechanisms that mirror the three cognitive advantages: a divide-and-conquer observation pipeline that lets the agent skim section summaries and extract details only from task-relevant regions; a lightweight exploration and memory system that traverses each website once to build a reusable map of pages and element behaviors; and compound action workflows that collapse common multi-step interactions into single agent actions, handling partial state changes automatically. Because all three operate over PageMem, the framework generalizes across websites without site-specific adapters. Using off-the-shelf open-weight models without fine-tuning, our system achieves 56.3% on WebArena, 48.7% on VisualWebArena, 51.0% on Online-Mind2Web, and 70.9% on WorkArena, approaching frontier proprietary systems at a fraction of the cost. Our code is released at https://github.com/jayoohwang1/webchallenger",
+      "authors": [
+        "Jayoo Hwang",
+        "Xiaowen Zhang",
+        "Vedant Padwal"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-09T04:53:19+00:00",
+      "link": "https://arxiv.org/pdf/2606.10423v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "PageMem: structured page representation for persistent memory of website structure",
+      "llm_evidence_cn": "PageMem：结构化页面表示，持久化记忆网站结构",
+      "llm_evidence": "PageMem：结构化页面表示，持久化记忆网站结构",
+      "canonical_evidence": "PageMem：结构化页面表示，持久化记忆网站结构",
+      "llm_tldr_en": "Introduces WebChallenger, a web agent framework with PageMem, a structured page representation that provides persistent memory of website structure, selective attention, and procedural fluency, achieving high efficiency without proprietary models.",
+      "llm_tldr_cn": "强通用网页代理依赖昂贵的大模型，本文认为问题在于缺乏人类式认知优势。WebChallenger通过PageMem提供结构化页面表示，实现选择性注意和网站结构持久记忆，同时存储常见交互模式。在多个基准上，该架构在效率上媲美专有模型，且显著降低成本。",
+      "llm_tldr": "强通用网页代理依赖昂贵的大模型，本文认为问题在于缺乏人类式认知优势。WebChallenger通过PageMem提供结构化页面表示，实现选择性注意和网站结构持久记忆，同时存储常见交互模式。在多个基准上，该架构在效率上媲美专有模型，且显著降低成本。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.10507v1",
+      "source": "arxiv",
+      "title": "HIPIF: Hierarchical Planning and Information Folding for Long-Horizon LLM Agent Learning",
+      "abstract": "While Large Language Models (LLMs) have demonstrated strong capabilities as autonomous agents across a wide range of tasks, their performance often degrades in multi-turn long-horizon agentic tasks. Existing methods have made progress through fine-grained credit assignment to alleviate long-horizon sparse rewards and hierarchical reinforcement learning to decompose tasks and reduce long-term dependency. However, these methods still do not directly address long-context interference, in which continuously growing histories weaken the agent's ability to track the global task state and impair subsequent reasoning and decision-making. Inspired by the way humans handle complex tasks through subgoal decomposition and completed progress summarization, we propose Hierarchical Planning and Information Folding (HIPIF) for long-horizon LLM agent learning. HIPIF trains the agent end-to-end to organize long-horizon execution around explicit subgoals while folding completed subgoal histories to reduce long-context interference. Furthermore, to stabilize subgoal-based planning and execution, HIPIF combines hierarchical reflection and subgoal-oriented process rewards to guide subgoal generation, transition, and execution, without relying on costly auxiliary models or task-specific expert trajectories. Extensive experiments on three publicly available agentic benchmarks demonstrate the validity of our method.",
+      "authors": [
+        "Juncheng Diao",
+        "Zhicong Lu",
+        "Peiguang Li",
+        "Yongwei Zhou",
+        "Changyuan Tian",
+        "Qingbin Li",
+        "Rongxiang Weng",
+        "Jingang Wang",
+        "Xunliang Cai"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-09T07:35:14+00:00",
+      "link": "https://arxiv.org/pdf/2606.10507v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "addresses long-context interference through information folding to improve memory-based decision making",
+      "llm_evidence_cn": "通过信息折叠解决长上下文干扰，改进基于记忆的决策",
+      "llm_evidence": "通过信息折叠解决长上下文干扰，改进基于记忆的决策",
+      "canonical_evidence": "通过信息折叠解决长上下文干扰，改进基于记忆的决策",
+      "llm_tldr_en": "Proposes HIPIF, which uses hierarchical planning and information folding to mitigate long-context interference in long-horizon LLM agents, improving memory efficiency.",
+      "llm_tldr_cn": "长时程智能体任务中，不断增长的历史记录会削弱智能体跟踪全局状态的能力，导致推理和决策受损。本文提出HIPIF框架，通过子目标分解和已完成进度总结来折叠信息，减少长上下文干扰。实验表明该方法在多个长时程任务上提升了智能体的决策性能，为智能体记忆管理提供了有效方案。",
+      "llm_tldr": "长时程智能体任务中，不断增长的历史记录会削弱智能体跟踪全局状态的能力，导致推理和决策受损。本文提出HIPIF框架，通过子目标分解和已完成进度总结来折叠信息，减少长上下文干扰。实验表明该方法在多个长时程任务上提升了智能体的决策性能，为智能体记忆管理提供了有效方案。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory-based decision making agents",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
