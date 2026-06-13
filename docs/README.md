@@ -6,41 +6,37 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-12
-- 运行时间：2026-06-12 21:21:49 UTC
+- 最新运行日期：2026-06-13
+- 运行时间：2026-06-13 20:42:31 UTC
 - 运行状态：成功
-- 本次总论文数：7
+- 本次总论文数：5
 - 精读区：3
-- 速读区：4
+- 速读区：2
 
 ### 今日简报（AI）
-今日聚焦长时记忆与空间推理智能体，两份高分精读报告《EMBER》和《Skill-3D》分别提出预算化记忆保留与3D场景技能进化；速读中《Tree-of-Experience》等三篇也围绕低奖励环境下的自演化与Web导航。建议优先精读《EMBER》与《Skill-3D》，并关注其框架如何融合记忆与空间推理以提升长期任务表现。
-- 详情：[/202606/12/README](/202606/12/README)
+今日精读两篇9.0高分论文：机器人层次化记忆门控模型与LLM长期记忆管理框架。  
+重点聚焦记忆机制在机器人操控和语言模型中的创新应用。  
+建议优先精读这两篇，理解层次化与推理增强的记忆设计思路。
+- 详情：[/202606/13/README](/202606/13/README)
 
 ### 精读区论文标签
-1. [EMBER: Efficient Memory via Budgeted Evidence Retention for Long-Horizon Agents](/202606/12/2606.05894v1-ember-efficient-memory-via-budgeted-evidence-retention-for-long-horizon-agents)  
+1. [HiMem-WAM: Hierarchical Memory-Gated World Action Models for Robotic Manipulation](/202606/13/2606.10363v1-himem-wam-hierarchical-memory-gated-world-action-models-for-robotic-manipulation)  
+   标签：评分：9.0/10、query:agent-memory
+   evidence：针对长时间跨度机器人操作的分层记忆门控模型，带边界触发的记忆更新
+2. [REAL: A Reasoning-Enhanced Graph Framework for Long-Term Memory Management of LLMs](/202606/13/2606.10694v1-real-a-reasoning-enhanced-graph-framework-for-long-term-memory-management-of-llms)  
+   标签：评分：9.0/10、query:agent-memory
+   evidence：提出了用于LLM长期记忆管理的图框架
+3. [Recalling Too Well: Sycophancy Evaluation and Mitigation in Memory-Augmented Models](/202606/13/2606.10949v1-recalling-too-well-sycophancy-evaluation-and-mitigation-in-memory-augmented-models)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：长时程代理记忆的预算化证据保留
-2. [Skill-3D: Evolving Scene-Aware Skills for Agentic 3D Spatial Reasoning](/202606/12/2606.07436v1-skill-3d-evolving-scene-aware-skills-for-agentic-3d-spatial-reasoning)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：使用场景记忆记录和检索成功的工具使用轨迹
-3. [AllDayNav: Lifelong Navigation via Real-World Reinforcement Learning](/202606/12/2606.10927v1-alldaynav-lifelong-navigation-via-real-world-reinforcement-learning)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：用于终身导航的自我演化多模态记忆
+   evidence：评估并缓解记忆增强LLM中的谄媚行为
 
 ### 速读区论文标签
-1. [Tree-of-Experience: A Structured Experience-Management Solution for Self-Evolving Agents under Low-Repetition and Implicit-Reward Environments](/202606/12/2606.06960v1-tree-of-experience-a-structured-experience-management-solution-for-self-evolving-agents-under-low-repetition-and-implicit-reward-environments)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：结构化经验管理用于自进化代理
-2. [WebChallenger: A Reliable and Efficient Generalist Web Agent](/202606/12/2606.10423v1-webchallenger-a-reliable-and-efficient-generalist-web-agent)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：PageMem：结构化页面表示，持久化记忆网站结构
-3. [HIPIF: Hierarchical Planning and Information Folding for Long-Horizon LLM Agent Learning](/202606/12/2606.10507v1-hipif-hierarchical-planning-and-information-folding-for-long-horizon-llm-agent-learning)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：通过信息折叠解决长上下文干扰，改进基于记忆的决策
-4. [Anything2Skill: Compiling External Knowledge into Reusable Skills for Agents](/202606/12/2606.09316v1-anything2skill-compiling-external-knowledge-into-reusable-skills-for-agents)  
+1. [SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?](/202606/13/2606.07682v1-swe-marathon-can-agents-autonomously-complete-ultra-long-horizon-software-work)  
    标签：评分：6.0/10、query:agent-memory
-   evidence：将外部知识编译为智能体技能,与记忆增强架构相关
+   evidence：评估智能体在长视界任务中的记忆使用
+2. [Context-Driven Incremental Compression for Multi-Turn Dialogue Generation](/202606/13/2606.12411v1-context-driven-incremental-compression-for-multi-turn-dialogue-generation)  
+   标签：评分：6.0/10、query:agent-memory
+   evidence：紧凑对话记忆与增量压缩
 
 
 <div class="dpr-home-promo-card">
