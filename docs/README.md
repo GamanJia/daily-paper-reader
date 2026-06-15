@@ -6,60 +6,43 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-14
-- 运行时间：2026-06-14 20:46:51 UTC
+- 最新运行日期：2026-06-15
+- 运行时间：2026-06-15 22:29:27 UTC
 - 运行状态：成功
-- 本次总论文数：12
-- 精读区：6
-- 速读区：6
+- 本次总论文数：7
+- 精读区：5
+- 速读区：2
 
 ### 今日简报（AI）
-今日聚焦长期智能体与记忆管理，12篇论文中精读6篇，重点覆盖记忆保留与推理机制。
-
-最值得看的是两篇高分精读：10分的《Learning What to Remember》用约束优化实现可观测性安全记忆，9分的《WISE》在Minecraft中引入为何-何种推理完成长期任务。
-
-普通读者建议优先精读这两篇，掌握长期智能体前沿；速读中睡眠启发回放防止遗忘的思路也值得借鉴。
-- 详情：[/202606/14/README](/202606/14/README)
+今日聚焦GUI Agent记忆缺陷与版本控制推理两大前沿方向。  
+两篇9.0高分精读揭示：Naive Visual Memory不足导致GUI Agent失败，GitOfThoughts通过版本控制实现可重放、对比与合并的Agent记忆。  
+建议读者重点关注Agent长期记忆与逻辑可追溯性的融合趋势，以提升复杂任务稳定性。
+- 详情：[/202606/15/README](/202606/15/README)
 
 ### 精读区论文标签
-1. [Learning What to Remember: Observability-Safe Memory Retention via Constrained Optimization for Long-Horizon Language Agents](/202606/14/2606.10616v2-learning-what-to-remember-observability-safe-memory-retention-via-constrained-optimization-for-long-horizon-language-agents)  
-   标签：评分：10.0/10、query:agent-memory
-   evidence：将记忆保留建模为带约束的随机优化问题用于长期agent
-2. [WISE: A Long-Horizon Agent in Minecraft with Why-Which Reasoning](/202606/14/2606.12852v1-wise-a-long-horizon-agent-in-minecraft-with-why-which-reasoning)  
+1. [Naive Visual Memory is Not Enough: A Failure-Mode Study of GUI Agents](/202606/15/2606.14106v1-naive-visual-memory-is-not-enough-a-failure-mode-study-of-gui-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：具因果结构的episodic记忆用于长期具身agent
-3. [Learning What to Remember: A Cognitively Grounded Multi-Factor Value Model for Agentic Memory](/202606/14/2606.12945v1-learning-what-to-remember-a-cognitively-grounded-multi-factor-value-model-for-agentic-memory)  
+   evidence：系统研究图形用户界面代理中视觉记忆的效果
+2. [GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge](/202606/15/2606.14470v1-gitofthoughts-version-controlled-reasoning-and-agent-memory-you-can-replay-diff-and-merge)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：用于决定智能体记忆内容的认知多因素价值模型
-4. [G-Long: Graph-Enhanced Memory Management for Efficient Long-Term Dialogue Agents](/202606/14/2606.13115v1-g-long-graph-enhanced-memory-management-for-efficient-long-term-dialogue-agents)  
+   evidence：版本控制代理记忆用于回放和检索
+3. [StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance](/202606/15/2606.14571v1-streammembench-streaming-evaluation-of-agent-memory-for-future-oriented-assistance)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：图增强的长期对话代理记忆管理
-5. [MemRefine: LLM-Guided Compression for Long-Term Agent Memory](/202606/14/2606.13177v1-memrefine-llm-guided-compression-for-long-term-agent-memory)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：存储预算下基于LLM引导的长期代理记忆压缩
-6. [EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments](/202606/14/2606.13681v1-evoarena-tracking-memory-evolution-for-robust-llm-agents-in-dynamic-environments)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：基于补丁的记忆范式，追踪LLM代理中的记忆演化
+   evidence：针对长期代理记忆评估的流式基准
+4. [RunAgent SuperBrowser: A Theory of Autonomous Web Navigation Grounded in Human Browsing Behaviour](/202606/15/2606.09399v1-runagent-superbrowser-a-theory-of-autonomous-web-navigation-grounded-in-human-browsing-behaviour)  
+   标签：评分：8.0/10、query:agent-memory
+   evidence：描述了用于网页导航的三角色大脑记忆架构
+5. [TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation](/202606/15/2606.14551v1-trace-trajectory-routed-causal-memory-for-delayed-evidence-visuomotor-imitation)  
+   标签：评分：8.0/10、query:agent-memory
+   evidence：针对延迟证据机器人任务的因果记忆框架
 
 ### 速读区论文标签
-1. [Not Just After One: Sleep-Inspired Replay Prevents Catastrophic Forgetting After Sequential Tasks](/202606/14/2606.08447v1-not-just-after-one-sleep-inspired-replay-prevents-catastrophic-forgetting-after-sequential-tasks)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：睡眠启发的重放机制防止顺序任务后的灾难性遗忘
-2. [Action-Effect Memory Pretraining for Robot Manipulation](/202606/14/2606.12499v1-action-effect-memory-pretraining-for-robot-manipulation)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：机器人操作中的动作-效应记忆预训练
-3. [SMSR: Certified Defence Against Runtime Memory Poisoning in Persistent LLM Agent Systems](/202606/14/2606.12703v1-smsr-certified-defence-against-runtime-memory-poisoning-in-persistent-llm-agent-systems)  
+1. [From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI](/202606/15/2606.14502v1-from-chatbot-to-digital-colleague-the-paradigm-shift-toward-persistent-autonomous-ai)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：持久化LLM代理系统中的内存中毒防御
-4. [ProPlay: Procedural World Models for Self-Evolving LLM Agents](/202606/14/2606.12780v1-proplay-procedural-world-models-for-self-evolving-llm-agents)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：将记忆与规划闭环用于自我进化agent
-5. [Arbor: Tree Search as a Cognition Layer for Autonomous Agents](/202606/14/2606.12563v1-arbor-tree-search-as-a-cognition-layer-for-autonomous-agents)  
+   evidence：关于具备记忆能力的持久自主AI的视角
+2. [AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition](/202606/15/2606.14674v1-agentspec-understanding-embodied-agent-scaffolds-through-controlled-composition)  
    标签：评分：6.0/10、query:agent-memory
-   evidence：搜索树作为代理间的共享工作记忆
-6. [Iterating Toward Better Search: A Two-Agent Simulation Framework for Evaluating Agentic Search Architectures in E-Commerce](/202606/14/2606.12924v1-iterating-toward-better-search-a-two-agent-simulation-framework-for-evaluating-agentic-search-architectures-in-e-commerce)  
-   标签：评分：6.0/10、query:agent-memory
-   evidence：比较了滑动窗口记忆和意图提取记忆在电商代理搜索中的表现
+   evidence：模块化规范框架，将记忆接口标准化为智能体脚手架的一个组件
 
 
 <div class="dpr-home-promo-card">

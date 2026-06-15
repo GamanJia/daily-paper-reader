@@ -1,0 +1,313 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-15T22:21:04.966964+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 5,
+    "deep_cap": 6,
+    "deep_selected": 5,
+    "quick_candidates": 2,
+    "quick_skim_target": 11,
+    "quick_selected": 2
+  },
+  "deep_dive": [
+    {
+      "id": "2606.14106v1",
+      "source": "arxiv",
+      "title": "Naive Visual Memory is Not Enough: A Failure-Mode Study of GUI Agents",
+      "abstract": "Graphical User Interface (GUI) agents are increasingly used to automate complex computer tasks across applications, websites, and operating systems. To improve their reliability, recent work has introduced experiential memory, where agents retrieve prior trajectories to guide decision-making in similar states. More recent approaches further extend this idea to visual memory by storing and retrieving screenshots from past interactions, providing agents with richer contextual information than text-only memories. However, the effect of visual memory in GUI agents remains insufficiently understood: it is unclear which failures visual memory mitigates, or which failures it exacerbates. To systematically analyze the effect of visual memory, we introduce a taxonomy of four GUI agent failures (i.e., cognitive failure, visual state misunderstanding, hidden operation blindness, and grounding error) that map to distinct stages of the perception-reasoning-action pipeline. We find that prepending full-image memory has a divergent effect on the failure distribution: it reduces state-level failures but worsens action-level ones, and increases hidden operation blindness and grounding error. Motivated by this finding, we propose Action-Grounded Visual Memory (AGMem), an action-grounded memory framework for GUI agents. The core idea of AGMem is to store image crops that capture the local GUI region closely related to a successful action or a recovery, rather than storing full screenshots. Experiments on OSWorld show that AGMem improves task success rates by 33.3 % over full-image memory. These results demonstrate that AGMem is an effective representation for visual memory in GUI agents.",
+      "authors": [
+        "Seoyoung Choi",
+        "Minseok Ko",
+        "Hyunseok Lee",
+        "Kunwoong Kim",
+        "Woomin Song",
+        "Chanseok Jeon",
+        "Jinwoo Shin"
+      ],
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA",
+        "cs.CV"
+      ],
+      "published": "2026-06-12T04:39:01+00:00",
+      "link": "https://arxiv.org/pdf/2606.14106v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "systematically studies the effect of visual memory in GUI agents",
+      "llm_evidence_cn": "系统研究图形用户界面代理中视觉记忆的效果",
+      "llm_evidence": "系统研究图形用户界面代理中视觉记忆的效果",
+      "canonical_evidence": "系统研究图形用户界面代理中视觉记忆的效果",
+      "llm_tldr_en": "This paper provides a taxonomy of failure modes for visual memory in GUI agents, showing that naive visual memory can both mitigate and exacerbate certain failures.",
+      "llm_tldr_cn": "针对视觉记忆在图形用户界面代理中的应用缺乏系统理解，本文提出分类法并系统分析视觉记忆的失败模式。研究发现简单的视觉记忆不仅能解决某些故障，还可能引入新问题。实验揭示了视觉记忆在状态识别和决策中的双重作用，为设计更鲁棒的代理记忆系统提供了重要指导。",
+      "llm_tldr": "针对视觉记忆在图形用户界面代理中的应用缺乏系统理解，本文提出分类法并系统分析视觉记忆的失败模式。研究发现简单的视觉记忆不仅能解决某些故障，还可能引入新问题。实验揭示了视觉记忆在状态识别和决策中的双重作用，为设计更鲁棒的代理记忆系统提供了重要指导。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.14470v1",
+      "source": "arxiv",
+      "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge",
+      "abstract": "Large language model (LLM) reasoning is ephemeral: chains of thought vanish with the context window, pruned search branches leave no record, and memory buffers cannot be diffed, merged, or audited. Every other complex software process (code, infrastructure, data, experiments) is version-controlled; reasoning is not. We introduce GitOfThoughts, which stores an agent's reasoning tree as a git repository: every scored thought is a commit, scores are notes, outcomes are tags, and retrieval is \"git log\" over the agent's own history. This makes reasoning replayable, auditable, and mergeable across agents at near-zero engineering cost.   We then ask the harder question: does memory, in any substrate, actually improve accuracy? Across five substrates (none, markdown, vector, graph, git), two benchmarks, two model scales, and pre-registered replications, the answer for novel problems is no. No memory format reliably helps, and a promising early result collapsed under its own pre-registered replication. Memory pays only above what we call the copyability threshold: when the retrieved case is a near-duplicate of the current problem (similarity >~ 0.8), accuracy jumps sharply; below it, nothing. The gain is answer retrieval, not method transfer: a 4.5x larger model doubles the near-duplicate payoff yet still cannot extract a transferable method from a worked example. The only general lever we find is test-time sampling. The case for git-as-substrate is therefore auditability, provenance, and mergeability at accuracy parity. We document a retracted result and a refuted hypothesis to model the evaluation standard we hold ourselves to.",
+      "authors": [
+        "Pavan C Shekar",
+        "Abhishek H S",
+        "Aswanth Krishnan"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-06-12T14:02:37+00:00",
+      "link": "https://arxiv.org/pdf/2606.14470v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "version-controlled agent memory for replay and retrieval",
+      "llm_evidence_cn": "版本控制代理记忆用于回放和检索",
+      "llm_evidence": "版本控制代理记忆用于回放和检索",
+      "canonical_evidence": "版本控制代理记忆用于回放和检索",
+      "llm_tldr_en": "Introduces Git-based version control for LLM reasoning trees, enabling replay, audit, and merge of agent memory.",
+      "llm_tldr_cn": "该论文提出GitOfThoughts，将代理的推理树存储为Git仓库，每个思维为一次提交，分数为注释，结果为标签，检索为git log。这使得推理可回放、可审计、可合并，并以接近零的工程成本实现。实验探讨了记忆对不同基质的准确性影响。",
+      "llm_tldr": "该论文提出GitOfThoughts，将代理的推理树存储为Git仓库，每个思维为一次提交，分数为注释，结果为标签，检索为git log。这使得推理可回放、可审计、可合并，并以接近零的工程成本实现。实验探讨了记忆对不同基质的准确性影响。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.14571v1",
+      "source": "arxiv",
+      "title": "StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance",
+      "abstract": "A central role of personal-agent memory is to turn stored information and prior interactions into future-oriented assistance. In daily use, useful cues come from what the agent observes and how the user interacts with the agent, and the agent must carry them forward from the current request to similar future tasks. Existing memory benchmarks usually test dialogue recall or task improvement in isolation, leaving the trajectory from streaming observations to later assistance largely untested. We introduce StreamMemBench, a streaming benchmark that constructs a two-step task sequence around each evidence anchor from EgoLife egocentric streams. The initial task tests evidence use, while the follow-up task tests whether feedback and interaction experience are reused. Four metrics diagnose evidence recall, initial evidence use, feedback incorporation, and follow-up reuse. Experiments with eight memory systems across two backbones show that current systems often fail to use observed evidence or turn feedback into reliable follow-up behavior, even when evidence is stored or feedback is incorporated locally. StreamMemBench is publicly available at https://github.com/landian60/StreamMemBench.",
+      "authors": [
+        "Guanming Liu",
+        "Yuqi Ren",
+        "Hansu Gu",
+        "Peng Zhang",
+        "Weihang Wang",
+        "Jiahao Liu",
+        "Ning Gu",
+        "Tun Lu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-12T15:48:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.14571v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "streaming benchmark for long-term agent memory evaluation",
+      "llm_evidence_cn": "针对长期代理记忆评估的流式基准",
+      "llm_evidence": "针对长期代理记忆评估的流式基准",
+      "canonical_evidence": "针对长期代理记忆评估的流式基准",
+      "llm_tldr_en": "Presents StreamMemBench, a streaming benchmark that tests agent memory from streaming observations to future-oriented assistance using two-step tasks from egocentric streams.",
+      "llm_tldr_cn": "该论文指出现有记忆基准仅孤立测试对话回忆或任务改进，缺少从流式观测到未来辅助的完整评估路径。为此提出StreamMemBench，一个基于EgoLife第一人称流构建两步任务序列的流式基准，首个任务测试证据利用，后续任务测试反馈携带能力。该基准能够有效评估长期记忆在实际持续辅助中的表现，填补了评估方法的空白。",
+      "llm_tldr": "该论文指出现有记忆基准仅孤立测试对话回忆或任务改进，缺少从流式观测到未来辅助的完整评估路径。为此提出StreamMemBench，一个基于EgoLife第一人称流构建两步任务序列的流式基准，首个任务测试证据利用，后续任务测试反馈携带能力。该基准能够有效评估长期记忆在实际持续辅助中的表现，填补了评估方法的空白。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.09399v1",
+      "source": "arxiv",
+      "title": "RunAgent SuperBrowser: A Theory of Autonomous Web Navigation Grounded in Human Browsing Behaviour",
+      "abstract": "We present SUPERBROWSER, an autonomous web-navigation agent designed against a single guiding hypothesis: a web agent should browse the way a person browses. A human reading a page does not retain every pixel they have seen; they look at a few candidate targets, decide on one, and remember only what is needed to keep the goal alive. We operationalize this perception-cognition-action triad as three coupled mechanisms. First, a vision-first bounding-box pipeline labels candidate interactive regions on every screenshot and feeds them, asynchronously prefetched, to the language model so that the \"eye\" precedes the \"hand\". Second, a three-role brain -- an Orchestrator that classifies and routes, a Planner that evaluates progress every few steps, and a Worker that emits per-step actions -- separates strategic from operational reasoning. Third, a structured Ledger stores only what a person would: the goal, the last three actions, a small set of facts and dead-ends, and a handful of checkpoints; a six-phase eviction loop systematically discards stale screenshots, state blobs, and reasoning traces from the live context. Action execution is a three-tier click cascade (Chrome DevTools Protocol to Puppeteer to scripted) with humanized Bezier motion, plus a chevron-aware bounding-box snapper that resolves the \"small arrow beside a large label\" ambiguity. On the Mind2Web Hard benchmark (66 tasks), SUPERBROWSER attains 89.47% success, placing third overall and ahead of every published open/research browser-agent baseline by a large margin. We argue that the gain comes not from any single trick but from the consistent application of a cognitive contract throughout the system.",
+      "authors": [
+        "Radeen Mostafa",
+        "Sawradip Saha"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-08T12:18:22+00:00",
+      "link": "https://arxiv.org/pdf/2606.09399v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "describes a memory architecture with three-role brain for web navigation",
+      "llm_evidence_cn": "描述了用于网页导航的三角色大脑记忆架构",
+      "llm_evidence": "描述了用于网页导航的三角色大脑记忆架构",
+      "canonical_evidence": "描述了用于网页导航的三角色大脑记忆架构",
+      "llm_tldr_en": "SUPERBROWSER models human browsing with a perception-cognition-action triad, using a three-role brain (Orchestrator, Planner, Executor) and selective memory retention.",
+      "llm_tldr_cn": "针对现有网页代理记忆低效的问题，本文基于人类浏览行为提出SUPERBROWSER，采用视觉优先的候选区域提取、三角色大脑（编排器、规划器、执行器）和按需记忆机制。实验表明该方法在复杂导航任务中显著优于同类方法，展示了认知启发记忆架构在智能代理中的潜力。",
+      "llm_tldr": "针对现有网页代理记忆低效的问题，本文基于人类浏览行为提出SUPERBROWSER，采用视觉优先的候选区域提取、三角色大脑（编排器、规划器、执行器）和按需记忆机制。实验表明该方法在复杂导航任务中显著优于同类方法，展示了认知启发记忆架构在智能代理中的潜力。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.14551v1",
+      "source": "arxiv",
+      "title": "TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation",
+      "abstract": "Robots under autonomous operation may require decisions based on evidence that is no longer visible. We study \\emph{delayed-evidence} tasks, where an early cue disappears before a later decision point, so visually similar observations can require different actions. In these settings, the current observation is not a sufficient state for control. We introduce TRAjectory-routed Causal Evidence (TRACE), a memory framework for visuomotor imitation policies. TRACE stores task-relevant visual and robot-state evidence, such as object identity, target choice, or route-dependent state, in a fixed-size latent memory that remains bounded over long episodes. Instead of indexing memory by raw time or manually provided task labels, TRACE uses \\emph{path signatures}: compact, order-sensitive features of the executed robot-state trajectory. These signatures do not store the visual cue itself; rather, they provide trajectory-conditioned keys for writing and retrieving the evidence stored when the cue was visible. When the robot later reaches an ambiguous observation, the policy conditions on TRACE memory to recover the missing context and choose the correct branch. TRACE attaches through lightweight adapters to policies, without changing the policy backbone, action head, or imitation objective. Across real-world long-horizon manipulation tasks with visually ambiguous branch points, TRACE improves branch selection and task success over alternative baselines, including short-history and recurrent memory. Project page: https://jeong-zju.github.io/trace",
+      "authors": [
+        "Zihao Li",
+        "Ranpeng Qiu",
+        "Yincong Chen",
+        "Guoqiang Ren",
+        "Weiming Zhi"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-06-12T15:30:18+00:00",
+      "link": "https://arxiv.org/pdf/2606.14551v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "causal memory framework for delayed-evidence robot tasks",
+      "llm_evidence_cn": "针对延迟证据机器人任务的因果记忆框架",
+      "llm_evidence": "针对延迟证据机器人任务的因果记忆框架",
+      "canonical_evidence": "针对延迟证据机器人任务的因果记忆框架",
+      "llm_tldr_en": "Introduces TRACE, a memory framework using path similarity to index task-relevant evidence for visuomotor imitation, enabling decisions based on vanished cues.",
+      "llm_tldr_cn": "该论文针对机器人延迟证据任务（早期线索消失后仍需决策）提出TRACE记忆框架。TRACE通过轨迹路由因果记忆技术，将任务相关的视觉和状态证据存储在固定大小的潜在记忆中，利用路径相似性而非时间戳索引。实验证明该框架在处理需要记忆关键证据的模仿任务时显著优于基线方法，拓展了记忆在机器人领域的应用。",
+      "llm_tldr": "该论文针对机器人延迟证据任务（早期线索消失后仍需决策）提出TRACE记忆框架。TRACE通过轨迹路由因果记忆技术，将任务相关的视觉和状态证据存储在固定大小的潜在记忆中，利用路径相似性而非时间戳索引。实验证明该框架在处理需要记忆关键证据的模仿任务时显著优于基线方法，拓展了记忆在机器人领域的应用。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.14502v1",
+      "source": "arxiv",
+      "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+      "abstract": "Large Language Models (LLMs) are undergoing a fundamental transformation from conversational generators into integrated AI systems capable of reasoning, action, memory, and self-improvement. We conceptualize this transition as a shift from Chatbot to Digital Colleague: from conversational answers to persistent work. We organize this transition along two tightly coupled dimensions. First, at the cognitive core level, LLMs are advancing from Chatbot-era \"fast thinking\" systems driven by next-token prediction toward Thinking LLMs that leverage inference-time computation, Chain-of-Thought reasoning, reflection, process supervision, and reinforcement learning to support more deliberate and reliable cognition. Second, at the tool-augmented task execution level, LLMs are progressing from tool-calling Agents that invoke external resources in an ad hoc manner toward OpenClaw-style workstation systems (OpenClaw) equipped with persistent Workspaces, skills, verification loops, and governance. The \"Workspace + Skill\" paradigm makes episodic tool use colleague-like via state persistence, reusable procedures, task closure, and experience reuse. We examine data construction shifts from instruction-response pairs to State-Action-Observation trajectories and evaluation from static benchmarks to sandboxed, auditable, self-evolving AI ecosystems.",
+      "authors": [
+        "Yongheng Zhang",
+        "Ziang Liu",
+        "Jiaxuan Zhu",
+        "Shuai Wang",
+        "Xiangqi Chen",
+        "Haojing Huang",
+        "Jiayi Kuang",
+        "Siyu Chen",
+        "Ao Shen",
+        "Hao Wu",
+        "Qiufeng Wang",
+        "Qian-Wen Zhang",
+        "Junnan Dong",
+        "Wenhao Jiang",
+        "Ying Shen",
+        "Hai-Tao Zheng",
+        "Yinghui Li",
+        "Di Yin",
+        "Xing Sun",
+        "Philip S. Yu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-12T14:33:55+00:00",
+      "link": "https://arxiv.org/pdf/2606.14502v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "perspective on persistent autonomous AI with memory capabilities",
+      "llm_evidence_cn": "关于具备记忆能力的持久自主AI的视角",
+      "llm_evidence": "关于具备记忆能力的持久自主AI的视角",
+      "canonical_evidence": "关于具备记忆能力的持久自主AI的视角",
+      "llm_tldr_en": "Conceptualizes the shift from chatbots to digital colleagues with persistent memory, reasoning, and self-improvement capabilities.",
+      "llm_tldr_cn": "该论文概念性地论述了LLM从对话生成器向持久自主AI系统的转变，强调了记忆、推理和自我改进能力，并提出了数字同事的愿景。文章沿认知核心和工具增强两个维度组织了这一转变，但未提供具体算法。",
+      "llm_tldr": "该论文概念性地论述了LLM从对话生成器向持久自主AI系统的转变，强调了记忆、推理和自我改进能力，并提出了数字同事的愿景。文章沿认知核心和工具增强两个维度组织了这一转变，但未提供具体算法。",
+      "llm_tags": [
+        "query:agent-memory:composite"
+      ],
+      "matched_query_tag": "query:agent-memory:composite",
+      "matched_query_text": "Papers central to 找Agent Memory相关的论文, especially work that connects or combines: agent memory mechanisms; experience replay agent learning; memory retrieval techniques for agents; memory-based decision making agents; long-term memory in artificial agents; memory architecture for intelligent agents; agent memory mechanisms in artificial intelligence; memory augmented agent architectures and applications; episodic and semantic memory for autonomous agents.",
+      "matched_requirement_id": "req-composite-agent-memory",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.14674v1",
+      "source": "arxiv",
+      "title": "AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition",
+      "abstract": "LLM agents are increasingly built not as single model calls, but as scaffolded systems that combine reasoning, memory, reflection, action execution, and learning. While such scaffolds often improve performance, they are often embedded in tightly coupled pipelines, making it difficult to isolate component contributions, compare alternative designs, or understand how module interactions shape agent behavior. We introduce AgentSpec, a modular specification framework that represents embodied agents as typed compositions of reusable policy components with standardized interfaces. AgentSpec standardizes the interfaces among perception, memory, reasoning, reflection, action, and optional learning, enabling components to be swapped and recombined under controlled conditions. We instantiate this framework across DeliveryBench, ALFRED, MiniGrid, and RoboTHOR, and analyze reasoning, memory, reflection, and reinforcement-learning modules across model backbones. Our results show that agent performance is governed by scaffold compatibility and interaction effects rather than isolated module strength. In particular, structured multi-granularity memory improves long-horizon state tracking, reasoning and memory interact non-uniformly across environments, reflection trades off correction and cost, and RL-trained policies compose best when optimized with deployment-time scaffold structure. AgentSpec provides a controlled foundation for studying, comparing, and designing composable LLM agents. Our code, baselines and interactive playground are publicly available at https://agentspec-embodied.github.io.",
+      "authors": [
+        "Jixuan Chen",
+        "Jianzhi Shen",
+        "Haoqiang Kang",
+        "Zhi Hong",
+        "Qingyi Jiang",
+        "Soham Bose",
+        "Yiming Zhang",
+        "Leon Leng",
+        "Amit Vyas",
+        "Lingjun Mao",
+        "Siru Ouyang",
+        "Kun Zhou",
+        "Lianhui Qin"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-12T17:39:49+00:00",
+      "link": "https://arxiv.org/pdf/2606.14674v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "modular specification framework that standardizes memory interfaces as a component in agent scaffolds",
+      "llm_evidence_cn": "模块化规范框架，将记忆接口标准化为智能体脚手架的一个组件",
+      "llm_evidence": "模块化规范框架，将记忆接口标准化为智能体脚手架的一个组件",
+      "canonical_evidence": "模块化规范框架，将记忆接口标准化为智能体脚手架的一个组件",
+      "llm_tldr_en": "Introduces AgentSpec, a modular framework that standardizes interfaces for memory and other components, enabling controlled composition and analysis of embodied agent architectures.",
+      "llm_tldr_cn": "当前LLM智能体作为多模块拼装系统，但组件贡献难以隔离。本文提出AgentSpec，将智能体表示为类型化的可重用策略组件，并标准化感知、记忆、推理等接口，支持组件互换和重组。该框架有助于理解和比较不同记忆架构对智能体行为的影响，为记忆架构设计提供分析工具。",
+      "llm_tldr": "当前LLM智能体作为多模块拼装系统，但组件贡献难以隔离。本文提出AgentSpec，将智能体表示为类型化的可重用策略组件，并标准化感知、记忆、推理等接口，支持组件互换和重组。该框架有助于理解和比较不同记忆架构对智能体行为的影响，为记忆架构设计提供分析工具。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
