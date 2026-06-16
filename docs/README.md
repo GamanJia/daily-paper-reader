@@ -6,43 +6,50 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-15
-- 运行时间：2026-06-15 22:29:27 UTC
+- 最新运行日期：2026-06-16
+- 运行时间：2026-06-16 23:11:55 UTC
 - 运行状态：成功
-- 本次总论文数：7
-- 精读区：5
-- 速读区：2
+- 本次总论文数：10
+- 精读区：6
+- 速读区：4
 
 ### 今日简报（AI）
-今日聚焦GUI Agent记忆缺陷与版本控制推理两大前沿方向。  
-两篇9.0高分精读揭示：Naive Visual Memory不足导致GUI Agent失败，GitOfThoughts通过版本控制实现可重放、对比与合并的Agent记忆。  
-建议读者重点关注Agent长期记忆与逻辑可追溯性的融合趋势，以提升复杂任务稳定性。
-- 详情：[/202606/15/README](/202606/15/README)
+今日研读10篇Agent记忆与系统论文，精读6篇，速读4篇，重点推荐两篇9.0分论文。核心方向：T-Mem提出前瞻性记忆机制替代档案式存储，Control-Plane揭示控制平面配置对Agent记忆遗忘的架构影响。建议普通读者优先关注Agent记忆架构优化与遗忘控制策略方向。
+- 详情：[/202606/16/README](/202606/16/README)
 
 ### 精读区论文标签
-1. [Naive Visual Memory is Not Enough: A Failure-Mode Study of GUI Agents](/202606/15/2606.14106v1-naive-visual-memory-is-not-enough-a-failure-mode-study-of-gui-agents)  
+1. [T-Mem: Memory That Anticipates, Not Archives](/202606/16/2606.15405v1-t-mem-memory-that-anticipates-not-archives)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：系统研究图形用户界面代理中视觉记忆的效果
-2. [GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge](/202606/15/2606.14470v1-gitofthoughts-version-controlled-reasoning-and-agent-memory-you-can-replay-diff-and-merge)  
+   evidence：提出预测关联链接的长期记忆
+2. [Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations](/202606/16/2606.15903v1-control-plane-placement-shapes-forgetting-an-architectural-study-of-agent-memory-across-thirteen-system-configurations)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：版本控制代理记忆用于回放和检索
-3. [StreamMemBench: Streaming Evaluation of Agent Memory for Future-Oriented Assistance](/202606/15/2606.14571v1-streammembench-streaming-evaluation-of-agent-memory-for-future-oriented-assistance)  
+   evidence：对智能体记忆控制平面布局的架构研究
+3. [HiMPO: Hindsight-Informed Memory Policy Optimization for Less-Entangled Credit in Long-Horizon Agents](/202606/16/2606.16285v1-himpo-hindsight-informed-memory-policy-optimization-for-less-entangled-credit-in-long-horizon-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：针对长期代理记忆评估的流式基准
-4. [RunAgent SuperBrowser: A Theory of Autonomous Web Navigation Grounded in Human Browsing Behaviour](/202606/15/2606.09399v1-runagent-superbrowser-a-theory-of-autonomous-web-navigation-grounded-in-human-browsing-behaviour)  
+   evidence：提出用于长周期智能体的记忆策略优化
+4. [User as Code: Executable Memory for Personalized Agents](/202606/16/2606.16707v1-user-as-code-executable-memory-for-personalized-agents)  
+   标签：评分：9.0/10、query:agent-memory
+   evidence：个性化智能体的可执行记忆范式
+5. [Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory](/202606/16/2606.09365v3-experience-makes-skillful-enabling-generalizable-medical-agent-reasoning-via-self-evolving-skill-memory)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：描述了用于网页导航的三角色大脑记忆架构
-5. [TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation](/202606/15/2606.14551v1-trace-trajectory-routed-causal-memory-for-delayed-evidence-visuomotor-imitation)  
+   evidence：面向医疗智能体经验回放的自进化技能记忆
+6. [From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI](/202606/16/2606.14502v1-from-chatbot-to-digital-colleague-the-paradigm-shift-toward-persistent-autonomous-ai)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：针对延迟证据机器人任务的因果记忆框架
+   evidence：将记忆作为持久自主AI的组成部分进行讨论
 
 ### 速读区论文标签
-1. [From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI](/202606/15/2606.14502v1-from-chatbot-to-digital-colleague-the-paradigm-shift-toward-persistent-autonomous-ai)  
+1. [FARM: Find Anything using Relational Spatial Memory](/202606/16/2606.15476v1-farm-find-anything-using-relational-spatial-memory)  
+   标签：评分：8.0/10、query:agent-memory
+   evidence：使用关系和空间谓词进行对象实例检索的关系空间记忆
+2. [FragFuse: Bypassing Access Control of Large Language Model Agents via Memory-Based Query Fragmentation and Fusion](/202606/16/2606.15609v1-fragfuse-bypassing-access-control-of-large-language-model-agents-via-memory-based-query-fragmentation-and-fusion)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：关于具备记忆能力的持久自主AI的视角
-2. [AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition](/202606/15/2606.14674v1-agentspec-understanding-embodied-agent-scaffolds-through-controlled-composition)  
+   evidence：利用长期记忆碎片化与融合绕过代理访问控制
+3. [HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry](/202606/16/2606.14249v1-harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry)  
    标签：评分：6.0/10、query:agent-memory
-   evidence：模块化规范框架，将记忆接口标准化为智能体脚手架的一个组件
+   evidence：代理框架中的可组合记忆组件
+4. [AI Engram: In Search of Memory Traces in Artificial Intelligence](/202606/16/2606.14997v1-ai-engram-in-search-of-memory-traces-in-artificial-intelligence)  
+   标签：评分：6.0/10、query:agent-memory
+   evidence：在深度神经网络中识别记忆痕迹的几何框架
 
 
 <div class="dpr-home-promo-card">

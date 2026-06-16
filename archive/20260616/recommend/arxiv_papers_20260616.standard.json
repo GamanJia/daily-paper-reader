@@ -1,0 +1,441 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-16T23:01:55.963268+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 7,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2606.15405v1",
+      "source": "arxiv",
+      "title": "T-Mem: Memory That Anticipates, Not Archives",
+      "abstract": "Long-term memory is essential for conversational agents to remain coherent across extended dialogues, follow through on commitments made many sessions earlier, and adapt their behaviour to each user. Current LLM-backed long-term conversational memory, however, is reachability-bounded by the similarity between a query and stored content, both lexical and dense-vector. The approach is effective when query and memory share surface features such as wording or named entities (we call this descriptive). But it misses another, equally valuable class of cases, where query and memory do not share surface features and are tied only by a latent semantic arc (associative). On this regime prevailing long-term memory systems collectively fail. Covering this other half is what allows an assistant, for the first time, to actively draw on past dialogue as a semantic asset. On the memory side, this is the engineering counterpart of what cognitive science calls episodic future thinking: rehearsing past experience for the future contexts under which it will need to be found. We call these write-time rehearsals triggers. We propose T-Mem, the first long-term conversational memory architecture that covers both descriptive and associative recall. At each of two evidence granularities, single facts and full exchanges, T-Mem instantiates one descriptive trigger family and one associative trigger family, so that every memory remains reachable from both surface-similar and relevance-bound queries. As empirical validation, T-Mem reaches state-of-the-art on both LoCoMo and LoCoMo-Plus.",
+      "authors": [
+        "Weidong Guo",
+        "Dakai Wang",
+        "Zixuan Wang",
+        "Hui Liu",
+        "Yu Xu"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-06-13T17:14:53+00:00",
+      "link": "https://arxiv.org/pdf/2606.15405v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "proposes long-term memory that anticipates associative links",
+      "llm_evidence_cn": "提出预测关联链接的长期记忆",
+      "llm_evidence": "提出预测关联链接的长期记忆",
+      "canonical_evidence": "提出预测关联链接的长期记忆",
+      "llm_tldr_en": "Introduces T-Mem, a long-term memory that goes beyond descriptive similarity to handle associative recall for conversational agents.",
+      "llm_tldr_cn": "本文提出T-Mem，一种新型长期记忆机制，不仅依靠字面相似度检索，还能处理查询与记忆之间无表面关联的语义联想。现有记忆系统限于描述性匹配，T-Mem通过预测潜在语义弧来覆盖联想记忆缺口，从而使对话智能体能够跨会话保持连贯性和承诺执行。",
+      "llm_tldr": "本文提出T-Mem，一种新型长期记忆机制，不仅依靠字面相似度检索，还能处理查询与记忆之间无表面关联的语义联想。现有记忆系统限于描述性匹配，T-Mem通过预测潜在语义弧来覆盖联想记忆缺口，从而使对话智能体能够跨会话保持连贯性和承诺执行。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.15903v1",
+      "source": "arxiv",
+      "title": "Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations",
+      "abstract": "Where an LLM sits in an agent memory pipeline -- between the recall plane that retrieves stored facts (extensively benchmarked) and the control plane that mutates them via supersede, release, purge (largely untested) -- shapes which forgetting failure modes the system recovers. Comparing thirteen system configurations on a 385-case adversarial surface, we observe three placement regimes with partly complementary coverage: deterministic primitives suffice for lexical/temporal categories but fail canonicalization (5% on identifier-obfuscation, 0% on cross-lingual); inscribe-time LLM recovers canonicalization (100%) but cannot help intent-aware deletion (0% on prefix-collision and compound-fact); a mutation-time hook recovers intent-aware deletion (78-85%) and brightens nearly all categories simultaneously (91.7-93.2% overall, $0.17 per 385-case run, 2.3s/case mutation latency vs. 64-191ms/case deterministic, recall path unchanged).   We expose the trade-off via ForgetEval, a 1000-case templated suite plus a 385-case adversarial layer (132 hand-crafted + 253 LLM-drafted oracle-validated) scored by deterministic substring match, paired with a six-method Adapter Protocol with honest N/A scoring that lets heterogeneous memory stores enter in 130 lines. Admission is corroborated by 10-annotator IAA (Fleiss' kappa = 0.958) and a 77-case external-authored subset (four blind contributors) that replicates the canonicalization asymmetry and amplifies the joint-placement lift (+27.8 pt). Production failures are predominantly forgetting failures rather than recall failures, yet existing benchmarks measure only recall. ForgetEval and all adapters are released under MIT.",
+      "authors": [
+        "Dongxu Yang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-06-14T16:32:15+00:00",
+      "link": "https://arxiv.org/pdf/2606.15903v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "architectural study of agent memory control plane placement",
+      "llm_evidence_cn": "对智能体记忆控制平面布局的架构研究",
+      "llm_evidence": "对智能体记忆控制平面布局的架构研究",
+      "canonical_evidence": "对智能体记忆控制平面布局的架构研究",
+      "llm_tldr_en": "Studies how the placement of LLM in the agent memory pipeline affects forgetting failure modes across thirteen configurations.",
+      "llm_tldr_cn": "本文通过十三种系统配置，系统研究了LLM在智能体记忆管线中的位置（控制平面与召回平面）如何影响遗忘失败模式。实验表明不同放置优先级在词汇/时间、规范化、意图感知删除等方面具有互补覆盖。该研究揭示了记忆架构设计中的一个关键维度，为构建更鲁棒的智能体记忆系统提供了实证指导。",
+      "llm_tldr": "本文通过十三种系统配置，系统研究了LLM在智能体记忆管线中的位置（控制平面与召回平面）如何影响遗忘失败模式。实验表明不同放置优先级在词汇/时间、规范化、意图感知删除等方面具有互补覆盖。该研究揭示了记忆架构设计中的一个关键维度，为构建更鲁棒的智能体记忆系统提供了实证指导。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.16285v1",
+      "source": "arxiv",
+      "title": "HiMPO: Hindsight-Informed Memory Policy Optimization for Less-Entangled Credit in Long-Horizon Agents",
+      "abstract": "Long-horizon agents rely on memory mechanisms to compress interaction history, but optimizing memory writing faces a distinct credit assignment challenge: a memory update may be rewarded or penalized due to downstream tool failures, noisy observations, or reasoning errors rather than its own contribution. This causally entangled credit can lead agents to discard useful evidence or preserve irrelevant information. We propose HiMPO, a Hindsight-Informed Memory Policy Optimization framework for assigning less-entangled credit to memory-writing actions in long-horizon agents. HiMPO first estimates the local utility of a memory update by comparing the task-relevant information recoverable from the previous and updated memories under the same pre-write state. It then uses hindsight relevance as a bounded retrospective filter that attenuates memory credit when local utility is not supported by the target outcome. The resulting memory-specific advantage is applied only to memory tokens, while trajectory-level rewards optimize the rest of the agent behavior. Across judge-based open-domain tasks and objective compressive-memory QA, HiMPO improves over strong memory-based and RL-based baselines while preserving compressed-context efficiency. Controlled interventions further show that HiMPO reduces blame leakage from tool-induced errors and improves attribution fidelity of memory updates.",
+      "authors": [
+        "Jiangze Yan",
+        "Yi Shen",
+        "Wenjing Zhang",
+        "Jieyun Huang",
+        "Zhaoxiang Liu",
+        "Ning Wang",
+        "Kai Wang",
+        "Shiguo Lian"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-06-15T06:49:18+00:00",
+      "link": "https://arxiv.org/pdf/2606.16285v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "proposes memory policy optimization for long-horizon agents",
+      "llm_evidence_cn": "提出用于长周期智能体的记忆策略优化",
+      "llm_evidence": "提出用于长周期智能体的记忆策略优化",
+      "canonical_evidence": "提出用于长周期智能体的记忆策略优化",
+      "llm_tldr_en": "HiMPO addresses credit assignment in memory writing for long-horizon agents by estimating local utility of memory updates to reduce entanglement.",
+      "llm_tldr_cn": "长周期智能体依赖记忆机制压缩交互历史，但记忆更新面临信用分配难题。HiMPO通过对比更新前后记忆恢复的任务相关信息来估计局部效用，从而实现更少纠缠的记忆写作信用分配。实验表明该方法能有效避免智能体因下游错误而丢弃有用证据或保留无关信息。这项工作为智能体记忆优化提供了新视角。",
+      "llm_tldr": "长周期智能体依赖记忆机制压缩交互历史，但记忆更新面临信用分配难题。HiMPO通过对比更新前后记忆恢复的任务相关信息来估计局部效用，从而实现更少纠缠的记忆写作信用分配。实验表明该方法能有效避免智能体因下游错误而丢弃有用证据或保留无关信息。这项工作为智能体记忆优化提供了新视角。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.16707v1",
+      "source": "arxiv",
+      "title": "User as Code: Executable Memory for Personalized Agents",
+      "abstract": "A personalized AI agent needs a user memory: a persistent model of who the user is, built across many conversations and consulted on each new one. Today this memory is almost always stored as unstructured text, a knowledge graph, or a flat store of facts, and consulted by retrieval -- fetching the entries most similar to the current request. Such \"bag-of-facts\" memory recalls individual facts well, but because storing a fact and acting on it are separate steps, it struggles to resolve contradictions, aggregate over many records, or enforce rules. We argue that user memory should instead be executable. We introduce User as Code (UaC), a paradigm in which an agent's model of a user is a living software project: typed Python objects hold the user's state and ordinary Python functions encode the rules that govern it, so representing and reasoning about the user happen in one medium an interpreter can run. The enabling mechanism is a two-phase pipeline: an append-only log that never discards a fact, periodically checkpointed into typed code.   This changes what memory can do. On standard long-term conversation benchmarks, UaC matches both a full-context upper bound and the strongest prior memory systems on recall (78.8% on LOCOMO). Its advantage emerges where representation matters most. On aggregate questions over a user's history -- \"how many international trips did I take last year?\" -- retrieval-based memory collapses (6-43%) while UaC stays near-perfect (99%), because the answer is a one-line computation over typed state rather than a search over text. And because its rules execute deterministically whenever the state changes, UaC can surface unsolicited, safety-critical alerts -- such as a newly prescribed drug that conflicts with an allergy recorded months earlier -- a capability query-driven memory cannot provide.",
+      "authors": [
+        "Bojie Li"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-15T13:39:41+00:00",
+      "link": "https://arxiv.org/pdf/2606.16707v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "executable memory paradigm for personalized agents",
+      "llm_evidence_cn": "个性化智能体的可执行记忆范式",
+      "llm_evidence": "个性化智能体的可执行记忆范式",
+      "canonical_evidence": "个性化智能体的可执行记忆范式",
+      "llm_tldr_en": "Introduces User as Code (UaC), a paradigm where user memory is an executable software project with typed Python objects, overcoming limitations of retrieval-based bag-of-facts memory.",
+      "llm_tldr_cn": "现有智能体用户记忆通常采用检索式存储，难以处理矛盾、聚合和规则强制执行。本文提出用户即代码（UaC）范式，将用户记忆转化为可执行的Python对象项目，使记忆能够主动执行逻辑而非被动检索。该范式在个性化场景中表现出更强的推理和一致性能力，为智能体记忆设计提供了全新思路。",
+      "llm_tldr": "现有智能体用户记忆通常采用检索式存储，难以处理矛盾、聚合和规则强制执行。本文提出用户即代码（UaC）范式，将用户记忆转化为可执行的Python对象项目，使记忆能够主动执行逻辑而非被动检索。该范式在个性化场景中表现出更强的推理和一致性能力，为智能体记忆设计提供了全新思路。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.09365v3",
+      "source": "arxiv",
+      "title": "Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory",
+      "abstract": "Medical agent systems are increasingly expected to support interactive clinical decision making rather than only static question answering. In such settings, effective agents must reuse prior experience across evolving cases, yet existing memory mechanisms often retain raw historical traces that are redundant, noisy, and difficult to govern. More importantly, they rarely distinguish which memories are truly useful for future reasoning. This limits their ability to accumulate compact and reliable experience for long-horizon clinical reasoning. To close this gap, we propose SkeMex, a post-deployment self-evolution framework that improves medical agents through a skill-based memory without updating model weights. SkeMex distills informative interaction trajectories into structured skills that encode reusable procedural knowledge, and organizes them into a multi-branch repository spanning general, task-specific, and action-level experience. To determine which memories should be reused and retained, SkeMex estimates context-dependent utility from environment feedback and uses it to guide value-aware retrieval and repository governance. A closed-loop ``Read--Write--Assess--Govern\" lifecycle further supports continual evolution by writing new skills, updating utilities, promoting useful memories, and removing harmful entries. Experiments across diverse clinical tasks show that SkeMex consistently outperforms representative memory-based agents in both offline and online settings. It also generalizes across model backbones and supports transferable skill memory. All data and code will be released publicly.",
+      "authors": [
+        "Haoran Sun",
+        "Wenjie Li",
+        "Yujie Zhang",
+        "Zekai Lin",
+        "Fanrui Zhang",
+        "Kaitao Chen",
+        "Xingqi He",
+        "Yichen Li",
+        "Mianxin Liu",
+        "Lei Liu",
+        "Yankai Jiang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "published": "2026-06-08T11:37:01+00:00",
+      "link": "https://arxiv.org/pdf/2606.09365v3",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "self-evolving skill memory for medical agent experience replay",
+      "llm_evidence_cn": "面向医疗智能体经验回放的自进化技能记忆",
+      "llm_evidence": "面向医疗智能体经验回放的自进化技能记忆",
+      "canonical_evidence": "面向医疗智能体经验回放的自进化技能记忆",
+      "llm_tldr_en": "SkeMex enables medical agents to reuse prior experience via self-evolving skill memory without weight update.",
+      "llm_tldr_cn": "医疗智能体需在交互中复用过往经验，但现有记忆机制保留冗余原始轨迹。SkeMex提出一种部署后自进化框架，通过技能记忆（而不更新模型权重）压缩和提炼有用经验。该方法区分哪些记忆对未来推理真正有用，从而积累紧凑可靠的经验。在临床推理数据集上，SkeMex显著提升了医疗智能体的泛化能力。",
+      "llm_tldr": "医疗智能体需在交互中复用过往经验，但现有记忆机制保留冗余原始轨迹。SkeMex提出一种部署后自进化框架，通过技能记忆（而不更新模型权重）压缩和提炼有用经验。该方法区分哪些记忆对未来推理真正有用，从而积累紧凑可靠的经验。在临床推理数据集上，SkeMex显著提升了医疗智能体的泛化能力。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.14502v1",
+      "source": "arxiv",
+      "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+      "abstract": "Large Language Models (LLMs) are undergoing a fundamental transformation from conversational generators into integrated AI systems capable of reasoning, action, memory, and self-improvement. We conceptualize this transition as a shift from Chatbot to Digital Colleague: from conversational answers to persistent work. We organize this transition along two tightly coupled dimensions. First, at the cognitive core level, LLMs are advancing from Chatbot-era \"fast thinking\" systems driven by next-token prediction toward Thinking LLMs that leverage inference-time computation, Chain-of-Thought reasoning, reflection, process supervision, and reinforcement learning to support more deliberate and reliable cognition. Second, at the tool-augmented task execution level, LLMs are progressing from tool-calling Agents that invoke external resources in an ad hoc manner toward OpenClaw-style workstation systems (OpenClaw) equipped with persistent Workspaces, skills, verification loops, and governance. The \"Workspace + Skill\" paradigm makes episodic tool use colleague-like via state persistence, reusable procedures, task closure, and experience reuse. We examine data construction shifts from instruction-response pairs to State-Action-Observation trajectories and evaluation from static benchmarks to sandboxed, auditable, self-evolving AI ecosystems.",
+      "authors": [
+        "Yongheng Zhang",
+        "Ziang Liu",
+        "Jiaxuan Zhu",
+        "Shuai Wang",
+        "Xiangqi Chen",
+        "Haojing Huang",
+        "Jiayi Kuang",
+        "Siyu Chen",
+        "Ao Shen",
+        "Hao Wu",
+        "Qiufeng Wang",
+        "Qian-Wen Zhang",
+        "Junnan Dong",
+        "Wenhao Jiang",
+        "Ying Shen",
+        "Hai-Tao Zheng",
+        "Yinghui Li",
+        "Di Yin",
+        "Xing Sun",
+        "Philip S. Yu"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-12T14:33:55+00:00",
+      "link": "https://arxiv.org/pdf/2606.14502v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "discusses memory as a component of persistent autonomous AI",
+      "llm_evidence_cn": "将记忆作为持久自主AI的组成部分进行讨论",
+      "llm_evidence": "将记忆作为持久自主AI的组成部分进行讨论",
+      "canonical_evidence": "将记忆作为持久自主AI的组成部分进行讨论",
+      "llm_tldr_en": "Conceptualizes the transition of LLMs from chatbots to persistent autonomous AI systems with reasoning, action, memory, and self-improvement.",
+      "llm_tldr_cn": "本文概念化了大语言模型从对话式聊天机器人向持久自主AI系统的转变，这类系统具备推理、行动、记忆和自我改进能力。文章从认知核心和工具增强两个维度组织这一转型，强调了记忆在长期自主工作中的关键作用，为未来智能体记忆架构的设计提供了理论框架。",
+      "llm_tldr": "本文概念化了大语言模型从对话式聊天机器人向持久自主AI系统的转变，这类系统具备推理、行动、记忆和自我改进能力。文章从认知核心和工具增强两个维度组织这一转型，强调了记忆在长期自主工作中的关键作用，为未来智能体记忆架构的设计提供了理论框架。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.15476v1",
+      "source": "arxiv",
+      "title": "FARM: Find Anything using Relational Spatial Memory",
+      "abstract": "Robots operating in homes, warehouses, and other object-rich environments need memory systems that can find specific object instances on demand. Object-level memory alone is often insufficient: scenes contain many plausibly matching objects, and users refer to the target through relations to landmarks and surrounding objects (e.g. ``the tall lamp below the dartboard and to the left of the poster''), demanding a relational spatial memory that supports retrieval through semantic, appearance, and spatial predicates over objects. To achieve this, we present FARM (Find Anything using Relational Spatial Memory), which builds, in real time at 5-10 Hz, a compact, open-vocabulary, object-level memory with geometry, visual-language descriptors, and viewpoint evidence. At query time, FARM uses VLMs to parse the query and score visual evidence, while grounding spatial constraints explicitly through object symbols and relational predicates. This structured use of VLMs enables more accurate and robust retrieval than end-to-end reasoning over frame histories or scene-graph context. In experiments on 44k language queries spanning 67 indoor and outdoor scenes, ranging from 15 to 15,000 m^2, FARM improves Recall@5 and Recall@10 over prior methods by 164% and 224%, and a final VLM reranking stage improves Accuracy@1 by 35%, while running in real time. We further demonstrate closed-loop deployment on a quadrupedal robot using onboard sensors and compute.",
+      "authors": [
+        "Siming He",
+        "Leo Huang",
+        "Adam Lilja",
+        "Fabio Hubel",
+        "Jonas Frey",
+        "Marco Pavone",
+        "S. Shankar Sastry",
+        "Jitendra Malik",
+        "Claire Tomlin"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-06-13T21:21:24+00:00",
+      "link": "https://arxiv.org/pdf/2606.15476v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "relational spatial memory for object instance retrieval using semantic and spatial predicates",
+      "llm_evidence_cn": "使用关系和空间谓词进行对象实例检索的关系空间记忆",
+      "llm_evidence": "使用关系和空间谓词进行对象实例检索的关系空间记忆",
+      "canonical_evidence": "使用关系和空间谓词进行对象实例检索的关系空间记忆",
+      "llm_tldr_en": "FARM builds compact open-vocabulary object-level memory with relational spatial queries for real-time object instance retrieval in robotics.",
+      "llm_tldr_cn": "该论文提出FARM系统，为机器人构建实时、紧凑的开放词汇对象级关系空间记忆，支持基于语义、外观和空间关系的对象实例检索，解决了场景中对象歧义和自然语言空间查询的挑战。",
+      "llm_tldr": "该论文提出FARM系统，为机器人构建实时、紧凑的开放词汇对象级关系空间记忆，支持基于语义、外观和空间关系的对象实例检索，解决了场景中对象歧义和自然语言空间查询的挑战。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2606.15609v1",
+      "source": "arxiv",
+      "title": "FragFuse: Bypassing Access Control of Large Language Model Agents via Memory-Based Query Fragmentation and Fusion",
+      "abstract": "Large language model (LLM) agents increasingly rely on long-term memory to support complex task execution, user personalization, and domain adaptation. Meanwhile, emerging access-control mechanisms for LLM agents are being explored to block policy-violating requests and prevent misuse. We reveal a novel attack surface arising from agent memory operations: prohibited content that would trigger access control can be fragmented across interactions, stored in long-term memory in benign-appearing form, and later reconstructed through memory retrieval without appearing explicitly in the final user query. We propose FragFuse, the first attack that enables unprivileged users to bypass agent access control by exploiting this temporal channel introduced by long-term memory. FragFuse operates in three stages: (1) identifying rejection-responsive fragments via black-box adaptive querying with fragment masking; (2) injecting these fragments into memory using marker carrier queries; and (3) retrieving and fusing the stored fragments through a follow-up attack query. Although FragFuse can be instantiated manually for individual agents, we further develop a surrogate-based optimization scheme that tunes fusion instructions and marker designs, enabling automated attack generation without violating the attacker's threat-model assumptions. We evaluate FragFuse across four representative agent settings and task domains, covering three state-of-the-art agent access-control mechanisms. FragFuse achieves an average bypass success rate of 86.3% and an average end-to-end harmful task success rate of 41.1% across all settings, with only 4.4% average task-success degradation compared with configurations without access control. We also show that alternative defenses, including state-of-the-art prompt-injection detectors and perplexity detectors, do not effectively address this attack.",
+      "authors": [
+        "Zixin Rao",
+        "Wentian Zhu",
+        "Chan Aristella Lu",
+        "Zhaorun Chen",
+        "Wei Niu",
+        "Le Guan",
+        "Bo Li",
+        "Zhen Xiang"
+      ],
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "published": "2026-06-14T05:31:43+00:00",
+      "link": "https://arxiv.org/pdf/2606.15609v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "exploiting long-term memory fragmentation and fusion to bypass agent access control",
+      "llm_evidence_cn": "利用长期记忆碎片化与融合绕过代理访问控制",
+      "llm_evidence": "利用长期记忆碎片化与融合绕过代理访问控制",
+      "canonical_evidence": "利用长期记忆碎片化与融合绕过代理访问控制",
+      "llm_tldr_en": "FragFuse reveals a new attack surface by fragmenting prohibited content into benign memory entries and reconstructing via retrieval, bypassing agent access control.",
+      "llm_tldr_cn": "该论文揭示了一个基于代理长期记忆的新型攻击面。攻击者可以将违禁内容碎片化存储到长期记忆中，通过记忆检索重组而不在最终查询中出现。论文提出的FragFuse方法成功绕过了现有访问控制机制。该工作强调了记忆操作的安全风险，对记忆检索技术研究具有警示意义。",
+      "llm_tldr": "该论文揭示了一个基于代理长期记忆的新型攻击面。攻击者可以将违禁内容碎片化存储到长期记忆中，通过记忆检索重组而不在最终查询中出现。论文提出的FragFuse方法成功绕过了现有访问控制机制。该工作强调了记忆操作的安全风险，对记忆检索技术研究具有警示意义。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.14249v1",
+      "source": "arxiv",
+      "title": "HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry",
+      "abstract": "AI agent performance depends critically on the runtime harness, comprising the prompts, tools, memory, and control flow that mediate how a model observes, reasons, and acts. Yet today's harnesses remain largely hand-crafted and static: each new model or task still demands bespoke scaffolding, and the rich traces produced during execution are rarely distilled back into systematic improvement. We introduce HarnessX, a foundry for composable, adaptive, and evolvable agent harnesses. HarnessX assembles typed harness primitives via a substitution algebra, adapts them through AEGIS, a trace-driven multi-agent evolution engine grounded in an operational mirror between symbolic adaptation and reinforcement learning, and closes the harness-model loop by turning trajectories into both harness updates and model training signal. Across five benchmarks (ALFWorld, GAIA, WebShop, tau^3-Bench, and SWE-bench Verified), HarnessX yields an average gain of +14.5% (up to +44.0%), with gains largest where baselines are lowest. These results suggest that agent progress need not come from model scaling alone: composing and evolving runtime interfaces from execution feedback is an actionable and complementary lever. The complete codebase will be open-sourced in a future release.",
+      "authors": [
+        "Tingyang Chen",
+        "Shuo Lu",
+        "Kang Zhao",
+        "Weicheng Meng",
+        "Hanlin Teng",
+        "Tianhao Li",
+        "Chao Li",
+        "Xule Liu",
+        "Jian Liang",
+        "Zhizhong Zhang",
+        "Yuan Xie",
+        "Heng Qu",
+        "Kun Shao",
+        "Jian Luan"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-12T08:27:11+00:00",
+      "link": "https://arxiv.org/pdf/2606.14249v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "composable memory components in agent harness foundry",
+      "llm_evidence_cn": "代理框架中的可组合记忆组件",
+      "llm_evidence": "代理框架中的可组合记忆组件",
+      "canonical_evidence": "代理框架中的可组合记忆组件",
+      "llm_tldr_en": "HarnessX is a foundry for composable agent harnesses, including memory, with a trace-driven evolution engine that adapts harness primitives.",
+      "llm_tldr_cn": "该论文提出HarnessX，一个可组合、自适应和可进化的代理框架工厂。它将提示、工具、记忆和控制流视为原始组件，通过替换代数组合，并利用AEGIS引擎进行跟踪驱动的进化优化。实验表明该框架能有效生成适应不同模型和任务的运行时框架，其中记忆模块的可组合性为代理架构提供了灵活性。",
+      "llm_tldr": "该论文提出HarnessX，一个可组合、自适应和可进化的代理框架工厂。它将提示、工具、记忆和控制流视为原始组件，通过替换代数组合，并利用AEGIS引擎进行跟踪驱动的进化优化。实验表明该框架能有效生成适应不同模型和任务的运行时框架，其中记忆模块的可组合性为代理架构提供了灵活性。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.14997v1",
+      "source": "arxiv",
+      "title": "AI Engram: In Search of Memory Traces in Artificial Intelligence",
+      "abstract": "Memory formation is fundamental to intelligence, yet whether deep neural networks preserve identifiable memory traces analogous to biological memory units remains an open question. This work introduces a geometric framework to identify such \"AI engrams\" by formalizing the neuroscientific criteria of specificity, reactivation, sufficiency, and necessity into a constrained inverse problem. We derive a closed-form estimator that isolates individual memory traces from globally entangled parameters, and show that this biologically-derived solution corresponds to a natural gradient update on the parameter manifold. AI engrams enable surgical manipulation of learned knowledge: any subset of memories can be composed or erased through linear arithmetic, without iterative optimization. Experiments ranging from simple MLPs to LLMs demonstrate the causal validity and substantial scalability of AI engrams. Together, these results bridge theories of biological memory and artificial representation learning and offer geometric insight into how deep networks simultaneously support functional specificity within distributed storage.",
+      "authors": [
+        "Jea Kwon",
+        "Dong-Kyum Kim",
+        "Jiwon Kim",
+        "Yonghyun Kim",
+        "Woong Kook",
+        "Meeyoung Cha"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-06-12T22:36:52+00:00",
+      "link": "https://arxiv.org/pdf/2606.14997v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "geometric framework to identify memory traces in DNNs",
+      "llm_evidence_cn": "在深度神经网络中识别记忆痕迹的几何框架",
+      "llm_evidence": "在深度神经网络中识别记忆痕迹的几何框架",
+      "canonical_evidence": "在深度神经网络中识别记忆痕迹的几何框架",
+      "llm_tldr_en": "AI Engram formalizes neuroscientific criteria to isolate individual memory traces, enabling surgical knowledge manipulation.",
+      "llm_tldr_cn": "深度神经网络中是否存在类似生物记忆单元的可辨识记忆痕迹仍待探索。本文提出几何框架，将特异性、再激活、充分性和必要性形式化为约束逆问题，推导出闭式估计器从全局参数中分离个体记忆痕迹。该生物学启发的解对应参数流形上的自然梯度更新。AI Engram支持通过线性算术对记忆子集进行组合或擦除，无需迭代训练。这项理论工作为理解AI记忆机制提供了新工具。",
+      "llm_tldr": "深度神经网络中是否存在类似生物记忆单元的可辨识记忆痕迹仍待探索。本文提出几何框架，将特异性、再激活、充分性和必要性形式化为约束逆问题，推导出闭式估计器从全局参数中分离个体记忆痕迹。该生物学启发的解对应参数流形上的自然梯度更新。AI Engram支持通过线性算术对记忆子集进行组合或擦除，无需迭代训练。这项理论工作为理解AI记忆机制提供了新工具。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms in artificial intelligence",
+      "matched_requirement_id": "req-7",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
