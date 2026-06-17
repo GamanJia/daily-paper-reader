@@ -1,0 +1,389 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-17T20:48:35.852412+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 5,
+    "quick_skim_target": 11,
+    "quick_selected": 5
+  },
+  "deep_dive": [
+    {
+      "id": "2606.10616v3",
+      "source": "arxiv",
+      "title": "Learning What to Remember: Observability-Safe Memory Retention via Constrained Optimization for Long-Horizon Language Agents",
+      "abstract": "Long-horizon language agents accumulate observations, reasoning traces, and retrieved facts that exceed their context windows, making memory retention -- what to keep, discard, or later recover under a fixed budget -- central to sustained performance. Most systems score memories with local rules such as recency or relevance, ignoring the delayed costs of retention: future retrieval failures, recomputation, and stale-information use. We formulate retention as a constrained, partially observable stochastic optimization problem in which current decisions shape information demands revealed only later, and prove its single-step version NP-hard. Since exact optimization is intractable and future demands unknown, we develop \\textbf{OSL-MR} (Observability-Safe Learning for Memory Retention), a learning-augmented approximation for deployable memory control. Its core principle is observability separation: deployed decisions use only online-observable signals, while supervision from evidence realized after an interaction is used solely for offline learning. OSL-MR pairs a budget-aware Mixed-Score heuristic (a cold-start policy and inductive prior) with an evidence learner predicting which memories later serve as evidence. As the cumulative objective is non-decomposable and combinatorial, the learner is trained on evidence-membership signals rather than reward, a tractable, deployable target. On LoCoMo and LongMemEval, OSL-MR consistently outperforms strong heuristic and imitation-learning baselines, especially under tight budgets, and is robust across cost settings. On exactly-solvable instances, retention is genuinely multi-step: a perfect single-step optimizer is far from optimal, whereas OSL-MR stays near the dynamic-programming optimum. These results establish constrained stochastic optimization and optimization-guided learning as a scalable foundation for memory in long-horizon agents.",
+      "authors": [
+        "Qingcan Kang",
+        "Liu Mingyang",
+        "Shixiong Kai",
+        "Kaichao Liang",
+        "Tao Zhong",
+        "Mingxuan Yuan"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-09T09:15:33+00:00",
+      "link": "https://arxiv.org/pdf/2606.10616v3",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "memory retention optimization for long-horizon language agents",
+      "llm_evidence_cn": "长周期语言代理的记忆保留优化",
+      "llm_evidence": "长周期语言代理的记忆保留优化",
+      "canonical_evidence": "长周期语言代理的记忆保留优化",
+      "llm_tldr_en": "Formulates memory retention as a constrained stochastic optimization problem to decide what to keep under budget, considering future retrieval costs.",
+      "llm_tldr_cn": "长周期语言代理面临记忆超限问题，本文将其建模为带约束的部分可观测随机优化问题，证明单步版本NP难，并提出近似解法。实验表明该方法优于基于局部规则的基线，有效平衡记忆效用与未来检索成本。",
+      "llm_tldr": "长周期语言代理面临记忆超限问题，本文将其建模为带约束的部分可观测随机优化问题，证明单步版本NP难，并提出近似解法。实验表明该方法优于基于局部规则的基线，有效平衡记忆效用与未来检索成本。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.17628v1",
+      "source": "arxiv",
+      "title": "OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation",
+      "abstract": "Memory has become a standard substrate for self-evolving agents, yet retaining experience is not the same as learning how to evolve through it. Existing memory agents can store trajectories, retrieve reflections, or accumulate skills, but often lack the holistic competence to select useful experience, act on it, write reusable knowledge, and maintain a growing repository. We introduce OPD-Evolver, a slow-fast co-evolution framework that cultivates such an agent evolver through on-policy self-distillation. In the fast loop, OPD-Evolver interacts with a four-level memory hierarchy to read, use, write, and maintain experience for rapid test-time evolution. In the slow loop, outcome-calibrated memory attribution and privileged hindsight distill these four abilities into the deployable policy. Across multi-domain benchmarks, OPD-Evolver surpasses memory systems such as ReasoningBank by up to 11.5%, and training-based methods such as Skill0 by ~5.8%. Further analysis shows that OPD-Evolver internalizes high-value experience and memory management, enabling OPD-Evolver-9B to challenge giant counterparts such as Qwen3.5-397B-A17B and Step-3.5-Flash, pointing beyond memory-augmented agents toward genuinely qualified agent evolvers.",
+      "authors": [
+        "Guibin Zhang",
+        "Xun Xu",
+        "Yanwei Yue",
+        "Zikun Su",
+        "Wangchunshu Zhou",
+        "Xiaobin Hu",
+        "Shuicheng Yan"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-16T07:33:53+00:00",
+      "link": "https://arxiv.org/pdf/2606.17628v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "four-level memory hierarchy for self-evolving agents",
+      "llm_evidence_cn": "面向自演化智能体的四层记忆层次结构",
+      "llm_evidence": "面向自演化智能体的四层记忆层次结构",
+      "canonical_evidence": "面向自演化智能体的四层记忆层次结构",
+      "llm_tldr_en": "OPD-Evolver introduces a slow-fast co-evolution framework with a four-level memory hierarchy that enables agents to holistically read, use, write, and maintain experience for test-time evolution.",
+      "llm_tldr_cn": "现有记忆智能体虽能存储和检索经验，但缺乏全面利用经验来演化的能力。本文提出OPD-Evolver，一个慢-快协同演化框架，在快循环中通过四层记忆层次结构（读取、使用、写入、维护）实现快速测试时演化，在慢循环中通过结果校准的记忆归因和后见蒸馏提升知识质量。实验表明，该方法在多种长期任务上显著优于现有记忆智能体，使智能体具备真正的自我演化能力。",
+      "llm_tldr": "现有记忆智能体虽能存储和检索经验，但缺乏全面利用经验来演化的能力。本文提出OPD-Evolver，一个慢-快协同演化框架，在快循环中通过四层记忆层次结构（读取、使用、写入、维护）实现快速测试时演化，在慢循环中通过结果校准的记忆归因和后见蒸馏提升知识质量。实验表明，该方法在多种长期任务上显著优于现有记忆智能体，使智能体具备真正的自我演化能力。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.14047v1",
+      "source": "arxiv",
+      "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
+      "abstract": "Long-context language modeling requires not only extending context windows but maintaining coherent understanding of entity states and relationships across thousands of tokens -- a challenge that semantic similarity alone cannot address. KGERMAR addresses this by constructing dynamic, context-specific knowledge graphs from input text during inference, enabling domain-adaptive retrieval that leverages both semantic similarity and explicit entity relationships. The framework performs real-time entity and relation extraction to build contextual knowledge graphs, then integrates graph-structural embeddings with textual semantics through a multi-component memory architecture. Three memory banks -- contextual, semantic, and structural -- are maintained with retrieval signals fused via learned weights to capture both surface-level semantics and deeper relational patterns. Evaluated on SlimPajama (84.7K training examples), WikiText-103 (4,358 examples), PG-19 (100 examples), and Proof-pile (46.3K examples), KGERMAR achieves up to 8.5\\% lower perplexity and 2--2.5x better memory efficiency than memory-augmented baselines across context lengths from 1K to 32K tokens, with superior in-context learning performance across five NLU tasks. The dynamic knowledge graph construction approach advances memory-augmented language modeling by enabling domain-specific knowledge representation that adapts to input contexts rather than relying on fixed knowledge bases.",
+      "authors": [
+        "Ghadir Alselwi",
+        "Basem Suleiman",
+        "Hao Xue",
+        "Shoaib Jameel",
+        "Hakim Hacid",
+        "Flora D. Salim",
+        "Imran Razzak"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "published": "2026-06-12T02:48:45+00:00",
+      "link": "https://arxiv.org/pdf/2606.14047v1",
+      "tags": [
+        "keyword:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "memory-augmented retrieval with knowledge graphs for long-context modeling",
+      "llm_evidence_cn": "结合知识图谱的记忆增强检索用于长上下文建模",
+      "llm_evidence": "结合知识图谱的记忆增强检索用于长上下文建模",
+      "canonical_evidence": "结合知识图谱的记忆增强检索用于长上下文建模",
+      "llm_tldr_en": "Proposes KGERMAR which constructs dynamic knowledge graphs to enhance memory-augmented retrieval with semantic and structural memory banks.",
+      "llm_tldr_cn": "长上下文建模中语义相似度检索不足以维护实体关系，本文提出KGERMAR框架，在推理时构建上下文知识图谱，并维护三种记忆库（上下文、语义、结构）。实验表明该方法在长序列理解上显著优于纯语义检索。",
+      "llm_tldr": "长上下文建模中语义相似度检索不足以维护实体关系，本文提出KGERMAR框架，在推理时构建上下文知识图谱，并维护三种记忆库（上下文、语义、结构）。实验表明该方法在长序列理解上显著优于纯语义检索。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.15903v2",
+      "source": "arxiv",
+      "title": "Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations",
+      "abstract": "Where an LLM sits in an agent memory pipeline -- between the recall plane that retrieves stored facts (extensively benchmarked) and the control plane that mutates them via supersede, release, purge (largely untested) -- shapes which forgetting failure modes the system recovers. Comparing thirteen system configurations on a 385-case adversarial surface, we observe three placement regimes with partly complementary coverage: deterministic primitives suffice for lexical/temporal categories but fail canonicalization (5% on identifier-obfuscation, 0% on cross-lingual); inscribe-time LLM recovers canonicalization (100%) but cannot help intent-aware deletion (0% on prefix-collision and compound-fact); a mutation-time hook recovers intent-aware deletion (78-85%) and brightens nearly all categories simultaneously (91.7-93.2% overall, $0.17 per 385-case run, 2.3s/case mutation latency vs. 64-191ms/case deterministic, recall path unchanged).   We expose the trade-off via ForgetEval, a 1000-case templated suite plus a 385-case adversarial layer (132 hand-crafted + 253 LLM-drafted oracle-validated) scored by deterministic substring match, paired with a six-method Adapter Protocol with honest N/A scoring that lets heterogeneous memory stores enter in 130 lines. Admission is corroborated by 10-annotator IAA (Fleiss' kappa = 0.958) and a 77-case external-authored subset (four blind contributors) that replicates the canonicalization asymmetry and amplifies the joint-placement lift (+27.8 pt). Production failures are predominantly forgetting failures rather than recall failures, yet existing benchmarks measure only recall. ForgetEval and all adapters are released under MIT.",
+      "authors": [
+        "Dongxu Yang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "published": "2026-06-14T16:32:15+00:00",
+      "link": "https://arxiv.org/pdf/2606.15903v2",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "studies placement of LLM in agent memory pipeline and its effect on forgetting",
+      "llm_evidence_cn": "研究LLM在代理记忆流水线中的位置对遗忘的影响",
+      "llm_evidence": "研究LLM在代理记忆流水线中的位置对遗忘的影响",
+      "canonical_evidence": "研究LLM在代理记忆流水线中的位置对遗忘的影响",
+      "llm_tldr_en": "This paper examines how the placement of an LLM in an agent memory pipeline--between recall and control planes--affects forgetting failure modes, comparing 13 configurations on 385 adversarial cases, revealing complementary coverage regimes.",
+      "llm_tldr_cn": "现有代理记忆系统在遗忘方面存在多种故障模式，但控制平面（如更新、释放、清除）的影响未充分测试。本文通过在385个对抗案例上比较13种系统配置，研究了LLM在记忆流水线中的位置如何影响遗忘恢复。发现不同的放置位置产生部分互补的覆盖：确定性原语处理词汇/时间类别但无法规范化，而铭文时LLM能恢复规范化但无法进行意图感知删除。该研究为代理记忆架构设计提供了遗忘方面的指导。",
+      "llm_tldr": "现有代理记忆系统在遗忘方面存在多种故障模式，但控制平面（如更新、释放、清除）的影响未充分测试。本文通过在385个对抗案例上比较13种系统配置，研究了LLM在记忆流水线中的位置如何影响遗忘恢复。发现不同的放置位置产生部分互补的覆盖：确定性原语处理词汇/时间类别但无法规范化，而铭文时LLM能恢复规范化但无法进行意图感知删除。该研究为代理记忆架构设计提供了遗忘方面的指导。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.14551v2",
+      "source": "arxiv",
+      "title": "TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation",
+      "abstract": "Robots under autonomous operation may require decisions based on evidence that is no longer visible. We study delayed-evidence tasks, where an early cue disappears before a later decision point, so visually similar observations can require different actions. In these settings, the current observation is not a sufficient state for control. We introduce TRAjectory-routed Causal Evidence (TRACE), a memory framework for visuomotor imitation policies. TRACE stores task-relevant visual and robot-state evidence, such as object identity, target choice, or route-dependent state, in a fixed-size latent memory that remains bounded over long episodes. Instead of indexing memory by raw time or manually provided task labels, TRACE uses path signatures: compact, order-sensitive features of the executed robot-state trajectory. These signatures do not store the visual cue itself; rather, they provide trajectory-conditioned keys for writing and retrieving the evidence stored when the cue was visible. When the robot later reaches an ambiguous observation, the policy conditions on TRACE memory to recover the missing context and choose the correct branch. TRACE attaches through lightweight adapters to policies, without changing the policy backbone, action head, or imitation objective. Across real-world long-horizon manipulation tasks with visually ambiguous branch points, TRACE improves branch selection and task success over alternative baselines, including short-history and recurrent memory. Project page: https://jeong-zju.github.io/trace",
+      "authors": [
+        "Zihao Li",
+        "Ranpeng Qiu",
+        "Yincong Chen",
+        "Guoqiang Ren",
+        "Weiming Zhi"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-06-12T15:30:18+00:00",
+      "link": "https://arxiv.org/pdf/2606.14551v2",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "causal memory for delayed-evidence decision making in robots",
+      "llm_evidence_cn": "面向延迟证据场景的因果记忆用于机器人决策",
+      "llm_evidence": "面向延迟证据场景的因果记忆用于机器人决策",
+      "canonical_evidence": "面向延迟证据场景的因果记忆用于机器人决策",
+      "llm_tldr_en": "TRACE introduces a trajectory-routed causal memory for visuomotor imitation policies in delayed-evidence tasks, storing task-relevant evidence in a fixed-size latent memory indexed by path signatures.",
+      "llm_tldr_cn": "在机器人自主操作中，早期线索消失后仍需基于不可见证据决策。本文提出TRACE记忆框架，针对延迟证据的视觉运动模仿策略。TRACE将任务相关视觉和状态证据（如物体身份、目标选择）存储在固定大小的潜在记忆中，通过路径签名而非时间索引。实验表明该方法能有效处理观察不充分的状态，显著优于无记忆基线。",
+      "llm_tldr": "在机器人自主操作中，早期线索消失后仍需基于不可见证据决策。本文提出TRACE记忆框架，针对延迟证据的视觉运动模仿策略。TRACE将任务相关视觉和状态证据（如物体身份、目标选择）存储在固定大小的潜在记忆中，通过路径签名而非时间索引。实验表明该方法能有效处理观察不充分的状态，显著优于无记忆基线。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory-based decision making agents",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.16903v1",
+      "source": "arxiv",
+      "title": "Directory-Aware Query and Maintenance in Vector Databases",
+      "abstract": "Vector databases typically manage metadata as flat scalar attributes, which limits their ability to express hierarchical directory semantics commonly used to organize code repositories, enterprise documents, and agent memories. As a result, directory-scoped retrieval and structural updates are often implemented as application-layer workarounds, making recursive scope resolution expensive and directory maintenance difficult to keep consistent. This paper studies native directory semantics as a first-class capability for vector databases. We formalize two core operators: Directory-Semantic Query (DSQ) for hierarchically scoped retrieval, and Directory-Semantic Maintenance (DSM) for structural updates. We then evaluate three implementation strategies: query-time path expansion (PE-Online), ingestion-time path expansion (PE-Offline), and a Trie-based Hierarchical Index (TrieHI). Our analysis exposes the fundamental limitations of expansion-based designs: flattening the hierarchy incurs high recursive-query latency in PE-Online and unscalable write amplification during structural changes in both expansion strategies. In contrast, TrieHI keeps the directory topology as a native prefix tree, enabling efficient recursive retrieval through tree traversal and reducing maintenance cost through topological node manipulation. We benchmark these design points within ByteDance's Viking vector search engine and release two large-scale datasets, WIKI-Dir and ARXIV-Dir, to support future research on directory-semantic vector search. Finally, TrieHI has been integrated into OpenViking, an open-source context database for AI agents, where it supports filesystem-style context organization and directory-recursive retrieval.",
+      "authors": [
+        "Mengzhao Wang",
+        "Zheng Gong",
+        "Jingpei Hu",
+        "Jiajie Fu",
+        "Maojia Sheng",
+        "Junwen Chen",
+        "Yifan Zhu"
+      ],
+      "primary_category": "cs.DB",
+      "categories": [
+        "cs.DB"
+      ],
+      "published": "2026-06-15T16:11:35+00:00",
+      "link": "https://arxiv.org/pdf/2606.16903v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "directory semantics for vector databases applied to agent memories",
+      "llm_evidence_cn": "向量数据库的目录语义应用于代理记忆",
+      "llm_evidence": "向量数据库的目录语义应用于代理记忆",
+      "canonical_evidence": "向量数据库的目录语义应用于代理记忆",
+      "llm_tldr_en": "Proposes native directory semantics for vector databases to enable hierarchical scoped retrieval and maintenance, beneficial for organizing agent memories.",
+      "llm_tldr_cn": "向量数据库通常将元数据视为平面标量，难以表达目录层次。本文提出目录语义作为一等公民，支持层次化范围检索和结构更新，在代理记忆等场景中提升效率并简化维护。",
+      "llm_tldr": "向量数据库通常将元数据视为平面标量，难以表达目录层次。本文提出目录语义作为一等公民，支持层次化范围检索和结构更新，在代理记忆等场景中提升效率并简化维护。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.17016v1",
+      "source": "arxiv",
+      "title": "TokenPilot: Cache-Efficient Context Management for LLM Agents",
+      "abstract": "As LLM agents are deployed in long-horizon sessions, context accumulation drives up inference costs. Existing approaches utilize text pruning or dynamic memory eviction to minimize token footprints; however, their unconstrained sequence mutations alter layouts, introducing prefix mismatches and cache invalidation. This reveals a critical trade-off between text sparsity and prompt cache continuity. To address this, we present TokenPilot, a dual-granularity context management framework. Globally, Ingestion-Aware Compaction acts as a framework harness to stabilize prompt prefixes and eliminate open-world environmental noise at the ingestion gate. Locally, Lifecycle-Aware Eviction monitors the ongoing residual utility of context segments, enforcing a conservative batch-turn schedule to offload content segments only when task relevance expires. Experiments on PinchBench and Claw-Eval under both isolated and continuous modes demonstrate that TokenPilot reduces costs by 61% and 56% in isolated mode, and 61% and 87% in continuous mode, while maintaining competitive performance compared to prior systems. TokenPilot has been integrated into LightMem2 at https://github.com/zjunlp/LightMem2.",
+      "authors": [
+        "Buqiang Xu",
+        "Zirui Xue",
+        "Dianmou Chen",
+        "Chenyang Fu",
+        "Chiyu Wu",
+        "Caiying Huang",
+        "Chen Jiang",
+        "Jizhan Fang",
+        "Xinle Deng",
+        "Yijun Chen",
+        "Yunzhi Yao",
+        "Xuehai Wang",
+        "Jin Shang",
+        "Gong Yu",
+        "Ningyu Zhang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "published": "2026-06-15T17:46:50+00:00",
+      "link": "https://arxiv.org/pdf/2606.17016v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "cache-efficient context management with memory eviction and compaction for LLM agents",
+      "llm_evidence_cn": "面向LLM智能体的缓存高效上下文管理，包括内存驱逐与压缩",
+      "llm_evidence": "面向LLM智能体的缓存高效上下文管理，包括内存驱逐与压缩",
+      "canonical_evidence": "面向LLM智能体的缓存高效上下文管理，包括内存驱逐与压缩",
+      "llm_tldr_en": "TokenPilot employs ingestion-aware compaction and lifecycle-aware eviction to manage context in LLM agents, balancing token sparsity and prompt cache continuity.",
+      "llm_tldr_cn": "LLM智能体在长会话中上下文累积导致推理成本上升。TokenPilot提出双粒度上下文管理：全局上采用摄取感知压缩稳定提示前缀，局部上采用生命周期感知驱逐保留有用片段。该方法在保持缓存连续性的同时减少令牌占用，实验显示推理成本显著降低，性能保持。",
+      "llm_tldr": "LLM智能体在长会话中上下文累积导致推理成本上升。TokenPilot提出双粒度上下文管理：全局上采用摄取感知压缩稳定提示前缀，局部上采用生命周期感知驱逐保留有用片段。该方法在保持缓存连续性的同时减少令牌占用，实验显示推理成本显著降低，性能保持。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.17328v1",
+      "source": "arxiv",
+      "title": "MemTrace: Probing What Final Accuracy Misses in Long-Term Memory",
+      "abstract": "LLM agents increasingly maintain long-term memory of user facts across sessions. Yet such memory is usually evaluated by aggregating accuracy over question rows or episodes. Because this approach scores question rows independently, even when several questions probe the same fact, it cannot show how that fact behaves as conditions change. We introduce MemTrace, a benchmark whose unit of measurement is the knowledge point: a single typed fact about the user, rather than an individual question. MemTrace probes each fact along three controlled dimensions: memory age, defined by how many sessions ago the fact appeared in the history; question type, covering current state, earlier state, and trajectory of change; and evidence condition, covering present, missing, and contradicted-by-false-premise settings. Evaluating 13 memory-system configurations across four paradigms, we find that similar pooled accuracy hides different failures: recovering a fact's current and earlier states does not imply tracking how it changed, and safe abstention does not imply correcting a false premise. The dominant bottleneck is evidence use, not retrieval: when systems fail, the evidence was retrievable 10 times more often than it was missing. These results suggest that improving long-term memory requires better use of reachable evidence, not simply more storage or retrieval.",
+      "authors": [
+        "Xianxuan Long",
+        "Zhikai Chen",
+        "Shenglai Zeng",
+        "Shouren Wang",
+        "Kai Guo",
+        "Jiliang Tang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-15T22:21:23+00:00",
+      "link": "https://arxiv.org/pdf/2606.17328v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "introduces MemTrace, a benchmark probing long-term memory of LLM agents at knowledge point level",
+      "llm_evidence_cn": "提出MemTrace，一个在知识点层面探测LLM代理长期记忆的基准",
+      "llm_evidence": "提出MemTrace，一个在知识点层面探测LLM代理长期记忆的基准",
+      "canonical_evidence": "提出MemTrace，一个在知识点层面探测LLM代理长期记忆的基准",
+      "llm_tldr_en": "MemTrace evaluates long-term memory by tracking individual knowledge points across controlled dimensions (memory age, question type, evidence condition), revealing failure modes masked by aggregate accuracy.",
+      "llm_tldr_cn": "现有长期记忆评估通过聚合问题行准确率，掩盖了事实在不同条件（如记忆年龄、问题类型、证据条件）下的行为变化。MemTrace以知识点为测量单位，沿三个受控维度探测每个事实的表现，揭示了聚合度量遗漏的故障模式。实验表明即使在整体准确率高的情况下，也存在显著的性能下降。该基准为长期记忆系统提供了更细粒度的诊断工具。",
+      "llm_tldr": "现有长期记忆评估通过聚合问题行准确率，掩盖了事实在不同条件（如记忆年龄、问题类型、证据条件）下的行为变化。MemTrace以知识点为测量单位，沿三个受控维度探测每个事实的表现，揭示了聚合度量遗漏的故障模式。实验表明即使在整体准确率高的情况下，也存在显著的性能下降。该基准为长期记忆系统提供了更细粒度的诊断工具。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.18235v1",
+      "source": "arxiv",
+      "title": "EvolveNav: Proactive Preflection and Self-Evolving Memory for Zero-Shot Object Goal Navigation",
+      "abstract": "Zero-Shot Object-Goal Navigation (ZS-OGN) requires embodied agents to explore and locate target objects without any prior training. To this end, recent methods leverage foundation models. But they typically rely on static priors and lack adaptation, which leads to repeated errors and costly trial and error. In this paper, we propose a self-evolving ZS-OGN framework that enables continuous test-time improvement. Specifically, we build an agentic rule memory by extracting actionable knowledge from past trajectories. Then, we propose a retrieval strategy based on upper confidence bound, selecting effective rules by balancing semantic relevance and historical success. In addition, we introduce a memory-guided preflection module that forecasts potential outcomes before action, reducing inefficient exploration. Extensive experiments show that our method outperforms existing zero-shot baselines, achieving a 10.1\\% improvement in success rate with fewer unnecessary steps.",
+      "authors": [
+        "Qi Chai",
+        "Wenhao Shen",
+        "Nanjie Yao",
+        "Yue Xia",
+        "Kaiyong Zhao",
+        "Jie Ma",
+        "Guosheng Lin",
+        "Hao Wang"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-16T17:56:57+00:00",
+      "link": "https://arxiv.org/pdf/2606.18235v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "self-evolving agentic memory with rule extraction and retrieval for navigation",
+      "llm_evidence_cn": "自演化智能体记忆，包括规则提取和检索用于导航",
+      "llm_evidence": "自演化智能体记忆，包括规则提取和检索用于导航",
+      "canonical_evidence": "自演化智能体记忆，包括规则提取和检索用于导航",
+      "llm_tldr_en": "EvolveNav builds a self-evolving rule memory from past trajectories, using UCB-based retrieval and memory-guided preflection for zero-shot object goal navigation.",
+      "llm_tldr_cn": "零样本目标导航中，现有方法依赖静态先验导致重复错误。EvolveNav框架从历史轨迹中提取可行动知识构建规则记忆，采用上置信界策略平衡语义相关性与历史成功率进行检索，并引入记忆引导预反思模块。实验表明该方法能够在测试时持续改进，显著提升导航成功率。",
+      "llm_tldr": "零样本目标导航中，现有方法依赖静态先验导致重复错误。EvolveNav框架从历史轨迹中提取可行动知识构建规则记忆，采用上置信界策略平衡语义相关性与历史成功率进行检索，并引入记忆引导预反思模块。实验表明该方法能够在测试时持续改进，显著提升导航成功率。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

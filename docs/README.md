@@ -6,50 +6,49 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-16
-- 运行时间：2026-06-16 23:11:55 UTC
+- 最新运行日期：2026-06-17
+- 运行时间：2026-06-17 20:54:55 UTC
 - 运行状态：成功
-- 本次总论文数：10
-- 精读区：6
-- 速读区：4
+- 本次总论文数：9
+- 精读区：4
+- 速读区：5
 
 ### 今日简报（AI）
-今日研读10篇Agent记忆与系统论文，精读6篇，速读4篇，重点推荐两篇9.0分论文。核心方向：T-Mem提出前瞻性记忆机制替代档案式存储，Control-Plane揭示控制平面配置对Agent记忆遗忘的架构影响。建议普通读者优先关注Agent记忆架构优化与遗忘控制策略方向。
-- 详情：[/202606/16/README](/202606/16/README)
+今日日报聚焦智能体记忆优化与进化学习，精读两篇高分论文，另有三篇速读涉及因果记忆、向量数据库及缓存管理。  
+推荐关注《Learning What to Remember》中基于约束优化的智能体记忆保留方法，以及《OPD-Evolver》中通过在线策略蒸馏培养全能智能体进化器。  
+普通读者可优先精读这两篇9分论文，理解智能体长期记忆与自适应进化新范式；速读部分可关注TokenPilot的缓存效率方案。
+- 详情：[/202606/17/README](/202606/17/README)
 
 ### 精读区论文标签
-1. [T-Mem: Memory That Anticipates, Not Archives](/202606/16/2606.15405v1-t-mem-memory-that-anticipates-not-archives)  
+1. [Learning What to Remember: Observability-Safe Memory Retention via Constrained Optimization for Long-Horizon Language Agents](/202606/17/2606.10616v3-learning-what-to-remember-observability-safe-memory-retention-via-constrained-optimization-for-long-horizon-language-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：提出预测关联链接的长期记忆
-2. [Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations](/202606/16/2606.15903v1-control-plane-placement-shapes-forgetting-an-architectural-study-of-agent-memory-across-thirteen-system-configurations)  
+   evidence：长周期语言代理的记忆保留优化
+2. [OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation](/202606/17/2606.17628v1-opd-evolver-cultivating-holistic-agent-evolver-via-on-policy-distillation)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：对智能体记忆控制平面布局的架构研究
-3. [HiMPO: Hindsight-Informed Memory Policy Optimization for Less-Entangled Credit in Long-Horizon Agents](/202606/16/2606.16285v1-himpo-hindsight-informed-memory-policy-optimization-for-less-entangled-credit-in-long-horizon-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：提出用于长周期智能体的记忆策略优化
-4. [User as Code: Executable Memory for Personalized Agents](/202606/16/2606.16707v1-user-as-code-executable-memory-for-personalized-agents)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：个性化智能体的可执行记忆范式
-5. [Experience Makes Skillful: Enabling Generalizable Medical Agent Reasoning via Self-Evolving Skill Memory](/202606/16/2606.09365v3-experience-makes-skillful-enabling-generalizable-medical-agent-reasoning-via-self-evolving-skill-memory)  
+   evidence：面向自演化智能体的四层记忆层次结构
+3. [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](/202606/17/2606.14047v1-knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：面向医疗智能体经验回放的自进化技能记忆
-6. [From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI](/202606/16/2606.14502v1-from-chatbot-to-digital-colleague-the-paradigm-shift-toward-persistent-autonomous-ai)  
+   evidence：结合知识图谱的记忆增强检索用于长上下文建模
+4. [Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations](/202606/17/2606.15903v2-control-plane-placement-shapes-forgetting-an-architectural-study-of-agent-memory-across-thirteen-system-configurations)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：将记忆作为持久自主AI的组成部分进行讨论
+   evidence：研究LLM在代理记忆流水线中的位置对遗忘的影响
 
 ### 速读区论文标签
-1. [FARM: Find Anything using Relational Spatial Memory](/202606/16/2606.15476v1-farm-find-anything-using-relational-spatial-memory)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：使用关系和空间谓词进行对象实例检索的关系空间记忆
-2. [FragFuse: Bypassing Access Control of Large Language Model Agents via Memory-Based Query Fragmentation and Fusion](/202606/16/2606.15609v1-fragfuse-bypassing-access-control-of-large-language-model-agents-via-memory-based-query-fragmentation-and-fusion)  
+1. [TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation](/202606/17/2606.14551v2-trace-trajectory-routed-causal-memory-for-delayed-evidence-visuomotor-imitation)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：利用长期记忆碎片化与融合绕过代理访问控制
-3. [HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry](/202606/16/2606.14249v1-harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry)  
-   标签：评分：6.0/10、query:agent-memory
-   evidence：代理框架中的可组合记忆组件
-4. [AI Engram: In Search of Memory Traces in Artificial Intelligence](/202606/16/2606.14997v1-ai-engram-in-search-of-memory-traces-in-artificial-intelligence)  
-   标签：评分：6.0/10、query:agent-memory
-   evidence：在深度神经网络中识别记忆痕迹的几何框架
+   evidence：面向延迟证据场景的因果记忆用于机器人决策
+2. [Directory-Aware Query and Maintenance in Vector Databases](/202606/17/2606.16903v1-directory-aware-query-and-maintenance-in-vector-databases)  
+   标签：评分：7.0/10、query:agent-memory
+   evidence：向量数据库的目录语义应用于代理记忆
+3. [TokenPilot: Cache-Efficient Context Management for LLM Agents](/202606/17/2606.17016v1-tokenpilot-cache-efficient-context-management-for-llm-agents)  
+   标签：评分：7.0/10、query:agent-memory
+   evidence：面向LLM智能体的缓存高效上下文管理，包括内存驱逐与压缩
+4. [MemTrace: Probing What Final Accuracy Misses in Long-Term Memory](/202606/17/2606.17328v1-memtrace-probing-what-final-accuracy-misses-in-long-term-memory)  
+   标签：评分：7.0/10、query:agent-memory
+   evidence：提出MemTrace，一个在知识点层面探测LLM代理长期记忆的基准
+5. [EvolveNav: Proactive Preflection and Self-Evolving Memory for Zero-Shot Object Goal Navigation](/202606/17/2606.18235v1-evolvenav-proactive-preflection-and-self-evolving-memory-for-zero-shot-object-goal-navigation)  
+   标签：评分：7.0/10、query:agent-memory
+   evidence：自演化智能体记忆，包括规则提取和检索用于导航
 
 
 <div class="dpr-home-promo-card">
