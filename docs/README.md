@@ -6,49 +6,47 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-17
-- 运行时间：2026-06-17 20:54:55 UTC
+- 最新运行日期：2026-06-18
+- 运行时间：2026-06-18 22:22:05 UTC
 - 运行状态：成功
 - 本次总论文数：9
-- 精读区：4
-- 速读区：5
+- 精读区：6
+- 速读区：3
 
 ### 今日简报（AI）
-今日日报聚焦智能体记忆优化与进化学习，精读两篇高分论文，另有三篇速读涉及因果记忆、向量数据库及缓存管理。  
-推荐关注《Learning What to Remember》中基于约束优化的智能体记忆保留方法，以及《OPD-Evolver》中通过在线策略蒸馏培养全能智能体进化器。  
-普通读者可优先精读这两篇9分论文，理解智能体长期记忆与自适应进化新范式；速读部分可关注TokenPilot的缓存效率方案。
-- 详情：[/202606/17/README](/202606/17/README)
+今日聚焦通用Agent的记忆与对话长期记忆研究，精读两篇高分论文（10分和9分）。最值得关注的方向是通用Agent必须记住什么以及如何通过黎曼检索和Fisher引导蒸馏优化对话记忆。建议读者后续关注在线技能与记忆模块在预算约束下的实际效率评估。
+- 详情：[/202606/18/README](/202606/18/README)
 
 ### 精读区论文标签
-1. [Learning What to Remember: Observability-Safe Memory Retention via Constrained Optimization for Long-Horizon Language Agents](/202606/17/2606.10616v3-learning-what-to-remember-observability-safe-memory-retention-via-constrained-optimization-for-long-horizon-language-agents)  
+1. [What Must Generalist Agents Remember?](/202606/18/2606.18746v1-what-must-generalist-agents-remember)  
+   标签：评分：10.0/10、query:agent-memory
+   evidence：通用智能体必需记忆的形式化刻画
+2. [CoreMem: Riemannian Retrieval and Fisher-Guided Distillation for Long-Term Memory in Dialogue Agents](/202606/18/2606.18406v1-coremem-riemannian-retrieval-and-fisher-guided-distillation-for-long-term-memory-in-dialogue-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：长周期语言代理的记忆保留优化
-2. [OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation](/202606/17/2606.17628v1-opd-evolver-cultivating-holistic-agent-evolver-via-on-policy-distillation)  
+   evidence：基于里曼检索的对话代理长时记忆架构
+3. [GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents](/202606/18/2606.18829v1-gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：面向自演化智能体的四层记忆层次结构
-3. [Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling](/202606/17/2606.14047v1-knowledge-graph-enhanced-memory-augmented-retrieval-for-long-context-modeling)  
+   evidence：多主体共享内存系统的内存治理基准
+4. [WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents](/202606/18/2606.18847v1-worldlines-benchmarking-and-modeling-long-horizon-stateful-embodied-agents)  
+   标签：评分：9.0/10、query:agent-memory
+   evidence：长期具身代理的记忆基准与观察者记忆框架
+5. [Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation](/202606/18/2606.18960v1-mem-world-memory-augmented-action-conditioned-world-models-for-persistent-robot-manipulation)  
+   标签：评分：9.0/10、query:agent-memory
+   evidence：用于世界模型的新型记忆检索策略
+6. [EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments](/202606/18/2606.13681v2-evoarena-tracking-memory-evolution-for-robust-llm-agents-in-dynamic-environments)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：结合知识图谱的记忆增强检索用于长上下文建模
-4. [Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations](/202606/17/2606.15903v2-control-plane-placement-shapes-forgetting-an-architectural-study-of-agent-memory-across-thirteen-system-configurations)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：研究LLM在代理记忆流水线中的位置对遗忘的影响
+   evidence：基于补丁的记忆范式，用于跟踪动态环境中的记忆演化
 
 ### 速读区论文标签
-1. [TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation](/202606/17/2606.14551v2-trace-trajectory-routed-causal-memory-for-delayed-evidence-visuomotor-imitation)  
+1. [Are Online Skill and Memory Modules Always Worth Their Tokens? A Budget-Constrained Study of Web Agents](/202606/18/2606.15017v1-are-online-skill-and-memory-modules-always-worth-their-tokens-a-budget-constrained-study-of-web-agents)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：面向延迟证据场景的因果记忆用于机器人决策
-2. [Directory-Aware Query and Maintenance in Vector Databases](/202606/17/2606.16903v1-directory-aware-query-and-maintenance-in-vector-databases)  
+   evidence：预算约束下网络智能体记忆模块的效能研究
+2. [SEAGym: An Evaluation Environment for Self-Evolving LLM Agents](/202606/18/2606.17546v1-seagym-an-evaluation-environment-for-self-evolving-llm-agents)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：向量数据库的目录语义应用于代理记忆
-3. [TokenPilot: Cache-Efficient Context Management for LLM Agents](/202606/17/2606.17016v1-tokenpilot-cache-efficient-context-management-for-llm-agents)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：面向LLM智能体的缓存高效上下文管理，包括内存驱逐与压缩
-4. [MemTrace: Probing What Final Accuracy Misses in Long-Term Memory](/202606/17/2606.17328v1-memtrace-probing-what-final-accuracy-misses-in-long-term-memory)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：提出MemTrace，一个在知识点层面探测LLM代理长期记忆的基准
-5. [EvolveNav: Proactive Preflection and Self-Evolving Memory for Zero-Shot Object Goal Navigation](/202606/17/2606.18235v1-evolvenav-proactive-preflection-and-self-evolving-memory-for-zero-shot-object-goal-navigation)  
-   标签：评分：7.0/10、query:agent-memory
-   evidence：自演化智能体记忆，包括规则提取和检索用于导航
+   evidence：提出了自演进代理的评估环境，其中记忆作为代理架的重要组成部分
+3. [ACCORD: Action-Conditioned Contextual Grounding for Language Agents](/202606/18/2606.16432v1-accord-action-conditioned-contextual-grounding-for-language-agents)  
+   标签：评分：6.0/10、query:agent-memory
+   evidence：将观察到的证据传递到后续动作
 
 
 <div class="dpr-home-promo-card">
