@@ -6,47 +6,43 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-18
-- 运行时间：2026-06-18 22:22:05 UTC
+- 最新运行日期：2026-06-19
+- 运行时间：2026-06-19 21:36:30 UTC
 - 运行状态：成功
-- 本次总论文数：9
-- 精读区：6
+- 本次总论文数：7
+- 精读区：4
 - 速读区：3
 
 ### 今日简报（AI）
-今日聚焦通用Agent的记忆与对话长期记忆研究，精读两篇高分论文（10分和9分）。最值得关注的方向是通用Agent必须记住什么以及如何通过黎曼检索和Fisher引导蒸馏优化对话记忆。建议读者后续关注在线技能与记忆模块在预算约束下的实际效率评估。
-- 详情：[/202606/18/README](/202606/18/README)
+1) 今日推荐7篇论文，精读主攻原子事实记忆与多智能体记忆系统，速读覆盖工具调用、数据查询及风险控制。  
+2) 最高分9.0的两篇值得深读：《AtomMem》以原子事实构建简单高效的LLM智能体记忆，《Multi-Agent Transactive Memory》探索多智能体间交互式共享记忆机制。  
+3) 下一步可优先研读这两篇精读论文，为开发更稳定、可扩展的智能体系统提供基础方案。
+- 详情：[/202606/19/README](/202606/19/README)
 
 ### 精读区论文标签
-1. [What Must Generalist Agents Remember?](/202606/18/2606.18746v1-what-must-generalist-agents-remember)  
-   标签：评分：10.0/10、query:agent-memory
-   evidence：通用智能体必需记忆的形式化刻画
-2. [CoreMem: Riemannian Retrieval and Fisher-Guided Distillation for Long-Term Memory in Dialogue Agents](/202606/18/2606.18406v1-coremem-riemannian-retrieval-and-fisher-guided-distillation-for-long-term-memory-in-dialogue-agents)  
+1. [AtomMem: Building Simple and Effective Memory System for LLM Agents via Atomic Facts](/202606/19/2606.19847v1-atommem-building-simple-and-effective-memory-system-for-llm-agents-via-atomic-facts)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：基于里曼检索的对话代理长时记忆架构
-3. [GateMem: Benchmarking Memory Governance in Multi-Principal Shared-Memory Agents](/202606/18/2606.18829v1-gatemem-benchmarking-memory-governance-in-multi-principal-shared-memory-agents)  
+   evidence：原子事实用于LLM智能体长期记忆
+2. [Multi-Agent Transactive Memory](/202606/19/2606.19911v1-multi-agent-transactive-memory)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：多主体共享内存系统的内存治理基准
-4. [WorldLines: Benchmarking and Modeling Long-Horizon Stateful Embodied Agents](/202606/18/2606.18847v1-worldlines-benchmarking-and-modeling-long-horizon-stateful-embodied-agents)  
+   evidence：多智能体交易记忆，共享智能体生成的过程性知识
+3. [PACMS: Submodular Context Selection as a Pluggable Engine for LLM Agents](/202606/19/2606.20047v1-pacms-submodular-context-selection-as-a-pluggable-engine-for-llm-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：长期具身代理的记忆基准与观察者记忆框架
-5. [Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation](/202606/18/2606.18960v1-mem-world-memory-augmented-action-conditioned-world-models-for-persistent-robot-manipulation)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：用于世界模型的新型记忆检索策略
-6. [EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments](/202606/18/2606.13681v2-evoarena-tracking-memory-evolution-for-robust-llm-agents-in-dynamic-environments)  
+   evidence：子模上下文选择引擎，从持久记忆存储中检索条目
+4. [MemoryWAM: Efficient World Action Modeling with Persistent Memory](/202606/19/2606.20562v1-memorywam-efficient-world-action-modeling-with-persistent-memory)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：基于补丁的记忆范式，用于跟踪动态环境中的记忆演化
+   evidence：世界动作模型中的持久记忆，用于机器人操作，保留长期历史观测
 
 ### 速读区论文标签
-1. [Are Online Skill and Memory Modules Always Worth Their Tokens? A Budget-Constrained Study of Web Agents](/202606/18/2606.15017v1-are-online-skill-and-memory-modules-always-worth-their-tokens-a-budget-constrained-study-of-web-agents)  
+1. [CacheRL:Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward](/202606/19/2606.14179v1-cacherlmulti-turn-tool-calling-agents-via-cached-rollouts-and-hybrid-reward)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：预算约束下网络智能体记忆模块的效能研究
-2. [SEAGym: An Evaluation Environment for Self-Evolving LLM Agents](/202606/18/2606.17546v1-seagym-an-evaluation-environment-for-self-evolving-llm-agents)  
+   evidence：缓存回滚用于工具调用智能体的强化学习
+2. [Data Intelligence Agents: Interpreting, Modeling, and Querying Enterprise Data via Autonomous Coding Agents](/202606/19/2606.19319v1-data-intelligence-agents-interpreting-modeling-and-querying-enterprise-data-via-autonomous-coding-agents)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：提出了自演进代理的评估环境，其中记忆作为代理架的重要组成部分
-3. [ACCORD: Action-Conditioned Contextual Grounding for Language Agents](/202606/18/2606.16432v1-accord-action-conditioned-contextual-grounding-for-language-agents)  
+   evidence：多智能体企业数据系统中的共享记忆和经验重用
+3. [ToolChain-CRC: Conformal Risk Control for Agentic AI Under Retrieval and Tool-Use Drift](/202606/19/2606.18467v1-toolchain-crc-conformal-risk-control-for-agentic-ai-under-retrieval-and-tool-use-drift)  
    标签：评分：6.0/10、query:agent-memory
-   evidence：将观察到的证据传递到后续动作
+   evidence：提出检索增强智能体的风险控制方法，间接涉及记忆检索
 
 
 <div class="dpr-home-promo-card">

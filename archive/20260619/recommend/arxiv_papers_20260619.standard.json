@@ -1,0 +1,298 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-19T21:31:16.787338+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 4,
+    "deep_cap": 6,
+    "deep_selected": 4,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [
+    {
+      "id": "2606.19847v1",
+      "source": "arxiv",
+      "title": "AtomMem: Building Simple and Effective Memory System for LLM Agents via Atomic Facts",
+      "abstract": "Large language models (LLMs) demonstrate strong reasoning and generation abilities, but their fixed context windows limit long-term information accumulation and reuse across multi-session interactions. Existing memory-augmented systems often construct memory in a coarse and unstable manner, relying on inefficient memory representations or unstable unconstrained updates. To address these challenges, we propose AtomMem, a long-term memory system designed for value-dense storage and stable memory evolution. AtomMem introduces a Fact Executor, which selectively extracts high value atomic facts from long form interactions to serve as highly efficient memory representations. Subsequently, AtomMem organizes these facts into hierarchical event structures and temporal profiles, capturing coherent episodic contexts and tracking dynamically evolving user attributes over time. During retrieval, the system activates an associative memory graph to connect fragmented memories. Experiments on the LoCoMo benchmark confirm that AtomMem achieves state-of-the-art performance across various reasoning tasks, offering a scalable and economically viable solution for deploying intelligent personalized agents.",
+      "authors": [
+        "Yanyu Yao",
+        "Shangze Li",
+        "Zhi Zheng",
+        "Hui Zheng",
+        "Qi Liu",
+        "Tong Xu",
+        "Enhong Chen"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-18T06:56:15+00:00",
+      "link": "https://arxiv.org/pdf/2606.19847v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "atomic facts for long-term memory in LLM agents",
+      "llm_evidence_cn": "原子事实用于LLM智能体长期记忆",
+      "llm_evidence": "原子事实用于LLM智能体长期记忆",
+      "canonical_evidence": "原子事实用于LLM智能体长期记忆",
+      "llm_tldr_en": "AtomMem builds a long-term memory system using atomic facts extracted by a Fact Executor, organized hierarchically for stable and value-dense storage.",
+      "llm_tldr_cn": "LLM固定上下文窗口限制了长期信息积累。AtomMem提出原子事实表示，通过事实执行器从长交互中提取高价值原子事实，并组织为层次化事件结构。该方法实现了价值密集的稳定记忆演化，实验证明在记忆检索和下游任务中优于现有系统。为智能体长期记忆提供了简单有效的方案。",
+      "llm_tldr": "LLM固定上下文窗口限制了长期信息积累。AtomMem提出原子事实表示，通过事实执行器从长交互中提取高价值原子事实，并组织为层次化事件结构。该方法实现了价值密集的稳定记忆演化，实验证明在记忆检索和下游任务中优于现有系统。为智能体长期记忆提供了简单有效的方案。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.19911v1",
+      "source": "arxiv",
+      "title": "Multi-Agent Transactive Memory",
+      "abstract": "The decentralized deployment of LLM agents with diverse capabilities across diverse tasks motivates infrastructure for knowledge sharing across heterogeneous agent populations. Just as search engines index human-generated artifacts to support human problem solving, retrieval systems can organize agent-generated artifacts for reuse across agent populations. We extend retrieval-augmented generation - which demonstrates the value of human-authored artifacts to individual agents - to retrieval of agent-generated artifacts supporting a population of agents. In particular, agent trajectories encode reusable procedural knowledge, yet these artifacts are typically discarded after a single use or retained only by the producing agent, forcing newly instantiated agents to repeatedly rediscover existing solutions. We propose Multi-Agent Transactive Memory (MATM), a framework for population-level storage and retrieval of agent-generated trajectories, where producer agents contribute trajectories to a shared repository and consumer agents retrieve them to improve task execution. We focus on interactive environments (ALFWorld and WebArena), where trajectories are long and encode especially rich procedural structure. Our experiments demonstrate that retrieving trajectories from MATM improves downstream task performance and reduces interaction steps without coordination or joint training. These results position MATM as a design pattern for population-level experience sharing in open agent ecosystems.",
+      "authors": [
+        "To Eun Kim",
+        "Xuhong He",
+        "Dishank Jain",
+        "Ambuj Agrawal",
+        "Negar Arabzadeh",
+        "Fernando Diaz"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "published": "2026-06-18T08:04:59+00:00",
+      "link": "https://arxiv.org/pdf/2606.19911v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Multi-agent transactive memory for sharing agent-generated procedural knowledge",
+      "llm_evidence_cn": "多智能体交易记忆，共享智能体生成的过程性知识",
+      "llm_evidence": "多智能体交易记忆，共享智能体生成的过程性知识",
+      "canonical_evidence": "多智能体交易记忆，共享智能体生成的过程性知识",
+      "llm_tldr_en": "Proposes a retrieval system for agent-generated artifacts such as trajectories, enabling memory sharing across heterogeneous agent populations, extending RAG to multi-agent settings.",
+      "llm_tldr_cn": "当前LLM智能体生成的过程性知识（如轨迹）常被丢弃或仅由产生者保留，导致重复发现。本文提出多智能体交易记忆，建立检索系统组织智能体生成的知识，实现跨群体重用。从单个智能体的RAG扩展到多智能体知识共享。结果表明该方法有效支持异构智能体群的协同问题求解。",
+      "llm_tldr": "当前LLM智能体生成的过程性知识（如轨迹）常被丢弃或仅由产生者保留，导致重复发现。本文提出多智能体交易记忆，建立检索系统组织智能体生成的知识，实现跨群体重用。从单个智能体的RAG扩展到多智能体知识共享。结果表明该方法有效支持异构智能体群的协同问题求解。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.20047v1",
+      "source": "arxiv",
+      "title": "PACMS: Submodular Context Selection as a Pluggable Engine for LLM Agents",
+      "abstract": "Conversational and tool-using LLM agents operate over a context window that fills from several directions simultaneously. As a session proceeds, the agent accumulates user and assistant turns, entries drawn from a persistent memory store, and often largest of all, the verbatim outputs of tool calls such as file reads, search results, and API responses. Once the cumulative context exceeds the model's token budget, the framework must decide what to keep.   The prevailing mechanism is recency truncation, sometimes paired with periodic summarization. This is topic-blind: a fact established early in a session is discarded simply because it is old, even when the current user query is about exactly that fact; conversely, verbose but irrelevant recent material is retained. Agents that must recall information across many turns, the defining case for memory, are precisely where recency truncation fails.   Existing alternatives sit outside the agent's assembly step. Retrieval augmented generation fetches external documents into the prompt but does not arbitrate the agent's \\emph{already-present} pooled context. Context-compression methods reduce token count by rewriting or pruning text, but operate query-blind and lossily. Neither treats memory entries, conversation turns, and tool outputs as a single candidate pool to be selected from by relevance at the moment the prompt is assembled.",
+      "authors": [
+        "Manu Ghulyani",
+        "Arunabh Singh",
+        "Karan Bharadwaj",
+        "Ankit Nath",
+        "Suranjan Goswami"
+      ],
+      "primary_category": "cs.IR",
+      "categories": [
+        "cs.IR"
+      ],
+      "published": "2026-06-18T10:22:57+00:00",
+      "link": "https://arxiv.org/pdf/2606.20047v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "Submodular context selection engine that retrieves memory entries from persistent store",
+      "llm_evidence_cn": "子模上下文选择引擎，从持久记忆存储中检索条目",
+      "llm_evidence": "子模上下文选择引擎，从持久记忆存储中检索条目",
+      "canonical_evidence": "子模上下文选择引擎，从持久记忆存储中检索条目",
+      "llm_tldr_en": "PACMS introduces submodular context selection as a pluggable engine for LLM agents, optimally selecting memory entries and tool outputs to fit within the context window.",
+      "llm_tldr_cn": "LLM代理在对话和工具使用中积累大量上下文，超出模型令牌预算时需决定保留什么。现有截断策略是主题盲目的。PACMS提出子模函数作为可插拔引擎，从持久记忆存储、对话历史等来源中选择最有利的内容，最大化信息量。实验表明，该方法优于基于最近性截断和概要方法。这为代理上下文和记忆选择提供了通用优化方案。",
+      "llm_tldr": "LLM代理在对话和工具使用中积累大量上下文，超出模型令牌预算时需决定保留什么。现有截断策略是主题盲目的。PACMS提出子模函数作为可插拔引擎，从持久记忆存储、对话历史等来源中选择最有利的内容，最大化信息量。实验表明，该方法优于基于最近性截断和概要方法。这为代理上下文和记忆选择提供了通用优化方案。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.20562v1",
+      "source": "arxiv",
+      "title": "MemoryWAM: Efficient World Action Modeling with Persistent Memory",
+      "abstract": "Robust robotic manipulation in the real world requires not only an understanding of the current observation, but also memory and dynamics modeling. World action models (WAMs) possess these capabilities by jointly modeling visual foresight and actions conditioned on both current and historical observations, making them a promising paradigm for robotic manipulation. However, existing WAMs face a fundamental trade-off: methods with efficient inference typically condition only on a bounded window of recent observations and therefore struggle in non-Markovian environments, whereas methods that preserve long histories incur time and space costs that grow substantially with sequence length. To address this challenge, we introduce MemoryWAM, a world action model with efficient persistent memory. MemoryWAM uses a hybrid memory design that combines recent frames, event-boundary anchor frames, and compact gist tokens that summarize long-range history. A tailored attention mechanism enables retrieval of both detailed short-term context and compressed long-term context, supporting memory-dependent decision-making with reduced inference latency and GPU memory usage. Across long-horizon, memory-dependent manipulation tasks in both simulation and the real world, MemoryWAM outperforms strong vision-language-action (VLA) and WAM baselines while maintaining favorable computational efficiency.",
+      "authors": [
+        "Sizhe Yang",
+        "Juncheng Mu",
+        "Tianming Wei",
+        "Chenhao Lu",
+        "Xiaofan Li",
+        "Linning Xu",
+        "Zhengrong Xue",
+        "Zhecheng Yuan",
+        "Dahua Lin",
+        "Jiangmiao Pang",
+        "Huazhe Xu"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-06-18T17:59:51+00:00",
+      "link": "https://arxiv.org/pdf/2606.20562v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "Persistent memory in world action models for robotic manipulation with long-term historical observations",
+      "llm_evidence_cn": "世界动作模型中的持久记忆，用于机器人操作，保留长期历史观测",
+      "llm_evidence": "世界动作模型中的持久记忆，用于机器人操作，保留长期历史观测",
+      "canonical_evidence": "世界动作模型中的持久记忆，用于机器人操作，保留长期历史观测",
+      "llm_tldr_en": "MemoryWAM integrates a persistent memory module into world action models, enabling efficient inference with long-term historical context in non-Markovian robotic environments.",
+      "llm_tldr_cn": "现实世界机器人操作需要记忆和动力学建模。现有世界动作模型（WAM）在高效推理时仅依赖近期观测窗口，难以处理非马尔可夫环境；而保留长历史则导致时空成本线性增长。MemoryWAM引入持久记忆模块，通过紧凑的隐状态表示编码长期历史，同时保持高效推理。实验证明，该方法在需要长期依赖的操作任务中显著优于窗口方法。这为机器人长期记忆与动作联合建模提供了有效方案。",
+      "llm_tldr": "现实世界机器人操作需要记忆和动力学建模。现有世界动作模型（WAM）在高效推理时仅依赖近期观测窗口，难以处理非马尔可夫环境；而保留长历史则导致时空成本线性增长。MemoryWAM引入持久记忆模块，通过紧凑的隐状态表示编码长期历史，同时保持高效推理。实验证明，该方法在需要长期依赖的操作任务中显著优于窗口方法。这为机器人长期记忆与动作联合建模提供了有效方案。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.14179v1",
+      "source": "arxiv",
+      "title": "CacheRL:Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward",
+      "abstract": "We present CacheRL, a system for training small agent foundation models that achieves 92 percent process accuracy on multi-step tool-calling tasks, approaching GPT-5's 94 percent while requiring 100 times less compute. Our approach addresses three challenges in practical agent training: transferring tool-calling knowledge from large models at scale, enabling reinforcement learning without costly live tool execution, and learning robustly from noisy cached environments. CacheRL introduces three key innovations. First, a hybrid thinking trajectory pipeline augments agent trajectories with LLM-generated reasoning traces, producing training examples that teach models not only what tools to call but also why. Second, the CacheAgentLoop eliminates live execution costs through a three-tier fuzzy cache while preserving trajectory fidelity using token-level masking. Third, a cache-tier-aware reward dynamically adjusts answer-quality weights to avoid penalizing models for cache-induced limitations. Through iterative supervised fine-tuning (SFT) and Group Relative Policy Optimization (GRPO), CacheRL improves Qwen3-4B-Thinking's validation reward from 0.43 to 0.78. On public agentic tool-calling benchmarks, our model achieves competitive performance against frontier models such as GPT-5. Ablation studies show that removing knowledge transfer reduces performance by 41 percent, while cache-aware rewards contribute a 17 percent improvement. Interestingly, reinforcement learning improves training stability but yields limited gains beyond strong supervised fine-tuning, suggesting that data quality and reward design play a more important role than complex optimization methods in building practical small agent models.",
+      "authors": [
+        "Md Amirul Islam",
+        "Sumiran Thakur",
+        "Huancheng Chen",
+        "Su Min Park",
+        "Jiayun Wang",
+        "Gyuhak Kim"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-12T07:01:50+00:00",
+      "link": "https://arxiv.org/pdf/2606.14179v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "cached rollouts for reinforcement learning in tool-calling agents",
+      "llm_evidence_cn": "缓存回滚用于工具调用智能体的强化学习",
+      "llm_evidence": "缓存回滚用于工具调用智能体的强化学习",
+      "canonical_evidence": "缓存回滚用于工具调用智能体的强化学习",
+      "llm_tldr_en": "CacheRL uses cached rollouts and hybrid reward to train tool-calling agents without live execution, achieving GPT-5-like accuracy with 100x less compute.",
+      "llm_tldr_cn": "多轮工具调用训练面临成本高、环境噪声大等挑战。CacheRL提出缓存回滚和混合奖励方法，通过预生成轨迹和LLM推理增强训练数据，避免实时工具执行。在工具调用任务上达到92%过程准确率，接近GPT-5，计算量降低100倍。该方法为经验回放式智能体学习提供高效范式。",
+      "llm_tldr": "多轮工具调用训练面临成本高、环境噪声大等挑战。CacheRL提出缓存回滚和混合奖励方法，通过预生成轨迹和LLM推理增强训练数据，避免实时工具执行。在工具调用任务上达到92%过程准确率，接近GPT-5，计算量降低100倍。该方法为经验回放式智能体学习提供高效范式。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.18467v1",
+      "source": "arxiv",
+      "title": "ToolChain-CRC: Conformal Risk Control for Agentic AI Under Retrieval and Tool-Use Drift",
+      "abstract": "Modern AI agents retrieve documents, call tools, check intermediate information, and then produce a final answer or action. This creates a risk-control problem that is not visible from the final answer alone. A final response may look acceptable even when the retrieval was weak, a tool output was wrong, or an earlier step was unsupported. We propose ToolChain-CRC, a conformal risk-control method for retrieval-augmented and tool-using agents under drift. The method treats each agent run as a full trajectory of actions, observations, and final output. It builds step-level risk scores, combines them into a trajectory risk score, calibrates an accept-or-intervene rule, and adds an anytime alarm that can stop risky runs before the final answer. We prove trajectory-level risk control under exchangeable calibration runs, give a drift-aware extension with auditable constants, and prove an anytime escalation rule through a supermartingale construction. Experiments cover synthetic tool-chain drift, RAG/tool-use stress tests, public SQuAD-derived retrieval tasks, an API-free agentic QA case study, ablations, target-risk sensitivity checks, 20-seed robustness checks, a drift-margin audit, and a live RAG/tool-use agent benchmark. Across these settings, final-answer-only calibration can miss retrieval and tool failures, while trajectory-level calibration keeps accepted-trajectory risk below the target.",
+      "authors": [
+        "Jeffery Opoku",
+        "David Banahene"
+      ],
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "published": "2026-06-16T20:27:37+00:00",
+      "link": "https://arxiv.org/pdf/2606.18467v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "proposes risk control for retrieval-augmented agents, indirectly related to memory retrieval",
+      "llm_evidence_cn": "提出检索增强智能体的风险控制方法，间接涉及记忆检索",
+      "llm_evidence": "提出检索增强智能体的风险控制方法，间接涉及记忆检索",
+      "canonical_evidence": "提出检索增强智能体的风险控制方法，间接涉及记忆检索",
+      "llm_tldr_en": "ToolChain-CRC applies conformal risk control to retrieval-augmented and tool-using agents, monitoring step-level risks in trajectories.",
+      "llm_tldr_cn": "现代AI智能体在检索文档、调用工具等步骤中可能产生风险，而最终答案表面正常。ToolChain-CRC将每个智能体运行视为完整轨迹，构建步骤级风险评分并组合为轨迹风险分数，校准接受或干预规则，并添加随时警报以在风险运行时前停止。该方法适用于检索和工具使用漂移场景，提供形式化风险控制。",
+      "llm_tldr": "现代AI智能体在检索文档、调用工具等步骤中可能产生风险，而最终答案表面正常。ToolChain-CRC将每个智能体运行视为完整轨迹，构建步骤级风险评分并组合为轨迹风险分数，校准接受或干预规则，并添加随时警报以在风险运行时前停止。该方法适用于检索和工具使用漂移场景，提供形式化风险控制。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.19319v1",
+      "source": "arxiv",
+      "title": "Data Intelligence Agents: Interpreting, Modeling, and Querying Enterprise Data via Autonomous Coding Agents",
+      "abstract": "Production data integration is bottlenecked by repeated, lossy handoffs between data owners, engineers, and analysts who must collaboratively discover, structure, and query enterprise data. We present Data Intelligence Agents (DIA), a system of three agents (Data Interpreter, Schema Creator, and Query Generator) that compresses this workflow by treating autonomous coding agents (ACAs) as a first-class abstraction: rather than emitting text, the agents generate, execute, validate, and repair concrete artifacts, draw on a shared memory for experience reuse, and surface each for review by domain experts. DIA is deployed in production for enterprise customers. We study the Query Generator in depth and evaluate it in fully autonomous mode across seven SQL benchmarks spanning four task categories and four dialects. It matches or surpasses the best published results on all seven, demonstrating that an architecture grounded in execution, built on ACAs and a shared memory, generalizes across the data intelligence workload with adaptation confined to natural-language instructions.",
+      "authors": [
+        "Anoushka Vyas",
+        "Aarushi Dhanuka",
+        "Sina Khoshfetrat Pakazad",
+        "Henrik Ohlsson"
+      ],
+      "primary_category": "cs.MA",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.DB"
+      ],
+      "published": "2026-06-17T17:45:32+00:00",
+      "link": "https://arxiv.org/pdf/2606.19319v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "Shared memory for experience reuse in a multi-agent enterprise data system",
+      "llm_evidence_cn": "多智能体企业数据系统中的共享记忆和经验重用",
+      "llm_evidence": "多智能体企业数据系统中的共享记忆和经验重用",
+      "canonical_evidence": "多智能体企业数据系统中的共享记忆和经验重用",
+      "llm_tldr_en": "Proposes Data Intelligence Agents with a shared memory for experience reuse across agent coding tasks, compressing enterprise data integration workflow.",
+      "llm_tldr_cn": "企业数据集成面临重复的手动工作流。本文提出数据智能体系统，三个智能体通过共享记忆重用经验，自动生成、执行、验证和修复代码工件。实验表明该系统在查询生成任务上显著提升效率，共享记忆是经验回放的关键机制。",
+      "llm_tldr": "企业数据集成面临重复的手动工作流。本文提出数据智能体系统，三个智能体通过共享记忆重用经验，自动生成、执行、验证和修复代码工件。实验表明该系统在查询生成任务上显著提升效率，共享记忆是经验回放的关键机制。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
