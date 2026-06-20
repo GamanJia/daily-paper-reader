@@ -1,0 +1,358 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-20T20:41:54.276450+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 3,
+    "deep_cap": 6,
+    "deep_selected": 3,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2606.17162v1",
+      "source": "arxiv",
+      "title": "MemSlides: A Hierarchical Memory Driven Agent Framework for Personalized Slide Generation with Multi-turn Local Revision",
+      "abstract": "Personalized presentation generation requires more than conditioning on a current prompt or template: agents must preserve stable user preferences across tasks, retain newly introduced preferences and constraints during multi-turn revision, and carry out local edits reliably. We propose MemSlides, a hierarchical memory framework for personalized presentation agents that separates long-term memory from working memory and further divides long-term memory into user profile memory and tool memory. User profile memory stores intent-conditioned profiles for round-0 personalization, working memory carries active preferences and session constraints across revision rounds, and tool memory stores reusable execution experience for reliable localized editing. MemSlides pairs this memory design with scoped slide-local revision, so targeted updates act on the smallest affected region instead of repeatedly regenerating the full deck. In controlled experiments, user profile memory improves persona-alignment judgments on a multi-persona, multi-intent profile bank, tool-memory injection improves closed-loop modify behavior in diagnostic matched-pair settings, and qualitative cases illustrate working memory's ability to carryover preferences. Taken together, these results suggest that effective personalization in presentation authoring depends on separating persistent user profiles, session-level working memory, and reusable execution experience across generation and localized revision.",
+      "authors": [
+        "Ye Jin",
+        "Yangyang Xu",
+        "Jun Zhu",
+        "Yibo Yang"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.HC",
+        "cs.MA"
+      ],
+      "published": "2026-06-15T18:02:55+00:00",
+      "link": "https://arxiv.org/pdf/2606.17162v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "hierarchical memory framework with long-term and working memory for agents",
+      "llm_evidence_cn": "提出包含长期记忆和工作记忆的分层记忆代理框架",
+      "llm_evidence": "提出包含长期记忆和工作记忆的分层记忆代理框架",
+      "canonical_evidence": "提出包含长期记忆和工作记忆的分层记忆代理框架",
+      "llm_tldr_en": "Proposes MemSlides, a hierarchical memory framework for personalized presentation agents with long-term user profile and tool memory, and working memory.",
+      "llm_tldr_cn": "针对个性化演示生成中用户偏好跨任务保持和多轮修订的挑战，提出MemSlides框架，将代理记忆分为长期记忆（用户画像和工具记忆）和工作记忆。长期记忆保留稳定偏好，工作记忆跟踪会话约束，实验证明在幻灯片生成中有效提升个性化一致性。",
+      "llm_tldr": "针对个性化演示生成中用户偏好跨任务保持和多轮修订的挑战，提出MemSlides框架，将代理记忆分为长期记忆（用户画像和工具记忆）和工作记忆。长期记忆保留稳定偏好，工作记忆跟踪会话约束，实验证明在幻灯片生成中有效提升个性化一致性。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.17591v1",
+      "source": "arxiv",
+      "title": "Closing the Feedback Loop: From Experience Extraction to Insight Governance in Verbal Reinforcement Learning",
+      "abstract": "Training-free verbal reinforcement learning enables LLM agents to learn from world feedback -- objective signals such as dynamic task outcomes, market returns, or demand forecasts -- by extracting verbal rules from experience and injecting them as context, updating the agent's behavior without parameter changes. However, in non-stationary environments these agents face a retention-forgetting dilemma: retaining stale insights causes negative transfer, while discarding them causes catastrophic forgetting when conditions recur. We identify four requirements for navigating this dilemma -- outcome-driven evaluation, persistent structured evidence, non-monotonic knowledge lifecycle, and compositional governance -- and show that existing methods invest heavily in experience extraction while underinvesting in insight governance. We propose a three-layer architecture -- rules, evidence, and skills -- connected by a feedback-driven curation loop that closes the governance gap. Rules capture distilled experience from world outcomes; evidence logs track each rule's reliability across episodes; skills govern which rules to apply, how to resolve conflicts, and when to abstain. On financial forecasting as a case study, where world feedback is naturally abundant, noisy, and non-stationary, we show that the same accumulated experience either degrades performance below the zero-shot baseline or dramatically improves accuracy and risk-adjusted returns, depending on whether the curation loop is present.",
+      "authors": [
+        "Yanwei Cui",
+        "Xing Zhang",
+        "Yulong Zhang",
+        "Li Shao",
+        "Xiaofeng Shi",
+        "Guanghui Wang",
+        "Peiyang He"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-16T06:55:55+00:00",
+      "link": "https://arxiv.org/pdf/2606.17591v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "focuses on extracting verbal rules from experience and reusing them; addresses retention-forgetting dilemma in experience replay",
+      "llm_evidence_cn": "专注于从经验中提取言语规则并复用；解决经验重放中的保留-遗忘困境",
+      "llm_evidence": "专注于从经验中提取言语规则并复用；解决经验重放中的保留-遗忘困境",
+      "canonical_evidence": "专注于从经验中提取言语规则并复用；解决经验重放中的保留-遗忘困境",
+      "llm_tldr_en": "This paper addresses the retention-forgetting dilemma in training-free verbal reinforcement learning, proposing a framework for experience extraction, persistent storage, and compositional governance to enable effective reuse.",
+      "llm_tldr_cn": "无训练言语强化学习中，LLM代理从世界反馈提取言语规则并作为上下文注入，但面临保留过时知识导致负迁移与丢弃导致灾难性遗忘的矛盾。本文识别出该困境的四个需求：结果驱动评估、持久结构化证据、非单调知识生命周期和组合治理，并提出了相应框架。该工作直接针对经验回放中的知识存储与检索问题，为代理记忆管理提供了系统化方法。实验结果验证了框架在非平稳环境中持续学习的效果。",
+      "llm_tldr": "无训练言语强化学习中，LLM代理从世界反馈提取言语规则并作为上下文注入，但面临保留过时知识导致负迁移与丢弃导致灾难性遗忘的矛盾。本文识别出该困境的四个需求：结果驱动评估、持久结构化证据、非单调知识生命周期和组合治理，并提出了相应框架。该工作直接针对经验回放中的知识存储与检索问题，为代理记忆管理提供了系统化方法。实验结果验证了框架在非平稳环境中持续学习的效果。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.16409v1",
+      "source": "arxiv",
+      "title": "PathRouter: Aligning Rewards with Retrieval Quality in Agentic Graph Retrieval-Augmented Generation",
+      "abstract": "Agentic GraphRAG trains language-model agents to iteratively retrieve and reason over graph-structured evidence, enabling more accurate and context-aware decision-making by efficiently navigating complex information networks. However, outcome-only reinforcement learning suffers from \\textit{\\textbf{answer-path reward aliasing}}, where correct answers may come from shortcuts rather than useful evidence paths. It also exhibits \\textit{\\textbf{search-update ambiguity}}, as scalar trajectory-level feedback does not indicate which retrieval actions to adjust. To mitigate these shortcomings, we present PathRouter, a path-aware training framework for agentic GraphRAG. PathRouter jointly evaluates each trajectory along answer correctness and evidence-path overlap, yielding four trajectory categories with differentiated GRPO advantage scaling that suppresses shortcut reinforcement while preserving evidence-seeking behavior. For evidence-poor trajectories, a frozen gold-evidence teacher provides token-level KL guidance on reasoning and search-query tokens, excluding answer tokens to avoid direct response imitation. Experiments on six QA benchmarks across three model sizes show that PathRouter consistently improves answer F1 and evidence-path overlap, achieving average F1 gains of 3.1 on 3B and 4.9 on 7B models compared to a strong baseline.",
+      "authors": [
+        "Bo Wang",
+        "Heyan Huang",
+        "Yaolin Li",
+        "Wei Tang",
+        "Yuan Zhang",
+        "Wenbo Li",
+        "Mingze Gao",
+        "Ge Shi",
+        "Chong Feng"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL"
+      ],
+      "published": "2026-06-15T08:48:04+00:00",
+      "link": "https://arxiv.org/pdf/2606.16409v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "memory retrieval techniques for agents via path-aware training in GraphRAG",
+      "llm_evidence_cn": "通过路径感知训练实现智能体记忆检索技术",
+      "llm_evidence": "通过路径感知训练实现智能体记忆检索技术",
+      "canonical_evidence": "通过路径感知训练实现智能体记忆检索技术",
+      "llm_tldr_en": "PathRouter addresses retrieval quality in agentic GraphRAG by jointly evaluating answer correctness and path quality, overcoming reward aliasing and search-update ambiguity.",
+      "llm_tldr_cn": "智能体图检索增强生成中，仅基于结果的强化学习会导致答案-路径奖励混淆和搜索更新模糊。本文提出PathRouter，联合评估轨迹的答案正确性和检索路径质量，训练智能体遵循有用证据路径而非捷径。实验显示该方法显著提升检索路径的实用性，改善了基于记忆的决策质量。",
+      "llm_tldr": "智能体图检索增强生成中，仅基于结果的强化学习会导致答案-路径奖励混淆和搜索更新模糊。本文提出PathRouter，联合评估轨迹的答案正确性和检索路径质量，训练智能体遵循有用证据路径而非捷径。实验显示该方法显著提升检索路径的实用性，改善了基于记忆的决策质量。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.18112v1",
+      "source": "arxiv",
+      "title": "Qwen-RobotNav Technical Report: A Scalable Navigation Model Designed for an Agentic Navigation System",
+      "abstract": "Agentic navigation systems require a base navigation model whose observation strategy can be externally reconfigured at inference time, because instruction following, object search, target tracking, and autonomous driving share the same perception-planning backbone yet demand fundamentally different strategies for consuming the visual stream. We present Qwen-RobotNav, a scalable navigation model built on Qwen-RobotNav that addresses it through a parameterised interface with two complementary dimensions: multiple task modes that select the navigation behaviour, and controllable observation parameters (e.g., token budget, per-camera weights) that govern how visual history is encoded. With training-time randomization over all parameters, Qwen-RobotNav is robust to any inference-time configuration requiring zero architectural modification to the Qwen-RobotNav backbone. We train Qwen-RobotNav on 15.6M samples; co-training with vision-language data prevents the collapse into reactive action-sequence mappers observed in trajectory-only training. The parameterised interface also makes Qwen-RobotNav a natural building block for agentic systems: for long-horizon scenarios, an upper-level planner decomposes goals into sub-tasks and dynamically switches Qwen-RobotNav's task mode and context strategy mid-episode, composing complex behaviours from repeated calls to the same model. Extensive experiments show that Qwen-RobotNav sets new state-of-the-art results across major navigation benchmarks. The model exhibits favourable scaling from 2B to 8B parameters, with joint multi-task training developing a shared spatial-planning substrate that transfers across task families, and demonstrates strong zero-shot generalisation to real-world robots across diverse environments.",
+      "authors": [
+        "Jiazhao Zhang",
+        "Gengze Zhou",
+        "Hale Yin",
+        "Yiyang Huang",
+        "Zixing Lei",
+        "Qihang Peng",
+        "Haoqi Yuan",
+        "Jie Zhang",
+        "Xudong Guo",
+        "Xiaoyue Chen",
+        "An Yang",
+        "Fei Huang",
+        "Junyang Lin",
+        "Dayiheng Liu",
+        "Jingren Zhou",
+        "Zhuoyuan Yu",
+        "Jingyang Fan",
+        "Zhixuan Liang",
+        "Pei Lin",
+        "Ye Wang",
+        "Anzhe Chen",
+        "Kun Yan",
+        "Xiao Xu",
+        "Jiahao Li",
+        "Lulu Hu",
+        "Minying Zhang",
+        "Shurui Li",
+        "Wenhu Xiao",
+        "Shuai Bai",
+        "Xuancheng Ren",
+        "Chenxu Lv",
+        "Chenfei Wu",
+        "Xiong-Hui Chen"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "published": "2026-06-16T16:17:44+00:00",
+      "link": "https://arxiv.org/pdf/2606.18112v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "memory-based decision making agents via controllable visual history encoding",
+      "llm_evidence_cn": "通过可控视觉历史编码实现基于记忆的决策智能体",
+      "llm_evidence": "通过可控视觉历史编码实现基于记忆的决策智能体",
+      "canonical_evidence": "通过可控视觉历史编码实现基于记忆的决策智能体",
+      "llm_tldr_en": "Qwen-RobotNav presents a scalable navigation model with controllable observation parameters that govern visual history encoding, enabling memory-based decision making across different tasks.",
+      "llm_tldr_cn": "智能体导航系统需要可重配置的观测策略来支持不同任务。本文提出Qwen-RobotNav，通过参数化接口控制token预算、相机权重等观测参数，从而对视觉历史进行可调节编码。该方法使得同一模型能通过调整记忆编码方式适应指令跟随、目标搜索等多种任务，提升了导航决策的灵活性和性能。",
+      "llm_tldr": "智能体导航系统需要可重配置的观测策略来支持不同任务。本文提出Qwen-RobotNav，通过参数化接口控制token预算、相机权重等观测参数，从而对视觉历史进行可调节编码。该方法使得同一模型能通过调整记忆编码方式适应指令跟随、目标搜索等多种任务，提升了导航决策的灵活性和性能。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory-based decision making agents",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.18132v1",
+      "source": "arxiv",
+      "title": "Knowledge Reutilization in Meta-Reinforcement Learning",
+      "abstract": "Meta-reinforcement learning enables fast adaptation by extracting shared structure from related tasks, but existing end-to-end methods often couple task inference with embodiment-specific control. This coupling can obscure non-parametric task semantics, reduce sample efficiency, and limit cross-agent reuse. We propose a meta-knowledge reutilization framework that learns task-level knowledge on a dynamics-simplified agent and transfers it to heterogeneous agents. The framework uses a Bayesian non-parametric prior to organize latent task modes and a high-level policy to generate task-level magnitude guidance. To bridge reusable task knowledge with different embodiments, we introduce a semantic-magnitude interface and a lightweight temporal adaptor, which convert frozen meta-knowledge into temporally aligned subgoals for embodiment-specific low-level controllers. Experiments on multiple locomotion agents show that our framework reduces final-step tracking error by 94.75% -- 99.79% compared with recent state-of-the-art baselines and achieves comparable deployment performance with about 23.8% of their interaction data.",
+      "authors": [
+        "Yuan Meng",
+        "Bo Wang",
+        "Juan de los Rios Ruiz",
+        "Xiangtong Yao",
+        "Zhenshan Bing",
+        "Fuchun Sun",
+        "Alois Knoll"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-16T16:32:28+00:00",
+      "link": "https://arxiv.org/pdf/2606.18132v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "meta-knowledge reutilization framework transfers task-level knowledge across agents, akin to long-term memory of tasks",
+      "llm_evidence_cn": "元知识重用框架可在不同智能体间迁移任务级知识，类似于长期任务记忆",
+      "llm_evidence": "元知识重用框架可在不同智能体间迁移任务级知识，类似于长期任务记忆",
+      "canonical_evidence": "元知识重用框架可在不同智能体间迁移任务级知识，类似于长期任务记忆",
+      "llm_tldr_en": "Proposes a meta-knowledge reutilization framework that learns task-level knowledge on a simplified agent and transfers it to heterogeneous agents via a semantic-magnitude interface.",
+      "llm_tldr_cn": "该工作针对元强化学习中任务推理与具体控制耦合导致知识难以复用的问题，提出元知识重用框架。首先在动力学简化的智能体上学习任务级知识，并通过贝叶斯非参数先验组织潜在任务模式；然后通过语义-幅度接口和轻量级时间适配器将冻结的知识迁移到异质智能体。实验证明该方法能有效提升跨智能体的样本效率和适应能力，为长期任务知识的存储与重用提供了新途径。",
+      "llm_tldr": "该工作针对元强化学习中任务推理与具体控制耦合导致知识难以复用的问题，提出元知识重用框架。首先在动力学简化的智能体上学习任务级知识，并通过贝叶斯非参数先验组织潜在任务模式；然后通过语义-幅度接口和轻量级时间适配器将冻结的知识迁移到异质智能体。实验证明该方法能有效提升跨智能体的样本效率和适应能力，为长期任务知识的存储与重用提供了新途径。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.18112v2",
+      "source": "arxiv",
+      "title": "Qwen-RobotNav Technical Report: A Scalable Navigation Model Designed for an Agentic Navigation System",
+      "abstract": "Agentic navigation systems require a base navigation model whose observation strategy can be externally reconfigured at inference time, because instruction following, object search, target tracking, and autonomous driving share the same perception-planning backbone yet demand fundamentally different strategies for consuming the visual stream. We present Qwen-RobotNav, a scalable navigation model built on Qwen-RobotNav that addresses it through a parameterised interface with two complementary dimensions: multiple task modes that select the navigation behaviour, and controllable observation parameters (e.g., token budget, per-camera weights) that govern how visual history is encoded. With training-time randomization over all parameters, Qwen-RobotNav is robust to any inference-time configuration requiring zero architectural modification to the Qwen-RobotNav backbone. We train Qwen-RobotNav on 15.6M samples; co-training with vision-language data prevents the collapse into reactive action-sequence mappers observed in trajectory-only training. The parameterised interface also makes Qwen-RobotNav a natural building block for agentic systems: for long-horizon scenarios, an upper-level planner decomposes goals into sub-tasks and dynamically switches Qwen-RobotNav's task mode and context strategy mid-episode, composing complex behaviours from repeated calls to the same model. Extensive experiments show that Qwen-RobotNav sets new state-of-the-art results across major navigation benchmarks. The model exhibits favourable scaling from 2B to 8B parameters, with joint multi-task training developing a shared spatial-planning substrate that transfers across task families, and demonstrates strong zero-shot generalisation to real-world robots across diverse environments.",
+      "authors": [
+        "Jiazhao Zhang",
+        "Gengze Zhou",
+        "Hale Yin",
+        "Yiyang Huang",
+        "Zixing Lei",
+        "Qihang Peng",
+        "Haoqi Yuan",
+        "Jie Zhang",
+        "Xudong Guo",
+        "Xiaoyue Chen",
+        "An Yang",
+        "Fei Huang",
+        "Zhibo Yang",
+        "Junyang Lin",
+        "Dayiheng Liu",
+        "Jingren Zhou",
+        "Zhuoyuan Yu",
+        "Jingyang Fan",
+        "Zhixuan Liang",
+        "Pei Lin",
+        "Ye Wang",
+        "Anzhe Chen",
+        "Kun Yan",
+        "Xiao Xu",
+        "Jiahao Li",
+        "Lulu Hu",
+        "Minying Zhang",
+        "Shurui Li",
+        "Wenhu Xiao",
+        "Shuai Bai",
+        "Xuancheng Ren",
+        "Chenxu Lv",
+        "Chenfei Wu",
+        "Xiong-Hui Chen"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "published": "2026-06-16T16:17:44+00:00",
+      "link": "https://arxiv.org/pdf/2606.18112v2",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "memory-based decision making agents via controllable visual history encoding",
+      "llm_evidence_cn": "通过可控视觉历史编码实现基于记忆的决策智能体",
+      "llm_evidence": "通过可控视觉历史编码实现基于记忆的决策智能体",
+      "canonical_evidence": "通过可控视觉历史编码实现基于记忆的决策智能体",
+      "llm_tldr_en": "Qwen-RobotNav presents a scalable navigation model with controllable observation parameters that govern visual history encoding, enabling memory-based decision making across different tasks.",
+      "llm_tldr_cn": "智能体导航系统需要可重配置的观测策略来支持不同任务。本文提出Qwen-RobotNav，通过参数化接口控制token预算、相机权重等观测参数，从而对视觉历史进行可调节编码。该方法使得同一模型能通过调整记忆编码方式适应指令跟随、目标搜索等多种任务，提升了导航决策的灵活性和性能。",
+      "llm_tldr": "智能体导航系统需要可重配置的观测策略来支持不同任务。本文提出Qwen-RobotNav，通过参数化接口控制token预算、相机权重等观测参数，从而对视觉历史进行可调节编码。该方法使得同一模型能通过调整记忆编码方式适应指令跟随、目标搜索等多种任务，提升了导航决策的灵活性和性能。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory-based decision making agents",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.19338v1",
+      "source": "arxiv",
+      "title": "Beyond the Current Observation: Evaluating Multimodal Large Language Models in Controllable Non-Markov Games",
+      "abstract": "Deploying multimodal foundation models as closed-loop policies increasingly requires conditioning actions on observations that are no longer visible. However, existing benchmarks either expose the full state, conflate hidden-state reconstruction with other agent skills, or test recall only after an episode has ended. We introduce RNG-Bench (Reconstructive Non-Markov Games), a benchmark suite designed to isolate a base model's ability to reconstruct past observations and act on them during multi-step interaction. RNG-Bench includes two complementary games: Matching Pairs, where card identities briefly revealed at specific locations must later be recalled, and 3D Maze, where egocentric views must be integrated into a spatial map. Both games are evaluated under a unified harness with three controlled difficulty axes: grid size, visual pattern, and observation modality. The benchmark further introduces a head-to-head duel protocol to control for instance-level variance and a Memory Gap metric that disentangles forgetting from poor action selection. The hardest configurations require contexts of roughly 128K tokens and 350 image inputs per episode, and remain far from saturated by frontier MLLMs. Memory Gap analysis shows that most residual errors stem from forgetting earlier observations rather than from suboptimal decision making. Finally, fine-tuning Qwen3.5-9B on optimal-policy rollouts and filtered model demonstrations improves performance on RNG-Bench and transfers to existing benchmarks without degrading general multimodal capability.",
+      "authors": [
+        "Shengyuan Ding",
+        "Xilin Wei",
+        "Xinyu Fang",
+        "Haodong Duan",
+        "Dahua Lin",
+        "Jiaqi Wang",
+        "Yuhang Zang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-17T17:59:34+00:00",
+      "link": "https://arxiv.org/pdf/2606.19338v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "benchmark for memory-based decision making in non-Markov games",
+      "llm_evidence_cn": "非马尔可夫游戏中基于记忆决策的基准",
+      "llm_evidence": "非马尔可夫游戏中基于记忆决策的基准",
+      "canonical_evidence": "非马尔可夫游戏中基于记忆决策的基准",
+      "llm_tldr_en": "RNG-Bench evaluates multimodal LLMs ability to reconstruct past observations and act on them during multi-step interaction, isolating hidden-state reconstruction skills.",
+      "llm_tldr_cn": "现有基准要么暴露完整状态，要么混淆隐状态重建与其他技能。本文提出RNG-Bench基准套件，包含配对记忆和3D迷宫两个互补游戏，专门评估多模态大模型在多步交互中重建过去观察并基于其行动的能力。实验表明模型在记忆重建方面存在显著差距。",
+      "llm_tldr": "现有基准要么暴露完整状态，要么混淆隐状态重建与其他技能。本文提出RNG-Bench基准套件，包含配对记忆和3D迷宫两个互补游戏，专门评估多模态大模型在多步交互中重建过去观察并基于其行动的能力。实验表明模型在记忆重建方面存在显著差距。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory-based decision making agents",
+      "matched_requirement_id": "req-4",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}
