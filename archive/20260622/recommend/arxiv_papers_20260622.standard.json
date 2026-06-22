@@ -1,0 +1,443 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-22T21:31:44.723410+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 6,
+    "deep_cap": 6,
+    "deep_selected": 6,
+    "quick_candidates": 4,
+    "quick_skim_target": 11,
+    "quick_selected": 4
+  },
+  "deep_dive": [
+    {
+      "id": "2606.15778v1",
+      "source": "arxiv",
+      "title": "DYNA : Dynamic Episodic Memory Networks for Augmenting Large Language Models with Temporal Knowledge Graphs in Continuous Learning",
+      "abstract": "Large Language Models (LLMs) struggle to incorporate new knowledge without forgetting or costly retraining. We propose DYNA, a lightweight framework that augments a frozen LLM with a temporal knowledge graph where events are nodes and temporal relations are directed, timestamped edges. The graph serves as an external, updatable memory. At query time, DYNA retrieves relevant nodes via random walks and centrality measures, then augments the LLM's response. Evaluated on three temporal recall tasks, DYNA reduces catastrophic forgetting by ~7% compared to fine-tuning and improves temporal ordering by ~5% over standard RAG. Higher graph clustering coefficients correlate with better retrieval, showing that graph structure matters. Contributions: (1) episodic memory as temporal KG, (2) retraining-free LLM augmentation, (3) graph properties as predictors of retrieval performance.",
+      "authors": [
+        "Ali Sarabadani",
+        "Mahtab Tajvidiyan"
+      ],
+      "primary_category": "cs.CL",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.SI"
+      ],
+      "published": "2026-06-14T12:27:26+00:00",
+      "link": "https://arxiv.org/pdf/2606.15778v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "dynamic episodic memory network with temporal knowledge graph for LLMs",
+      "llm_evidence_cn": "基于时间知识图的动态情景记忆网络改进LLM",
+      "llm_evidence": "基于时间知识图的动态情景记忆网络改进LLM",
+      "canonical_evidence": "基于时间知识图的动态情景记忆网络改进LLM",
+      "llm_tldr_en": "DYNA augments a frozen LLM with a temporal knowledge graph as external updatable memory, improving recall and reducing catastrophic forgetting.",
+      "llm_tldr_cn": "LLM难以持续学习新知识而不遗忘，DYNA通过构建时间知识图作为外部可更新记忆，用随机游走检索相关事件并增强LLM回答。在三个时序回忆任务上，DYNA相比微调减少了约7%的灾难性遗忘，并比标准RAG提高了约5%的时序排序能力。该工作为情景记忆在连续学习中的应用提供了有效方案。",
+      "llm_tldr": "LLM难以持续学习新知识而不遗忘，DYNA通过构建时间知识图作为外部可更新记忆，用随机游走检索相关事件并增强LLM回答。在三个时序回忆任务上，DYNA相比微调减少了约7%的灾难性遗忘，并比标准RAG提高了约5%的时序排序能力。该工作为情景记忆在连续学习中的应用提供了有效方案。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "episodic and semantic memory for autonomous agents",
+      "matched_requirement_id": "req-9",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.18960v2",
+      "source": "arxiv",
+      "title": "Mem-World: Memory-Augmented Action-Conditioned World Models for Persistent Robot Manipulation",
+      "abstract": "Action-conditioned world models have emerged as a promising paradigm for robot learning, offering a scalable alternative to costly real-world experimentation by generating action-consistent video rollouts. However, persistent world modeling remains challenging in manipulation: frequent end-effector occlusions and rapid wrist-camera motion make the current observation insufficient for predicting future views, causing models to forget or hallucinate scene details seen in earlier frames. Existing memory retrieval strategies often fail to identify informative history in dynamic manipulation scenarios. To address this limitation, we propose Mem-World, a memory-augmented multi-view action-conditioned world model. At its core, we present W-VMem, a 4D wrist-view-centered surfel-indexed memory that anchors historical observations to temporally evolving surface elements. By explicitly modeling when and where scene elements are observed, W-VMem enables geometry-aware retrieval of relevant history frames conditioned on future actions. During generation, relevant history frames are selected via surfel-based rendering and scoring, providing informative and non-redundant context for prediction. Extensive experiments show that Mem-World generates persistent rollouts in complex manipulation scenarios, enables more reliable policy evaluation than Ctrl-World, improving the Pearson correlation with real-world performance by 14.5\\%, and supports effective policy improvement through synthetic data generation, increasing success rates from 58\\% to 72\\% on long-horizon tasks.",
+      "authors": [
+        "Zirui Zheng",
+        "Jiaqian Yu",
+        "Xiongfeng Peng",
+        "jun shi",
+        "Mingyi Li",
+        "Chao Zhang",
+        "Weiming Li",
+        "Dong Wang",
+        "Huchuan Lu",
+        "Xu Jia"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "published": "2026-06-17T11:42:00+00:00",
+      "link": "https://arxiv.org/pdf/2606.18960v2",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "memory-augmented world model",
+      "llm_evidence_cn": "内存增强的世界模型",
+      "llm_evidence": "内存增强的世界模型",
+      "canonical_evidence": "内存增强的世界模型",
+      "llm_tldr_en": "Mem-World augments action-conditioned world models with memory retrieval for persistent robot manipulation, addressing occlusion and camera motion.",
+      "llm_tldr_cn": "持久化世界建模在机器人操作中面临遮挡和相机快速运动导致的遗忘或幻觉问题。Mem-World提出了一种内存增强的多视角动作条件世界模型，通过改进的内存检索策略从历史帧中提取信息来预测未来视图。实验表明该方法在长时操作中显著提升了预测一致性。",
+      "llm_tldr": "持久化世界建模在机器人操作中面临遮挡和相机快速运动导致的遗忘或幻觉问题。Mem-World提出了一种内存增强的多视角动作条件世界模型，通过改进的内存检索策略从历史帧中提取信息来预测未来视图。实验表明该方法在长时操作中显著提升了预测一致性。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory augmented agent architectures and applications",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.17463v1",
+      "source": "arxiv",
+      "title": "WeaveLA: Event Driven Cross-Subtask Latent Memory Weaving for Repetitive Robot Manipulation",
+      "abstract": "Vision-Language-Action (VLA) policies have achieved remarkable single-step manipulation, yet they remain brittle precisely where each stage depends on what was just completed. The core issue is structural: short-window VLAs lack an explicit channel for rouxting information across sub-task boundaries, and existing memory-augmented variants either write at every frame, retrieve from demonstration-time stages, or fire at sub-goal events without performing an explicit sub-task-to-sub-task hand-off into the action expert. We identify the sub-goal completion event as the natural temporal unit for cross-subtask memory hand-off, and present WeaveLA (Weave Latent memory for Vision-Language-Action policies), a cross-subtask memory interface that, on top of a frozen VLA backbone, compresses each completed segment into latent tokens via query-driven attention pooling and routes them directly into the action-generation path of the next sub-task. This event-triggered, action-side design preserves the base policy's short-window interface while adding a lightweight cross-subtask channel. Through stratified evaluation on RoboMME with a $π_{0.5}$ backbone, WeaveLA's gains land exactly where the channel is needed: on the hardest repetition slice (SwingXtimes, $N{=}3$), success rises from $0\\%$ to $47.8\\%$, while single-execution episodes remain unchanged. Per-episode paired analysis confirms the gains are confined to tasks whose causal structure requires cross-subtask information.",
+      "authors": [
+        "Shoujing Zhu",
+        "Zhenyang Liu",
+        "Fungmiu Wang",
+        "Jiafeng Wang",
+        "Bo Yue",
+        "Guiliang Liu",
+        "Simo Wu",
+        "Xiangyang Xue",
+        "Taiping Zeng"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "published": "2026-06-16T03:25:34+00:00",
+      "link": "https://arxiv.org/pdf/2606.17463v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "cross-subtask latent memory interface for VLA policies",
+      "llm_evidence_cn": "跨子任务潜在记忆接口用于视觉-语言-动作策略",
+      "llm_evidence": "跨子任务潜在记忆接口用于视觉-语言-动作策略",
+      "canonical_evidence": "跨子任务潜在记忆接口用于视觉-语言-动作策略",
+      "llm_tldr_en": "WeaveLA introduces a cross-subtask latent memory interface using sub-goal completion events to hand-off information between stages, enabling robust long-horizon robot manipulation.",
+      "llm_tldr_cn": "短窗口视觉-语言-动作策略在跨子任务依赖上存在结构性缺陷。WeaveLA识别子目标完成事件为自然时间单元，提出跨子任务潜在记忆接口，显式在子任务间传递信息。实验证明该方法在重复机器人操作任务上显著提升成功率，为代理的跨阶段记忆机制提供了有效方案。",
+      "llm_tldr": "短窗口视觉-语言-动作策略在跨子任务依赖上存在结构性缺陷。WeaveLA识别子目标完成事件为自然时间单元，提出跨子任务潜在记忆接口，显式在子任务间传递信息。实验证明该方法在重复机器人操作任务上显著提升成功率，为代理的跨阶段记忆机制提供了有效方案。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "agent memory mechanisms",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.17642v1",
+      "source": "arxiv",
+      "title": "FinAcumen: Financial Multimodal Reasoning via Self-Evolving Experience Memory Harness",
+      "abstract": "Financial multimodal reasoning requires agents to coordinate numerical computation, retrieval, visual interpretation, and temporal grounding across heterogeneous evidence sources. Existing tool-augmented agents improve execution fidelity, yet remain largely stateless across episodes, repeatedly rediscovering reasoning strategies and failure patterns. In high-stakes financial settings, this leads to unreliable tool routing, noisy retrieval, and hallucination-prone reasoning. We present FinAcumen, a financial reasoning agent framework centered on selective experience memory for tool-augmented multimodal reasoning. FinAcumen accumulates financially grounded reasoning experience from prior trajectories, distilling successful strategies and failure-derived cautionary rules into a persistent memory bank. During inference, retrieved experiences condition reasoning only when semantic relevance exceeds a calibrated threshold, while irrelevant memory is explicitly suppressed through a fallback mechanism. A deterministic financial tool environment further grounds numerical computation, retrieval, visual decoding, and answer verification.Across four financial multimodal reasoning benchmarks, FinAcumen consistently improves a frozen 8B vision-language model over finance-specialized models and approaches leading proprietary general-purpose models. Further analysis shows that selective experience activation improves reasoning reliability under retrieval uncertainty. Our code is anonymously available at https://anonymous.4open.science/r/FinAcumen",
+      "authors": [
+        "Pianran Guo",
+        "Pengcheng Zhou",
+        "Yucheng Jian",
+        "Shuhua Chen"
+      ],
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI"
+      ],
+      "published": "2026-06-16T08:00:30+00:00",
+      "link": "https://arxiv.org/pdf/2606.17642v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "selective experience memory from prior trajectories",
+      "llm_evidence_cn": "从先前轨迹中选择性经验记忆",
+      "llm_evidence": "从先前轨迹中选择性经验记忆",
+      "canonical_evidence": "从先前轨迹中选择性经验记忆",
+      "llm_tldr_en": "FinAcumen uses selective experience memory to accumulate and distill reasoning strategies from prior trajectories, improving tool-augmented multimodal reasoning for finance.",
+      "llm_tldr_cn": "金融多模态推理面临工具路由不可靠和幻觉问题。FinAcumen提出选择性经验记忆框架，通过积累先前轨迹中的推理经验，蒸馏成功策略，实现工具增强推理。实验表明其在金融任务上显著优于无记忆基线，为经验回放在代理学习中的有效应用提供了新范式。",
+      "llm_tldr": "金融多模态推理面临工具路由不可靠和幻觉问题。FinAcumen提出选择性经验记忆框架，通过积累先前轨迹中的推理经验，蒸馏成功策略，实现工具增强推理。实验表明其在金融任务上显著优于无记忆基线，为经验回放在代理学习中的有效应用提供了新范式。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.19341v1",
+      "source": "arxiv",
+      "title": "Native Active Perception as Reasoning for Omni-Modal Understanding",
+      "abstract": "Passive models for long video understanding typically rely on a \"watch-it-all\" paradigm, processing frames uniformly regardless of query difficulty, causing computational cost to grow with video duration. Although interactive frameworks have emerged, they often rely on global pre-scanning, and their context cost still scales with video length. We propose OmniAgent, the first native omni-modal agent that formulates video understanding as a POMDP-based iterative Observation-Thought-Action cycle. OmniAgent executes on-demand actions to selectively distill audio-visual cues into a persistent textual memory, effectively decoupling reasoning complexity from raw video duration. To operationalize this, we introduce (1) Agentic Supervised Fine-Tuning to bootstrap native active perception via best-of-N trajectory synthesis with dual-stage quality control, and (2) Agentic Reinforcement Learning with TAURA (Turn-aware Adaptive Uncertainty Rescaled Advantage), which leverages turn-level entropy to steer credit assignment toward pivotal discovery turns. Crucially, OmniAgent exhibits positive test-time scaling, where performance improves as the number of reasoning turns increases, validating the efficacy of active perception. Empirical results across ten benchmarks (e.g., VideoMME, LVBench) demonstrate that OmniAgent achieves state-of-the-art performance among open-source models. Notably, on LVBench, our 7B agent outperforms the 10$\\times$ larger Qwen2.5-VL-72B (50.5% vs. 47.3%).",
+      "authors": [
+        "Zhenghao Xing",
+        "Ruiyang Xu",
+        "Yuxuan Wang",
+        "Jinzheng He",
+        "Ziyang Ma",
+        "Qize Yang",
+        "Yunfei Chu",
+        "Jin Xu",
+        "Junyang Lin",
+        "Chi-Wing Fu",
+        "Pheng-Ann Heng"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "published": "2026-06-17T17:59:56+00:00",
+      "link": "https://arxiv.org/pdf/2606.19341v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "persistent textual memory for video agent",
+      "llm_evidence_cn": "视频智能体的持久文本记忆",
+      "llm_evidence": "视频智能体的持久文本记忆",
+      "canonical_evidence": "视频智能体的持久文本记忆",
+      "llm_tldr_en": "OmniAgent uses POMDP-based observation-thought-action cycles to distill audio-visual cues into persistent textual memory for long video understanding.",
+      "llm_tldr_cn": "长视频理解中被动模型计算成本随时长增长，且交互框架仍依赖全局预扫描。OmniAgent将视频理解建模为基于POMDP的迭代观察-思考-行动循环，通过按需动作选择性地将音视频线索提取到持久文本记忆中，从而将推理复杂度与视频时长解耦。实验表明其在长视频问答任务上效率更高。",
+      "llm_tldr": "长视频理解中被动模型计算成本随时长增长，且交互框架仍依赖全局预扫描。OmniAgent将视频理解建模为基于POMDP的迭代观察-思考-行动循环，通过按需动作选择性地将音视频线索提取到持久文本记忆中，从而将推理复杂度与视频时长解耦。实验表明其在长视频问答任务上效率更高。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory augmented agent architectures and applications",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2606.20092v1",
+      "source": "arxiv",
+      "title": "EventVLA: Event-Driven Visual Evidence Memory for Long-Horizon Vision-Language-Action Policies",
+      "abstract": "Memory remains a critical bottleneck for long-horizon robotic manipulation, as standard Vision-Language-Action (VLA) policies often fail when task-relevant cues become occluded or unobservable over time. While existing memory-augmented methods utilize historical context, they either suffer from severe information bottlenecks, incur high latency via decoupled dual systems, or rely on unselective buffers that accumulate massive visual redundancies. To address these limitations, we introduce EventVLA, an end-to-end framework founded on the concept of sparse visual evidence memory that comprises two core components: foundational visual anchors to retain initial and short-term contexts, and a dynamic Keyframe Evidence Memory (KEM) module. Specifically, KEM directly predicts future keyframe probabilities from the VLA's latent embeddings to autonomously capture and store sparse, task-critical visual events. This foresight-driven mechanism empowers the policy to dynamically evaluate the future causal utility of current observations, preserving transient visual evidence before it becomes unobservable. Furthermore, we propose RoboTwin-MeM, a diagnostic benchmark specifically designed to evaluate non-Markovian manipulation tasks with interactive visual evidence. Extensive evaluations show that across 17 memory-requiring simulation tasks and 4 real-world bimanual tasks, EventVLA achieves an average success rate improvement of +40% over state-of-the-art memory-augmented VLAs.",
+      "authors": [
+        "Ganlin Yang",
+        "Zhangzheng Tu",
+        "Yuqiang Yang",
+        "Sitong Mao",
+        "Junyi Dong",
+        "Tianxing Chen",
+        "Jiaqi Peng",
+        "Jing Xiong",
+        "Jiafei Cao",
+        "Jifeng Dai",
+        "Wengang Zhou",
+        "Yao Mu",
+        "Tai Wang"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-18T11:11:37+00:00",
+      "link": "https://arxiv.org/pdf/2606.20092v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "event-driven visual evidence memory architecture for robotic agents",
+      "llm_evidence_cn": "机器人代理的事件驱动视觉证据记忆架构",
+      "llm_evidence": "机器人代理的事件驱动视觉证据记忆架构",
+      "canonical_evidence": "机器人代理的事件驱动视觉证据记忆架构",
+      "llm_tldr_en": "Proposes EventVLA, an end-to-end framework with sparse visual evidence memory (foundational anchors and Keyframe Evidence Memory) for long-horizon robotic manipulation.",
+      "llm_tldr_cn": "针对长时域机器人操作中任务相关线索被遮挡或不可见的问题，提出EventVLA框架，基于稀疏视觉证据记忆概念，包括初始短时锚点和动态关键帧证据记忆（KEM）模块，实现高效的历史上下文利用，在多个基准上超越现有方法。",
+      "llm_tldr": "针对长时域机器人操作中任务相关线索被遮挡或不可见的问题，提出EventVLA框架，基于稀疏视觉证据记忆概念，包括初始短时锚点和动态关键帧证据记忆（KEM）模块，实现高效的历史上下文利用，在多个基准上超越现有方法。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory augmented agent architectures and applications",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2606.16295v1",
+      "source": "arxiv",
+      "title": "VisualClaw: A Real-Time, Personalized Agent for the Physical World",
+      "abstract": "Vision language models are serving as general-purpose interfaces for complex multimodal tasks. However, deployment still faces three gaps: VLMs typically incur high latency and cost when processing dense video frames and long prompts, the agent scaffold remains static after deployment, and standard video-QA benchmarks do not test whether agents can use visual evidence inside tool-using workspaces. We present VisualClaw, a self-evolving multimodal agent built around two principles. First, hybrid encoding reduces deployment cost by filtering less informative streaming frames with a cascaded gate and compressing the text skill bank through hot/cold top-k injection. Second, skill evolution lets the agent learn from failures: retrieved memories condition an evolver as direct concatenated context or as guided evidence, producing skill-bank updates that help future questions. Across 4 video-QA benchmarks with 2 VLMs, VisualClaw cuts per-question API cost by an average -98% versus full-frame upload and by -25.9% over the offline uniform 8 frame baseline, while boosting accuracy in most settings, e.g., an average +3.85% and a peak +15.80% on EgoSchema with Gemini 3 Flash. To address the gap, we curate VisualClawArena, a 200-scenario multimodal agentic benchmark built through a strict five-stage pipeline; models must use video evidence, documents, dynamic updates, and executable checks inside a workspace. On VisualClawArena, the same framework with computer-use agent backends improves macro accuracy by +2.9% for Codex (GPT-5.5) and +3.2% for Claude Code (Sonnet 4.6) over no-evolution baselines, with a -9.5% cost reduction compared to the uniform-sampled baseline. These properties make VisualClaw a natural fit for edge applications, where the cascade reduces a 1-hour streaming session from ~3,600 API uploads down to only 5-20 calls and the self-evolution makes it a perfect personalized assistant.",
+      "authors": [
+        "Haoqin Tu",
+        "Jianwen Chen",
+        "Zijun Wang",
+        "Siwei Han",
+        "Juncheng Wu",
+        "Hardy Chen",
+        "Haonian Ji",
+        "Kaiwen Xiong",
+        "Jiaqi Liu",
+        "Peng Xia",
+        "Jieru Mei",
+        "Hongliang Fei",
+        "Jason Eshraghian",
+        "Zeyu Zheng",
+        "Yuyin Zhou",
+        "Huaxiu Yao",
+        "Cihang Xie"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "published": "2026-06-15T06:58:22+00:00",
+      "link": "https://arxiv.org/pdf/2606.16295v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "retrieved memories condition skill evolution",
+      "llm_evidence_cn": "检索的记忆调节技能演化",
+      "llm_evidence": "检索的记忆调节技能演化",
+      "canonical_evidence": "检索的记忆调节技能演化",
+      "llm_tldr_en": "VisualClaw is a self-evolving multimodal agent that uses retrieved memories to condition skill evolution, with hybrid encoding for cost reduction.",
+      "llm_tldr_cn": "视觉语言模型在实时部署中面临高延迟、静态骨架等问题。VisualClaw提出自进化多模态代理，通过混合编码过滤低效帧，并利用检索记忆驱动技能演化。实验证明其在物理世界任务中实现实时个性化，展示了记忆检索在代理自适应中的重要作用。",
+      "llm_tldr": "视觉语言模型在实时部署中面临高延迟、静态骨架等问题。VisualClaw提出自进化多模态代理，通过混合编码过滤低效帧，并利用检索记忆驱动技能演化。实验证明其在物理世界任务中实现实时个性化，展示了记忆检索在代理自适应中的重要作用。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.16898v1",
+      "source": "arxiv",
+      "title": "Semantic Flip: Synthetic OOD Generation for Robust Refusal in Embodied Question Answering and Spatial Localization",
+      "abstract": "Detecting unanswerable user queries remains essential for the reliable deployment of real-world embodied agents. However, modern vision-language models (VLMs) often generate overly confident answers even when the available visual memory cannot support the query. Such overconfidence poses various task-dependent risks. The agent may provide misleading information to the user in Embodied Question Answering and select an arbitrary coordinate and physically guide the user there in spatial reasoning for navigation. Despite these high stakes, only a few prior studies directly address when and how an embodied VLM should respond with \"I do not know.\" This work proposes Semantic Flip, a simple yet effective framework that synthesizes auxiliary out-of-distribution (OOD) samples for embodied refusal without requiring external OOD annotations. The key idea is to independently transform the query and video memory to construct auxiliary OOD pairs that lack sufficient visual grounding. These synthesized pairs enable training a lightweight rejection module on top of a frozen pretrained VLM. The module attaches to any existing VLM-based pipeline without retraining the underlying model. Across two complementary benchmarks, Semantic Flip consistently outperforms strong prompting baselines. This work also introduces SpaceReject, a new refusal benchmark for spatial localization with deliberately unanswerable queries over long video memory, where Semantic Flip achieves an $F_1$ score of 0.9559. The source codes and datasets are publicly available at https://github.com/ndb796/SemanticFlip.",
+      "authors": [
+        "Dongbin Na",
+        "Chanwoo Kim",
+        "Giyun Choi",
+        "Dooyoung Hong"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-06-15T16:07:24+00:00",
+      "link": "https://arxiv.org/pdf/2606.16898v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "memory retrieval for embodied agents",
+      "llm_evidence_cn": "具身智能体的内存检索",
+      "llm_evidence": "具身智能体的内存检索",
+      "canonical_evidence": "具身智能体的内存检索",
+      "llm_tldr_en": "Semantic Flip synthetically generates OOD queries to improve embodied VLM refusal when visual memory is insufficient for question answering or spatial localization.",
+      "llm_tldr_cn": "具身视觉语言模型在面对无法回答的查询时往往过度自信，即使在视觉内存不支持查询的情况下。Semantic Flip提出了一种合成OOD生成框架，通过翻转语义来训练模型在内存不足时正确拒绝。该方法在具身问答和空间定位任务上提升了鲁棒性。",
+      "llm_tldr": "具身视觉语言模型在面对无法回答的查询时往往过度自信，即使在视觉内存不支持查询的情况下。Semantic Flip提出了一种合成OOD生成框架，通过翻转语义来训练模型在内存不足时正确拒绝。该方法在具身问答和空间定位任务上提升了鲁棒性。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory retrieval techniques for agents",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2606.19409v1",
+      "source": "arxiv",
+      "title": "OpenRath: Session-Centered Runtime State for Agent Systems",
+      "abstract": "Modern agent systems often suffer from fragmented runtime state: transcripts, tool effects, memory events, workspace placement, branch provenance, and replay evidence are recorded separately and become difficult to inspect or reproduce. OpenRath addresses this issue with a PyTorch-like programming model for multi-agent, multi-session systems. The analogy concerns the role of a central first-class runtime abstraction, not tensor computation. Its core abstraction is Session, the runtime value passed between agents and workflows. A Session is branchable, inspectable, replayable, backend-aware, and composable. It records conversation chunks, sandbox placement, lineage metadata, token usage, pending work, and tool evidence, while defining where memory interactions enter the runtime record. Since this state is carried by the same value used in program execution, fork, merge, and replay become explicit runtime operations rather than states reconstructed from external traces. OpenRath further defines Sandbox, Tool, Agent, Memory, Workflow, and Selector, with Selector turning control flow into runtime-routed decisions. This report presents the programming model, architecture, audited milestones, and evidence protocol. Its claims are limited to controlled runtime properties, while broad quantitative comparisons, live-provider quality, optional-backend availability, and memory quality are left for follow-on evaluation. The central thesis is that Session provides agent systems with a first-class runtime value for auditable composition.",
+      "authors": [
+        "Fukang Wen",
+        "Zhijie Wang",
+        "Ruilin Xu"
+      ],
+      "primary_category": "cs.SE",
+      "categories": [
+        "cs.SE",
+        "cs.PL"
+      ],
+      "published": "2026-06-17T15:19:19+00:00",
+      "link": "https://arxiv.org/pdf/2606.19409v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "session-centered runtime state recording memory events and replay evidence, enabling replay of agent experiences",
+      "llm_evidence_cn": "以会话为中心的运行时状态记录内存事件和回放证据，支持智能体经验回放",
+      "llm_evidence": "以会话为中心的运行时状态记录内存事件和回放证据，支持智能体经验回放",
+      "canonical_evidence": "以会话为中心的运行时状态记录内存事件和回放证据，支持智能体经验回放",
+      "llm_tldr_en": "OpenRath provides a runtime abstraction (Session) that records and replays agent memory events, tool effects, and lineage, enabling inspectable and replayable agent experiences.",
+      "llm_tldr_cn": "OpenRath引入Session作为运行时核心抽象，统一记录会话块、工具效果、内存事件和工作区布局，支持分支、检查和回放。该设计直接为智能体系统的记忆交互和回放提供了基础设施，有助于经验回放和记忆机制的实现与调试。",
+      "llm_tldr": "OpenRath引入Session作为运行时核心抽象，统一记录会话块、工具效果、内存事件和工作区布局，支持分支、检查和回放。该设计直接为智能体系统的记忆交互和回放提供了基础设施，有助于经验回放和记忆机制的实现与调试。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.17680v1",
+      "source": "arxiv",
+      "title": "EnvRL: Learn from Environment Dynamics in Agentic Reinforcement Learning",
+      "abstract": "Reinforcement learning (RL) has emerged as a powerful paradigm for training Large Language Models (LLMs) as agents. However, conventional RL methods for long-horizon agentic tasks often struggle with sparse outcome rewards. Intuitively, this overlooks the rich environment dynamics information contained in rollout interaction trajectories. We argue that the interaction experience inherently serves as an implicit supervision signal, reveals the underlying transition mechanisms of the environment, and enables the agent to construct a more accurate internal model of the environment.. Therefore, in this work, we investigate how to leverage this additional signal to improve policy learning. Specifically, we propose EnvRL, a framework that incorporates environment dynamics learning into agentic RL via two auxiliary objectives: state prediction and inverse dynamics. By jointly optimizing with the primary RL objective, we encourage the agent to internalize environment dynamics from its own interaction experience. Extensive experiments on two long-horizon agentic benchmarks demonstrate that EnvRL achieves significant improvements on success-rates over RL-only baselines, e.g., when trained with GRPO, lifting Qwen-2.5-1.5B-Instruct from 72.8% to 77.4% on ALFWorld, and from 56.8% to 67.0% on WebShop.",
+      "authors": [
+        "Zhitong Wang",
+        "Songze Li",
+        "Hao Peng",
+        "Shuzheng Si",
+        "Yi Wang",
+        "Maosong Sun",
+        "Juanzi Li"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "published": "2026-06-16T08:48:09+00:00",
+      "link": "https://arxiv.org/pdf/2606.17680v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "leverages interaction trajectories as implicit supervision for policy learning",
+      "llm_evidence_cn": "利用交互轨迹作为隐式监督信号改进策略学习",
+      "llm_evidence": "利用交互轨迹作为隐式监督信号改进策略学习",
+      "canonical_evidence": "利用交互轨迹作为隐式监督信号改进策略学习",
+      "llm_tldr_en": "EnvRL uses rollout interaction trajectories to learn environment dynamics, providing implicit supervision to improve policy learning in long-horizon agentic RL tasks.",
+      "llm_tldr_cn": "长视界代理强化学习中稀疏奖励导致学习困难。EnvRL提出利用交互轨迹中的环境动态信息作为隐式监督信号，帮助代理构建更准确的内部环境模型。实验表明该方法在多个长期任务上显著提升策略学习效率，可视为经验回放的一种变体。",
+      "llm_tldr": "长视界代理强化学习中稀疏奖励导致学习困难。EnvRL提出利用交互轨迹中的环境动态信息作为隐式监督信号，帮助代理构建更准确的内部环境模型。实验表明该方法在多个长期任务上显著提升策略学习效率，可视为经验回放的一种变体。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "experience replay agent learning",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    }
+  ]
+}
