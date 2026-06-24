@@ -6,69 +6,55 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-23
-- 运行时间：2026-06-23 21:41:04 UTC
+- 最新运行日期：2026-06-24
+- 运行时间：2026-06-24 21:13:17 UTC
 - 运行状态：成功
-- 本次总论文数：15
+- 本次总论文数：11
 - 精读区：6
-- 速读区：9
+- 速读区：5
 
 ### 今日简报（AI）
-今日聚焦智能体长期记忆新范式，满分论文《Nous》提出预测世界模型，高分论文《EvoEmbedding》探索可进化表示。
-
-最值得精读10分《Nous: A Predictive World Model for Long-Term Agent Memory》，其次关注9分《EvoEmbedding》的长上下文检索与代理记忆机制。
-
-普通读者可优先消化《Nous》的核心思想，再速读《Compressing Observation History》记忆压缩技术及《Benchmarking Robot Memory》干扰测试基准。
-- 详情：[/202606/23/README](/202606/23/README)
+今日精选11篇论文，精读2篇高分研究聚焦智能体自我进化与经验学习，速读3篇关注多智能体记忆与数据治理。  
+最值得关注《Metis》提出的文本与代码双记忆桥接机制，以及《Escaping》提出的“执行-蒸馏-验证”新范式，帮助智能体避免自我确认陷阱。  
+建议普通读者优先精读这两篇，后续可结合速读中关于共享内存、跨LLM编码代理连续性等方向，深化对智能体系统记忆与迭代的理解。
+- 详情：[/202606/24/README](/202606/24/README)
 
 ### 精读区论文标签
-1. [Nous: A Predictive World Model for Long-Term Agent Memory](/202606/23/2606.22030v1-nous-a-predictive-world-model-for-long-term-agent-memory)  
-   标签：评分：10.0/10、query:agent-memory
-   evidence：提出基于预测世界模型的智能体记忆架构
-2. [EvoEmbedding: Evolvable Representations for Long-Context Retrieval and Agentic Memory](/202606/23/2606.21649v1-evoembedding-evolvable-representations-for-long-context-retrieval-and-agentic-memory)  
+1. [Metis: Bridging Text and Code Memory for Self-Evolving Agents](/202606/24/2606.24151v1-metis-bridging-text-and-code-memory-for-self-evolving-agents)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：可演化表示用于长上下文智能体记忆
-3. [RaMem: Contextual Reinstatement for Long-term Agentic Memory](/202606/23/2606.22844v1-ramem-contextual-reinstatement-for-long-term-agentic-memory)  
+   evidence：自进化智能体的文本与代码记忆对比
+2. [Escaping the Self-Confirmation Trap: An Execute-Distill-Verify Paradigm for Agentic Experience Learning](/202606/24/2606.24428v1-escaping-the-self-confirmation-trap-an-execute-distill-verify-paradigm-for-agentic-experience-learning)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：直接提出了基于上下文重建的长期智能体记忆框架
-4. [Memory Contagion: Cross-Temporal Propagation of Evaluator Bias via Agent Memory](/202606/23/2606.23195v1-memory-contagion-cross-temporal-propagation-of-evaluator-bias-via-agent-memory)  
+   evidence：面向智能体经验学习的执行-提炼-验证范式与记忆重用
+3. [ReM-MoA: Reasoning Memory Sustains Mixture-of-Agents Scaling](/202606/24/2606.24437v1-rem-moa-reasoning-memory-sustains-mixture-of-agents-scaling)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：研究智能体记忆中的偏差传播
-5. [Towards Root Memories: Benchmarking and Enhancing Implicit Logical Memory Retrieval for Personalized LLMs](/202606/23/2606.23283v1-towards-root-memories-benchmarking-and-enhancing-implicit-logical-memory-retrieval-for-personalized-llms)  
+   evidence：记忆增强的混合智能体架构，包含排序推理记忆
+4. [MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery](/202606/24/2606.24595v1-memprobe-probing-long-term-agent-memory-via-hidden-user-state-recovery)  
    标签：评分：9.0/10、query:agent-memory
-   evidence：隐式逻辑记忆检索方法
-6. [Learning What Not to Forget: Long-Horizon Agent Memory from a Few Kilobytes of Learning](/202606/23/2606.20954v1-learning-what-not-to-forget-long-horizon-agent-memory-from-a-few-kilobytes-of-learning)  
+   evidence：智能体长期记忆评估基准
+5. [Are We Ready For An Agent-Native Memory System?](/202606/24/2606.24775v1-are-we-ready-for-an-agent-native-memory-system)  
+   标签：评分：9.0/10、query:agent-memory
+   evidence：从数据管理角度对智能体记忆的系统研究
+6. [Remember what you did?: Learning Behavioral Memories for Partially Observable Object Manipulation](/202606/24/2606.21188v1-remember-what-you-did-learning-behavioral-memories-for-partially-observable-object-manipulation)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：学习哪些历史单元需要保留以实现长期智能体记忆
+   evidence：压缩动作记忆策略用于机器人操作
 
 ### 速读区论文标签
-1. [AdaMem: Learning What to Remember for Personalized Long-Horizon LLM Agents](/202606/23/2606.21144v1-adamem-learning-what-to-remember-for-personalized-long-horizon-llm-agents)  
+1. [ESAA-Conversational: An Event-Sourced Memory Layer for Continuity, Handoff, and Curation Across Heterogeneous LLM Coding Agents](/202606/24/2606.23752v1-esaa-conversational-an-event-sourced-memory-layer-for-continuity-handoff-and-curation-across-heterogeneous-llm-coding-agents)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：关注LLM代理的长时记忆管理
-2. [Compressing Observation History into Agent Memory: Distilling Transformers into Recurrent Transformers](/202606/23/2606.21562v1-compressing-observation-history-into-agent-memory-distilling-transformers-into-recurrent-transformers)  
+   evidence：为异构LLM智能体提供事件溯源记忆层
+2. [Governed Shared Memory for Multi-Agent LLM Systems](/202606/24/2606.24535v1-governed-shared-memory-for-multi-agent-llm-systems)  
    标签：评分：8.0/10、query:agent-memory
-   evidence：将观测历史压缩为智能体的固定大小记忆
-3. [Benchmarking Robot Memory Under Interference](/202606/23/2606.22338v1-benchmarking-robot-memory-under-interference)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：跨会话干扰下的机器人记忆基准
-4. [Managing Procedural Memory in LLM Agents: Control, Adaptation, and Evaluation](/202606/23/2606.23127v1-managing-procedural-memory-in-llm-agents-control-adaptation-and-evaluation)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：聚焦LLM代理中程序性记忆的管理以实现可复用技能
-5. [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](/202606/23/2606.23565v1-holoagent-0-a-unified-embodied-agent-framework-with-3d-spatial-memory)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：具身智能体的3D空间记忆架构
-6. [Negative Knowledge as Failure-aware Shared Memory for AutoResearch](/202606/23/2606.21024v1-negative-knowledge-as-failure-aware-shared-memory-for-autoresearch)  
+   evidence：多智能体LLM系统中的受控共享内存架构
+3. [RoboLineage: Agent-Native Data Lifecycle Governance Across Robot Policy Iterations](/202606/24/2606.22142v1-robolineage-agent-native-data-lifecycle-governance-across-robot-policy-iterations)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：失败感知共享记忆用于自主科研智能体
-7. [PulseCX: Breaking the Closed-World Assumption in Real-Time CX](/202606/23/2606.21124v1-pulsecx-breaking-the-closed-world-assumption-in-real-time-cx)  
+   evidence：面向机器人策略记忆的智能体原生数据生命周期治理
+4. [Securing LLM-Agent Long-Term Memory Against Poisoning: Non-Malleable, Origin-Bound Authority with Machine-Checked Guarantees](/202606/24/2606.24322v1-securing-llm-agent-long-term-memory-against-poisoning-non-malleable-origin-bound-authority-with-machine-checked-guarantees)  
+   标签：评分：7.0/10、query:agent-memory
+   evidence：保护LLM智能体长期记忆免受投毒
+5. [ObsGraph: Hierarchical Observation Representation for Embodied Reasoning and Exploration](/202606/24/2606.24068v1-obsgraph-hierarchical-observation-representation-for-embodied-reasoning-and-exploration)  
    标签：评分：6.0/10、query:agent-memory
-   evidence：通过时态知识图实现自演化记忆的客户体验智能体
-8. [Dissecting Agentic RAG: A Component Ablation for Multi-Hop QA with a Local 7B Model](/202606/23/2606.21553v1-dissecting-agentic-rag-a-component-ablation-for-multi-hop-qa-with-a-local-7b-model)  
-   标签：评分：6.0/10、query:agent-memory
-   evidence：对智能体RAG中检索组件的消融研究
-9. [Measuring What Persists: Conditioning Mechanisms and a Geometric Framework for AI Agent Identity](/202606/23/2606.21843v1-measuring-what-persists-conditioning-mechanisms-and-a-geometric-framework-for-ai-agent-identity)  
-   标签：评分：6.0/10、query:agent-memory
-   evidence：用几何框架测量长期上下文中AI智能体的身份持久性
+   evidence：分层场景图用于具身智能体的检索和探索，与记忆检索相关
 
 
 <div class="dpr-home-promo-card">
