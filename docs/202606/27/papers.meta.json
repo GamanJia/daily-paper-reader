@@ -1,0 +1,54 @@
+{
+  "label": "2026-06-27",
+  "date": "2026-06-27",
+  "generated_at": "2026-06-27T20:11:12",
+  "count": 3,
+  "papers": [
+    {
+      "paper_id": "202606/27/2606.25342v1-lifelong-in-context-learning-with-transformers-requires-parametric-forms-of-attention",
+      "section": "quick",
+      "title_en": "Lifelong In-Context Learning with Transformers Requires Parametric Forms of Attention",
+      "authors": "Luke McDermott, Robert W. Heath, Rahul Parhi",
+      "date": "2026-06-24",
+      "pdf": "https://arxiv.org/pdf/2606.25342v1",
+      "score": "7.0",
+      "evidence": "使用参数化注意力实现终身上下文学习作为记忆",
+      "tldr": "终身持续学习是实现类人智能的关键难题。Transformer虽具备上下文学习能力，但注意力机制的二次复杂度使其无法处理任意长序列。本文提出将上下文学习扩展到终身场景，并论证需采用参数化注意力形式（如线性注意力、状态空间模型、快速权重编程器）替代非参数化softmax注意力，通过在线可训练神经网络取代不断增长的键值缓存，从而在固定硬件预算下理解终生上下文。当前参数化方法因内存容量有限或在线更新成本高而不足，本文提出一系列开放问题以引导长时域智能体的研究。",
+      "tags": "query:agent-memory",
+      "abstract_en": "Lifelong continual learning remains an obstacle on the path to human-like intelligence. Modern transformers show sparks of intelligence with in-context learning. The quadratic nature of attention, however, prohibits transformers from performing this process on arbitrarily long sequences. In this work, we argue that extending in-context learning to lifelong settings is a practical solution for continual learning in AI agents. In particular, we argue that \\emph{parametric forms of attention} are needed to understand a lifetime of context with transformers on a fixed hardware budget. These attention mechanisms learn the relationship between keys and their associated values at test-time with parametric regression. Our generalization of parametric approaches (linear attention, state-space models, fast weight programmers, and test-time training layers) contrasts with nonparametric counterparts like softmax attention. They replace the ever-growing key-value cache with an online-trainable neural network, maintaining a constant memory footprint. We highlight how parametric attention currently fall short of lifelong learning due to limited memory capacity or costly online updates. To address these issues, we pose a set of open questions with novel insights to guide the field toward long-horizon agents.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/27/2606.26907v1-qwen-image-agent-bridging-the-context-gap-in-real-world-image-generation",
+      "section": "quick",
+      "title_en": "Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation",
+      "authors": "Zekai Zhang, Jiahao Li, Jie Zhang, Kaiyuan Gao, Kun Yan, Lihan Jiang, Ningyuan Tang, Shengming Yin, Tianhe Wu, Xiaoyue Chen, Xiao Xu, Yan Shu, Yanran Zhang, Yixian Xu, Yuxiang Chen, Zhendong Wang, Zihao Liu, Zikai Zhou, Huishuai Zhang, Dongyan Zhao, Chenfei Wu",
+      "date": "2026-06-25",
+      "pdf": "https://arxiv.org/pdf/2606.26907v1",
+      "score": "7.0",
+      "evidence": "统一智能体框架集成记忆用于图像生成",
+      "tldr": "真实世界图像生成中，用户请求常隐含、不完整或依赖实时知识，导致文本到图像模型因上下文不足而表现不佳。本文提出Qwen-Image-Agent，通过上下文感知规划识别缺失信息，结合推理、搜索、记忆和反馈进行上下文接地，逐步构建完整生成条件。在IA-Bench、Mindbench和WISE-Verified基准上，该方法超越强基线取得最优性能，为上下文驱动的图像生成提供了有效范式。",
+      "tags": "query:agent-memory",
+      "abstract_en": "While text-to-image (T2I) models have achieved remarkable progress, they struggle with real-world requests that are often underspecified, implicit, or dependent on up-to-date knowledge. We identify this challenge as the Context Gap: the mismatch between the user context and the sufficient generation context for T2I models. To bridge this gap, we propose Qwen-Image-Agent, a unified agentic framework that integrates plan, reason, search, memory and feedback in a context-centric manner. Qwen-Image-Agent treats user input as partial context and progressively constructs the generation context through Context-Aware Planning and Context Grounding. Specifically, Context-Aware Planning identifies missing context and plans how it should be acquired and used, while Context Grounding gathers this context from reason, search, memory, and feedback. To evaluate agentic image generation, we further introduce Image Agent Bench (IA-Bench), a benchmark covering four core image agent capabilities: Plan, Reason, Search, and Memory. Experiments on IA-Bench, Mindbench and WISE-Verified show that Qwen-Image-Agent outperforms strong baselines and achieves state-of-the-art performance.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "paper_id": "202606/27/2606.27251v1-advancing-omnimodal-embodied-agents-from-isolated-skills-to-everyday-physical-autonomy",
+      "section": "quick",
+      "title_en": "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
+      "authors": "Junhao Shi, Zezheng Huai, Siyin Wang, Jia Chen, Yubang Wang, Zhaoye Fei, Hechang Chen, Jingjing Gong, Xipeng Qiu, Yu-Gang Jiang",
+      "date": "2026-06-25",
+      "pdf": "https://arxiv.org/pdf/2606.27251v1",
+      "score": "7.0",
+      "evidence": "具有显式记忆分离的分层异步架构",
+      "tldr": "现有具身智能体在长时间操作中面临异构工具编排困难、上下文无界膨胀和开环执行故障等问题。本文提出OmniAct层次异步架构，包含多模态语义规划器统一动作空间、自适应层次记忆实现子线性上下文增长、异步视觉抢占引擎闭合物理语义回路。在40个真实长时任务中，端到端成功率提升，token消耗保持近恒定。该方法首次使中型开源模型达到专有级持久物理自主性能。",
+      "tags": "query:agent-memory",
+      "abstract_en": "Building persistent embodied agents in unstructured environments demands unified orchestration of heterogeneous tools spanning both cyber (APIs, IoT) and physical (manipulation, navigation) domains, coupled with autonomous recovery from physical failures that inevitably arise over extended operation. Existing systems treat these as separate problems: VLM-based planners lack a unified cyber-physical action space, agent frameworks accumulate unbounded context that degrades temporal coherence, and VLA policies execute open-loop without detecting their own failures. We argue that persistent autonomy requires not a monolithic model but a hierarchical asynchronous architecture with explicit separation of planning, memory, and verification. To this end, we present OmniAct, a framework integrating a multimodal semantic planner for skill routing across unified action spaces, an adaptive hierarchical memory with event-boundary-driven compression for sub-linear context growth, and an asynchronous visual preemption engine that closes the semantic loop during physical execution. Across 40 real-world long-horizon tasks on two robotic platforms coordinating four IoT devices, OmniAct achieves consistent improvements in end-to-end success across all complexity levels, maintains near-flat token consumption over under 100k+ accumulated interaction tokens, and elevates mid-scale open-weight models to proprietary-level performance.",
+      "source": "arxiv",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "errors": []
+}

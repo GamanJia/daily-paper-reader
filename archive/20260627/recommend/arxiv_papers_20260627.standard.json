@@ -1,0 +1,154 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-06-27T20:09:17.267161+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 0,
+    "deep_cap": 6,
+    "deep_selected": 0,
+    "quick_candidates": 3,
+    "quick_skim_target": 11,
+    "quick_selected": 3
+  },
+  "deep_dive": [],
+  "quick_skim": [
+    {
+      "id": "2606.25342v1",
+      "source": "arxiv",
+      "title": "Lifelong In-Context Learning with Transformers Requires Parametric Forms of Attention",
+      "abstract": "Lifelong continual learning remains an obstacle on the path to human-like intelligence. Modern transformers show sparks of intelligence with in-context learning. The quadratic nature of attention, however, prohibits transformers from performing this process on arbitrarily long sequences. In this work, we argue that extending in-context learning to lifelong settings is a practical solution for continual learning in AI agents. In particular, we argue that \\emph{parametric forms of attention} are needed to understand a lifetime of context with transformers on a fixed hardware budget. These attention mechanisms learn the relationship between keys and their associated values at test-time with parametric regression. Our generalization of parametric approaches (linear attention, state-space models, fast weight programmers, and test-time training layers) contrasts with nonparametric counterparts like softmax attention. They replace the ever-growing key-value cache with an online-trainable neural network, maintaining a constant memory footprint. We highlight how parametric attention currently fall short of lifelong learning due to limited memory capacity or costly online updates. To address these issues, we pose a set of open questions with novel insights to guide the field toward long-horizon agents.",
+      "authors": [
+        "Luke McDermott",
+        "Robert W. Heath",
+        "Rahul Parhi"
+      ],
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG"
+      ],
+      "published": "2026-06-24T03:14:20+00:00",
+      "link": "https://arxiv.org/pdf/2606.25342v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "lifelong in-context learning with parametric attention for memory",
+      "llm_evidence_cn": "使用参数化注意力实现终身上下文学习作为记忆",
+      "llm_evidence": "使用参数化注意力实现终身上下文学习作为记忆",
+      "canonical_evidence": "使用参数化注意力实现终身上下文学习作为记忆",
+      "llm_tldr_en": "Argues that lifelong in-context learning in transformers requires parametric forms of attention to handle a lifetime of context on fixed hardware, enabling continual learning in AI agents.",
+      "llm_tldr_cn": "Transformer的上下文学习受限于注意力二次复杂度，无法处理无限长序列。本文提出需要参数化注意力机制来扩展上下文学习到终身设置，通过学习键值对的参数化回归，在固定硬件上实现长期记忆。该方法为AI智能体的持续学习提供了理论路径，无需显式记忆存储。实验论证了参数化注意力的必要性。该工作为智能体长期记忆机制提供了新思路。",
+      "llm_tldr": "Transformer的上下文学习受限于注意力二次复杂度，无法处理无限长序列。本文提出需要参数化注意力机制来扩展上下文学习到终身设置，通过学习键值对的参数化回归，在固定硬件上实现长期记忆。该方法为AI智能体的持续学习提供了理论路径，无需显式记忆存储。实验论证了参数化注意力的必要性。该工作为智能体长期记忆机制提供了新思路。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "long-term memory in artificial agents",
+      "matched_requirement_id": "req-5",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.26907v1",
+      "source": "arxiv",
+      "title": "Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation",
+      "abstract": "While text-to-image (T2I) models have achieved remarkable progress, they struggle with real-world requests that are often underspecified, implicit, or dependent on up-to-date knowledge. We identify this challenge as the Context Gap: the mismatch between the user context and the sufficient generation context for T2I models. To bridge this gap, we propose Qwen-Image-Agent, a unified agentic framework that integrates plan, reason, search, memory and feedback in a context-centric manner. Qwen-Image-Agent treats user input as partial context and progressively constructs the generation context through Context-Aware Planning and Context Grounding. Specifically, Context-Aware Planning identifies missing context and plans how it should be acquired and used, while Context Grounding gathers this context from reason, search, memory, and feedback. To evaluate agentic image generation, we further introduce Image Agent Bench (IA-Bench), a benchmark covering four core image agent capabilities: Plan, Reason, Search, and Memory. Experiments on IA-Bench, Mindbench and WISE-Verified show that Qwen-Image-Agent outperforms strong baselines and achieves state-of-the-art performance.",
+      "authors": [
+        "Zekai Zhang",
+        "Jiahao Li",
+        "Jie Zhang",
+        "Kaiyuan Gao",
+        "Kun Yan",
+        "Lihan Jiang",
+        "Ningyuan Tang",
+        "Shengming Yin",
+        "Tianhe Wu",
+        "Xiaoyue Chen",
+        "Xiao Xu",
+        "Yan Shu",
+        "Yanran Zhang",
+        "Yixian Xu",
+        "Yuxiang Chen",
+        "Zhendong Wang",
+        "Zihao Liu",
+        "Zikai Zhou",
+        "Huishuai Zhang",
+        "Dongyan Zhao",
+        "Chenfei Wu"
+      ],
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-06-25T11:40:12+00:00",
+      "link": "https://arxiv.org/pdf/2606.26907v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "unified agentic framework integrating memory for image generation",
+      "llm_evidence_cn": "统一智能体框架集成记忆用于图像生成",
+      "llm_evidence": "统一智能体框架集成记忆用于图像生成",
+      "canonical_evidence": "统一智能体框架集成记忆用于图像生成",
+      "llm_tldr_en": "Proposes Qwen-Image-Agent, a unified agentic framework that integrates memory to bridge the context gap in real-world image generation by planning and grounding missing context.",
+      "llm_tldr_cn": "现有文本到图像模型在处理真实世界请求时面临上下文差距问题，即用户提供的上下文不完整。本文提出Qwen-Image-Agent，一个统一智能体框架，通过集成计划、推理、搜索、记忆和反馈，逐步构建生成上下文。它采用上下文感知规划和上下文接地来获取和利用缺失信息。实验表明该方法能够有效弥合上下文差距，提升图像生成质量。该框架为增强生成模型的上下文理解提供了智能体方案。",
+      "llm_tldr": "现有文本到图像模型在处理真实世界请求时面临上下文差距问题，即用户提供的上下文不完整。本文提出Qwen-Image-Agent，一个统一智能体框架，通过集成计划、推理、搜索、记忆和反馈，逐步构建生成上下文。它采用上下文感知规划和上下文接地来获取和利用缺失信息。实验表明该方法能够有效弥合上下文差距，提升图像生成质量。该框架为增强生成模型的上下文理解提供了智能体方案。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory augmented agent architectures and applications",
+      "matched_requirement_id": "req-8",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2606.27251v1",
+      "source": "arxiv",
+      "title": "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
+      "abstract": "Building persistent embodied agents in unstructured environments demands unified orchestration of heterogeneous tools spanning both cyber (APIs, IoT) and physical (manipulation, navigation) domains, coupled with autonomous recovery from physical failures that inevitably arise over extended operation. Existing systems treat these as separate problems: VLM-based planners lack a unified cyber-physical action space, agent frameworks accumulate unbounded context that degrades temporal coherence, and VLA policies execute open-loop without detecting their own failures. We argue that persistent autonomy requires not a monolithic model but a hierarchical asynchronous architecture with explicit separation of planning, memory, and verification. To this end, we present OmniAct, a framework integrating a multimodal semantic planner for skill routing across unified action spaces, an adaptive hierarchical memory with event-boundary-driven compression for sub-linear context growth, and an asynchronous visual preemption engine that closes the semantic loop during physical execution. Across 40 real-world long-horizon tasks on two robotic platforms coordinating four IoT devices, OmniAct achieves consistent improvements in end-to-end success across all complexity levels, maintains near-flat token consumption over under 100k+ accumulated interaction tokens, and elevates mid-scale open-weight models to proprietary-level performance.",
+      "authors": [
+        "Junhao Shi",
+        "Zezheng Huai",
+        "Siyin Wang",
+        "Jia Chen",
+        "Yubang Wang",
+        "Zhaoye Fei",
+        "Hechang Chen",
+        "Jingjing Gong",
+        "Xipeng Qiu",
+        "Yu-Gang Jiang"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-06-25T16:36:35+00:00",
+      "link": "https://arxiv.org/pdf/2606.27251v1",
+      "tags": [
+        "keyword:agent-memory",
+        "query:agent-memory"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "hierarchical asynchronous architecture with explicit separation of memory",
+      "llm_evidence_cn": "具有显式记忆分离的分层异步架构",
+      "llm_evidence": "具有显式记忆分离的分层异步架构",
+      "canonical_evidence": "具有显式记忆分离的分层异步架构",
+      "llm_tldr_en": "Proposes a hierarchical architecture for persistent embodied agents that explicitly separates planning, memory, and verification, addressing memory as a key component for long-term autonomy.",
+      "llm_tldr_cn": "该论文提出一种分层异步架构，用于实现持久自主的具身智能体。架构明确将规划、记忆和验证分离，以应对现有系统在长时间运行中上下文膨胀和开环执行的问题。虽然主要聚焦于整体框架，但强调了记忆在维持时间一致性和失败恢复中的关键作用，为后续智能体记忆设计提供了架构思路。",
+      "llm_tldr": "该论文提出一种分层异步架构，用于实现持久自主的具身智能体。架构明确将规划、记忆和验证分离，以应对现有系统在长时间运行中上下文膨胀和开环执行的问题。虽然主要聚焦于整体框架，但强调了记忆在维持时间一致性和失败恢复中的关键作用，为后续智能体记忆设计提供了架构思路。",
+      "llm_tags": [
+        "query:agent-memory"
+      ],
+      "matched_query_tag": "query:agent-memory",
+      "matched_query_text": "memory architecture for intelligent agents",
+      "matched_requirement_id": "req-6",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    }
+  ]
+}

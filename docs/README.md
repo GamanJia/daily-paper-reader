@@ -6,38 +6,32 @@
 </div>
 
 ## 每次日报
-- 最新运行日期：2026-06-26
-- 运行时间：2026-06-26 21:20:17 UTC
+- 最新运行日期：2026-06-27
+- 运行时间：2026-06-27 20:11:04 UTC
 - 运行状态：成功
-- 本次总论文数：6
-- 精读区：4
-- 速读区：2
+- 本次总论文数：3
+- 精读区：0
+- 速读区：3
 
 ### 今日简报（AI）
-今日精选6篇论文，聚焦长程语言智能体记忆机制与可进化表征，两篇精读获高分评价。最值得关注的是《Memory Depth, Not Memory Access》提出的选择式参数巩固策略与《EvoEmbedding》的可进化表征方案。建议普通读者优先精读这两篇，理解长程代理如何通过“记忆深度”而非简单“访问”提升性能，并关注可进化表征在检索与记忆中的实践。
-- 详情：[/202606/26/README](/202606/26/README)
+今日速读三篇7分论文，聚焦持续上下文学习的注意力机制、真实图像生成上下文缺口、以及日常生活自主性的多模态具身智能。  
+值得关注的方向是持续学习中的注意力参数化，以及打通图像生成中上下文衔接的通用模型。  
+建议普通读者优先选《Qwen-Image-Agent》了解图像生成新方法，或《Advancing Omnimodal》看具身智能如何从孤立技能走向日常自主。
+- 详情：[/202606/27/README](/202606/27/README)
 
 ### 精读区论文标签
-1. [Memory Depth, Not Memory Access: Selective Parametric Consolidation for Long-Running Language Agents](/202606/26/2606.26806v1-memory-depth-not-memory-access-selective-parametric-consolidation-for-long-running-language-agents)  
-   标签：评分：10.0/10、query:agent-memory
-   evidence：长运行语言代理的参数化记忆巩固
-2. [EvoEmbedding: Evolvable Representations for Long-Context Retrieval and Agentic Memory](/202606/26/2606.21649v2-evoembedding-evolvable-representations-for-long-context-retrieval-and-agentic-memory)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：用于长上下文检索和代理记忆的可演化嵌入
-3. [Temporal Validity in Retrieval Memory: Eliminating Stale-Fact Errors for AI Agents over Evolving Knowledge](/202606/26/2606.26511v1-temporal-validity-in-retrieval-memory-eliminating-stale-fact-errors-for-ai-agents-over-evolving-knowledge)  
-   标签：评分：9.0/10、query:agent-memory
-   evidence：检索记忆中的时间有效性
-4. [BIT-Nav: Brain-Inspired Trajectory Memory for Embodied Navigation](/202606/26/2606.21398v1-bit-nav-brain-inspired-trajectory-memory-for-embodied-navigation)  
-   标签：评分：8.0/10、query:agent-memory
-   evidence：使用海马体路径整合的脑启发轨迹记忆用于具身导航
+- 本次无精读推荐。
 
 ### 速读区论文标签
-1. [MIRROR: Novelty-Constrained Memory-Guided MCTS Red-Teaming for Agentic RAG](/202606/26/2606.26793v1-mirror-novelty-constrained-memory-guided-mcts-red-teaming-for-agentic-rag)  
+1. [Lifelong In-Context Learning with Transformers Requires Parametric Forms of Attention](/202606/27/2606.25342v1-lifelong-in-context-learning-with-transformers-requires-parametric-forms-of-attention)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：用于代理RAG红队测试的记忆引导MCTS
-2. [Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning](/202606/26/2606.27330v1-empowering-gui-agents-via-autonomous-experience-exploration-and-hindsight-experience-utilization-for-task-planning)  
+   evidence：使用参数化注意力实现终身上下文学习作为记忆
+2. [Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation](/202606/27/2606.26907v1-qwen-image-agent-bridging-the-context-gap-in-real-world-image-generation)  
    标签：评分：7.0/10、query:agent-memory
-   evidence：利用后见之明经验进行GUI代理任务规划
+   evidence：统一智能体框架集成记忆用于图像生成
+3. [Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy](/202606/27/2606.27251v1-advancing-omnimodal-embodied-agents-from-isolated-skills-to-everyday-physical-autonomy)  
+   标签：评分：7.0/10、query:agent-memory
+   evidence：具有显式记忆分离的分层异步架构
 
 
 <div class="dpr-home-promo-card">
